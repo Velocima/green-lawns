@@ -1,17 +1,12 @@
 import React from 'react';
 import '../css/app.css';
-import logo from '../images/logo-placeholder.jpg';
+import { Nav } from './Nav';
 
 const App = () => {
 	return (
 		<div className='app-container'>
 			<header>
-				<img
-					src={logo}
-					alt='logo placeholder image.'
-					height='200px'
-					width='300px'
-				/>
+				<Nav />
 			</header>
 		</div>
 	);
