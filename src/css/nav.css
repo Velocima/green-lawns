@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  nav img {
+    height: 15vw;
+    width: 15vw;
+    margin-left: 3vw; }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    margin-right: 3vw; }
+    nav ul li {
+      transition: all 0.3s; }
+      nav ul li a {
+        font-size: 40px;
+        color: black;
+        text-decoration: none; }
