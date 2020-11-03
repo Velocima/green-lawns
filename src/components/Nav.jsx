@@ -5,14 +5,16 @@ import { Link } from 'react-router-dom';
 
 export const Nav = (props) => {
 	const pages = [
-		{ route: 'home', navText: 'Home' },
-		{ route: 'about', navText: 'About Us' },
-		{ route: 'services', navText: 'Services' },
-		{ route: 'contact', navText: 'Contact' },
+		{ route: '/', navText: 'Home' },
+		{ route: '/about', navText: 'About Us' },
+		{ route: '/services', navText: 'Services' },
+		{ route: '/contact', navText: 'Contact' },
 	];
 	return (
 		<nav>
-			<img src={logo} alt='logo placeholder image.' />
+			<Link to='/'>
+				<img src={logo} alt='logo placeholder image.' />
+			</Link>
 			<ul>
 				{pages.map((page) => (
 					<li>
