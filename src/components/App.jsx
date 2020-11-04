@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/app.css';
 import { Nav } from './Nav';
 import { Landing } from './Landing';
+import { About } from './About';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
@@ -11,6 +12,9 @@ const App = () => {
 				<Nav />
 			</header>
 			<Switch>
+				<Route path='/about'>
+					<About />
+				</Route>
 				<Route path='/'>
 					<Landing />
 				</Route>
