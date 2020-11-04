@@ -24,6 +24,7 @@ export const Landing = () => {
 				</p>
 			</div>
 			<section className='reviews'>
+				<h2>First rate customer service</h2>
 				{reviews.map((review, i) => (
 					<Review
 						review={review.review}
