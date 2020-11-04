@@ -1,9 +1,12 @@
+@import 'variables/variables';
+
 nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	height: 20vh;
+	// background-color: $nav-color;
 	img {
 		height: 18vh;
 		width: auto;
@@ -19,7 +22,7 @@ nav {
 		li {
 			transition: all 0.3s;
 			a {
-				font-size: 40px;
+				font-size: 30px;
 				color: black;
 				text-decoration: none;
 			}
