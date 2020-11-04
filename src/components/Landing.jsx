@@ -7,8 +7,10 @@ export const Landing = () => {
 	return (
 		<main className='landing-container'>
 			<div className='banner'>
-				<h1>Green Lawns Boarding Kennels</h1>
-				<h2>Your dog's home away from home</h2>
+				<div className='titles'>
+					<h1>Green Lawns Boarding Kennels</h1>
+					<h2>Your dog's home away from home</h2>
+				</div>
 			</div>
 			<div className='description'>
 				<p>
