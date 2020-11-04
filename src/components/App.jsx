@@ -15,6 +15,7 @@ const App = () => {
 					<Landing />
 				</Route>
 			</Switch>
+			<footer></footer>
 		</Router>
 	);
 };
