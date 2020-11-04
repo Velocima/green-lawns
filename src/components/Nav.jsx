@@ -13,11 +13,11 @@ export const Nav = (props) => {
 	return (
 		<nav>
 			<Link to='/'>
-				<img src={logo} alt='logo placeholder image.' />
+				<img src={logo} alt='logo placeholder.' />
 			</Link>
 			<ul>
-				{pages.map((page) => (
-					<li>
+				{pages.map((page, i) => (
+					<li key={`${i}${page}`}>
 						<Link to={page.route}>{page.navText}</Link>
 					</li>
 				))}

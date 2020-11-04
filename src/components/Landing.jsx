@@ -23,9 +23,13 @@ export const Landing = () => {
 					eum at amet officia nisi consequuntur repudiandae?
 				</p>
 			</div>
-			<section class='reviews'>
-				{reviews.map((review) => (
-					<Review review={review.review} author={review.author} />
+			<section className='reviews'>
+				{reviews.map((review, i) => (
+					<Review
+						review={review.review}
+						author={review.author}
+						key={`${i}${review.author}`}
+					/>
 				))}
 			</section>
 		</main>
