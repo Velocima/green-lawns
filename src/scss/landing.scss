@@ -44,13 +44,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 70%;
-		height: 30vh;
+		min-height: 30vh;
 		p {
-			width: 80%;
-			padding: 40px;
+			width: 60%;
+			padding: 20px;
+			margin: 5vh;
 			font-size: 20px;
 			background-color: $container-color;
+			border: 2px outset $container-shadow;
 			border-radius: 10px;
 			box-shadow: 7px 10px 10px $container-shadow;
 		}
