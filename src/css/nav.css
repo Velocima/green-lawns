@@ -2,10 +2,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  height: 20vh; }
   nav img {
-    height: 15vw;
-    width: 15vw;
+    height: 18vh;
+    width: auto;
     margin-left: 3vw; }
   nav ul {
     display: flex;

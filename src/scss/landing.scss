@@ -1,3 +1,5 @@
+@import 'variables/variables';
+
 .landing-container {
 	display: flex;
 	flex-direction: column;
@@ -23,6 +25,21 @@
 		}
 		h1 {
 			font-size: 50px;
+		}
+	}
+	.description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		height: 30vh;
+		p {
+			width: 80%;
+			padding: 40px;
+			font-size: 20px;
+			background-color: $container-color;
+			border-radius: 10px;
+			box-shadow: 7px 10px 10px $container-shadow;
 		}
 	}
 }
