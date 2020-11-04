@@ -30,15 +30,19 @@
 		margin-bottom: 5vh;
 	}
 	.reviews-container {
+		display: flex;
+		flex-direction: column;
 		width: 70%;
 		font-family: $text-font;
 		.review {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
-			width: 70%;
+			align-items: flex-start;
+			width: 64%;
 			height: 15vh;
 			margin-bottom: 5vh;
+			margin-right: 0;
 			padding: 40px;
 			font-size: 20px;
 			background-color: $container-color;
@@ -63,7 +67,7 @@
 			}
 		}
 		.review:nth-child(2) {
-			margin-left: 30%;
+			align-self: flex-end;
 		}
 	}
 }
