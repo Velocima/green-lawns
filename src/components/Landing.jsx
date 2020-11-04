@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/landing.css';
 import { Review } from './Review';
+import { reviews } from '../contentJs/Reviews';
 
 export const Landing = () => {
 	return (
@@ -20,7 +21,11 @@ export const Landing = () => {
 				Tenetur libero distinctio quam similique dolor aut, maiores eum
 				at amet officia nisi consequuntur repudiandae?
 			</p>
-			<section class='reviews'></section>
+			<section class='reviews'>
+				{reviews.map((review) => (
+					<Review review={review.review} author={review.author} />
+				))}
+			</section>
 		</main>
 	);
 };
