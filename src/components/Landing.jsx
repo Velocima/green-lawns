@@ -6,7 +6,7 @@ import { reviews } from '../contentJs/Reviews';
 export const Landing = () => {
 	return (
 		<main className='landing-container'>
-			<div className='banner'>
+			<div className='title-banner'>
 				<div className='titles'>
 					<h1>Green Lawns Boarding Kennels</h1>
 					<h2>Your dog's home away from home</h2>
@@ -26,14 +26,18 @@ export const Landing = () => {
 				</p>
 			</div>
 			<section className='reviews'>
-				<h2>First rate customer service</h2>
-				{reviews.map((review, i) => (
-					<Review
-						review={review.review}
-						author={review.author}
-						key={`${i}${review.author}`}
-					/>
-				))}
+				<div className='reviews-banner'>
+					<h2>First rate customer service</h2>
+				</div>
+				<div className='reviews-container'>
+					{reviews.map((review, i) => (
+						<Review
+							review={review.review}
+							author={review.author}
+							key={`${i}${review.author}`}
+						/>
+					))}
+				</div>
 			</section>
 		</main>
 	);
