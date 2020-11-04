@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/landing.css';
+import { Review } from './Review';
 
 export const Landing = () => {
 	return (
@@ -19,7 +20,7 @@ export const Landing = () => {
 				Tenetur libero distinctio quam similique dolor aut, maiores eum
 				at amet officia nisi consequuntur repudiandae?
 			</p>
-			<section class='testimonials'></section>
+			<section class='reviews'></section>
 		</main>
 	);
 };
