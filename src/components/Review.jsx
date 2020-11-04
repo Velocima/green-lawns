@@ -5,7 +5,7 @@ export const Review = (props) => {
 	return (
 		<div className='review'>
 			<p>{props.review}</p>
-			<p>{props.author}</p>
+			<p>{` - ${props.author}`}</p>
 		</div>
 	);
 };

@@ -27,16 +27,19 @@
 			border-radius: 10px;
 			h1,
 			h2 {
+				font-family: $title-font;
+				font-weight: 300;
 				color: white;
 				opacity: 0.85;
 				text-shadow: 2px 2px 3px $text-shadow;
 			}
 			h1 {
-				font-size: 70px;
-				margin-bottom: 10px;
+				font-size: 5vw;
+				margin-bottom: 5vh;
 			}
 			h2 {
-				font-size: 30px;
+				font-size: 2.5vw;
+				font-style: italic;
 			}
 		}
 	}

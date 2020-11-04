@@ -19,16 +19,19 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		h2 {
+			font-family: $title-font;
+			font-weight: 300;
 			color: white;
 			opacity: 0.85;
 			text-shadow: 2px 2px 3px $text-shadow;
 			text-align: center;
-			font-size: 50px;
+			font-size: 3.5vw;
 		}
 		margin-bottom: 5vh;
 	}
 	.reviews-container {
 		width: 70%;
+		font-family: $text-font;
 		.review {
 			display: flex;
 			flex-direction: column;

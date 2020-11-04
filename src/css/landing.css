@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 .landing-container {
   display: flex;
   flex-direction: column;
@@ -24,14 +26,17 @@
       border-radius: 10px; }
       .landing-container .title-banner .titles h1,
       .landing-container .title-banner .titles h2 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
         color: white;
         opacity: 0.85;
         text-shadow: 2px 2px 3px #1fab89; }
       .landing-container .title-banner .titles h1 {
-        font-size: 70px;
-        margin-bottom: 10px; }
+        font-size: 5vw;
+        margin-bottom: 5vh; }
       .landing-container .title-banner .titles h2 {
-        font-size: 30px; }
+        font-size: 2.5vw;
+        font-style: italic; }
   .landing-container .description {
     display: flex;
     justify-content: center;
