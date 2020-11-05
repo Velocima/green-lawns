@@ -9,16 +9,19 @@ export const About = () => {
 	return (
 		<main className='about-container'>
 			<section className='family'>
-				<h1>More than just a business</h1>
-				<p>
-					This section will contain a paragraph about "family run
-					business". Cover who runs it, why they love it etc.
-					<br></br>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Debitis unde explicabo veritatis fuga labore facere natus
-					nihil, blanditiis consectetur fugiat id accusamus nisi hic
-					eligendi? Omnis, exercitationem. Quo, aperiam perferendis.
-				</p>
+				<div className='family-text'>
+					<h1>More than just a business</h1>
+					<p>
+						This section will contain a paragraph about "family run
+						business". Cover who runs it, why they love it etc.
+						<br></br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Debitis unde explicabo veritatis fuga labore
+						facere natus nihil, blanditiis consectetur fugiat id
+						accusamus nisi hic eligendi? Omnis, exercitationem. Quo,
+						aperiam perferendis.
+					</p>
+				</div>
 				<img src={ownerImage} alt='' />
 			</section>
 			<section className='facilites'>

@@ -1,1 +1,44 @@
 @import 'variables/variables';
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+
+	.family {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.family-text {
+			justify-self: center;
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			width: 50vw;
+			height: 30vw;
+			padding: 10px;
+			h1 {
+				font-family: $title-font;
+				font-size: 3vw;
+				font-weight: 300;
+				padding: 50px 0;
+				color: black;
+				opacity: 0.85;
+				text-shadow: 2px 2px 3px $text-shadow;
+			}
+			p {
+				width: 80%;
+				font-size: 20px;
+				font-family: $text-font;
+			}
+		}
+		img {
+			justify-self: center;
+			align-self: center;
+			height: 30vw;
+			width: 30vw;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+	}
+}

@@ -1,2 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+.about-container {
+  display: flex;
+  flex-direction: column; }
+  .about-container .family {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .about-container .family .family-text {
+      justify-self: center;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50vw;
+      height: 30vw;
+      padding: 10px; }
+      .about-container .family .family-text h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 3vw;
+        font-weight: 300;
+        padding: 50px 0;
+        color: black;
+        opacity: 0.85;
+        text-shadow: 2px 2px 3px #1fab89; }
+      .about-container .family .family-text p {
+        width: 80%;
+        font-size: 20px;
+        font-family: "Nunito Sans", sans-serif; }
+    .about-container .family img {
+      justify-self: center;
+      align-self: center;
+      height: 30vw;
+      width: 30vw;
+      border-radius: 50%;
+      object-fit: cover; }
