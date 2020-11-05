@@ -10,7 +10,8 @@
   .about-container .family {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 85vh; }
+    height: 85vh;
+    background: linear-gradient(#9df3c4, white); }
     .about-container .family .family-text {
       justify-self: center;
       align-self: center;
@@ -25,16 +26,25 @@
         font-family: "Josefin Sans", sans-serif;
         font-size: 3vw;
         font-weight: 300;
-        padding: 50px 0;
+        margin-bottom: 15vh;
         color: black;
         opacity: 0.85;
+        background-color: #d7fbe8;
+        padding: 10px;
+        border-radius: 10px;
         text-shadow: 2px 2px 3px #1fab89; }
+      .about-container .family .family-text p {
+        width: 37vw;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #d7fbe8; }
     .about-container .family img {
       justify-self: center;
       align-self: center;
       height: 30vw;
       width: 30vw;
       border-radius: 50%;
+      box-shadow: 7px 10px 10px #9df3c4;
       object-fit: cover; }
   .about-container .facilities .banner {
     display: grid;

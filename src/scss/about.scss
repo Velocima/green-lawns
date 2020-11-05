@@ -13,6 +13,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		height: 85vh;
+		background: linear-gradient($container-shadow, white);
 		.family-text {
 			justify-self: center;
 			align-self: center;
@@ -27,10 +28,19 @@
 				font-family: $title-font;
 				font-size: 3vw;
 				font-weight: 300;
-				padding: 50px 0;
+				margin-bottom: 15vh;
 				color: black;
 				opacity: 0.85;
+				background-color: $container-color;
+				padding: 10px;
+				border-radius: 10px;
 				text-shadow: 2px 2px 3px $text-shadow;
+			}
+			p {
+				width: 37vw;
+				padding: 10px;
+				border-radius: 10px;
+				background-color: $container-color;
 			}
 		}
 		img {
@@ -39,6 +49,7 @@
 			height: 30vw;
 			width: 30vw;
 			border-radius: 50%;
+			box-shadow: 7px 10px 10px $container-shadow;
 			object-fit: cover;
 		}
 	}
