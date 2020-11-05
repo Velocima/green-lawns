@@ -3,6 +3,7 @@ import '../css/app.css';
 import { Nav } from './Nav';
 import { Landing } from './Landing';
 import { About } from './About';
+import { Services } from './Services';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
@@ -14,6 +15,9 @@ const App = () => {
 			<Switch>
 				<Route path='/about'>
 					<About />
+				</Route>
+				<Route path='/services'>
+					<Services />
 				</Route>
 				<Route path='/'>
 					<Landing />
