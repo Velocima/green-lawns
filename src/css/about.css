@@ -3,9 +3,14 @@
 .about-container {
   display: flex;
   flex-direction: column; }
+  .about-container p {
+    width: 80%;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif; }
   .about-container .family {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    height: 85vh; }
     .about-container .family .family-text {
       justify-self: center;
       align-self: center;
@@ -24,10 +29,6 @@
         color: black;
         opacity: 0.85;
         text-shadow: 2px 2px 3px #1fab89; }
-      .about-container .family .family-text p {
-        width: 80%;
-        font-size: 20px;
-        font-family: "Nunito Sans", sans-serif; }
     .about-container .family img {
       justify-self: center;
       align-self: center;
@@ -35,3 +36,36 @@
       width: 30vw;
       border-radius: 50%;
       object-fit: cover; }
+  .about-container .facilities .banner {
+    display: grid;
+    height: 40vh;
+    background: url("../images/about-banner-placeholder.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .about-container .facilities .banner h1 {
+      justify-self: center;
+      align-self: center;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 5vw;
+      font-weight: 300;
+      color: white;
+      opacity: 0.85;
+      text-shadow: 2px 2px 3px #1fab89; }
+  .about-container .facilities .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d7fbe8; }
+    .about-container .facilities .tiles img {
+      width: 50vw;
+      height: 50vh;
+      object-fit: cover; }
+    .about-container .facilities .tiles p {
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      width: 60%;
+      padding: 5%;
+      border-radius: 10px;
+      background-color: #9df3c4; }

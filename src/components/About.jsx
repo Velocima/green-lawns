@@ -24,28 +24,34 @@ export const About = () => {
 				</div>
 				<img src={ownerImage} alt='' />
 			</section>
-			<section className='facilites'>
+			<section className='facilities'>
 				<div className='banner'>
-					<h1>Our facilites</h1>
+					<h1>Our facilities</h1>
 				</div>
 				<div className='tiles'>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Doloribus, vel! Quaerat temporibus tempore aut sunt,
-						consequatur suscipit nihil delectus amet quisquam
-						possimus veniam porro perspiciatis similique tempora
-						voluptas sit accusamus?
+						Something about how the kennels are super clean and
+						awesome and dog friendly. <br></br>Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Doloribus, vel!
+						Quaerat temporibus tempore aut sunt, consequatur
+						suscipit nihil delectus amet quisquam possimus veniam
+						porro perspiciatis similique tempora voluptas sit
+						accusamus?
 					</p>
 					<img src={dog1} alt='' />
+					<img src={dog2} alt='' />
 					<p>
+						Somthing about how the good boys get walked lots and
+						love it because every good boy loves a stroll <br></br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloribus, vel! Quaerat temporibus tempore aut sunt,
 						consequatur suscipit nihil delectus amet quisquam
 						possimus veniam porro perspiciatis similique tempora
 						voluptas sit accusamus?
 					</p>
-					<img src={dog2} alt='' />
 					<p>
+						Something about the micheline starred doggo dinners{' '}
+						<br></br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloribus, vel! Quaerat temporibus tempore aut sunt,
 						consequatur suscipit nihil delectus amet quisquam

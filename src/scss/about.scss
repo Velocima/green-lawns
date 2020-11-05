@@ -3,10 +3,16 @@
 .about-container {
 	display: flex;
 	flex-direction: column;
+	p {
+		width: 80%;
+		font-size: 20px;
+		font-family: $text-font;
+	}
 
 	.family {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		height: 85vh;
 		.family-text {
 			justify-self: center;
 			align-self: center;
@@ -26,11 +32,6 @@
 				opacity: 0.85;
 				text-shadow: 2px 2px 3px $text-shadow;
 			}
-			p {
-				width: 80%;
-				font-size: 20px;
-				font-family: $text-font;
-			}
 		}
 		img {
 			justify-self: center;
@@ -39,6 +40,46 @@
 			width: 30vw;
 			border-radius: 50%;
 			object-fit: cover;
+		}
+	}
+	.facilities {
+		.banner {
+			display: grid;
+			height: 40vh;
+			background: url('../images/about-banner-placeholder.jpg');
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			h1 {
+				justify-self: center;
+				align-self: center;
+				font-family: $title-font;
+				font-size: 5vw;
+				font-weight: 300;
+				color: white;
+				opacity: 0.85;
+				text-shadow: 2px 2px 3px $text-shadow;
+			}
+		}
+		.tiles {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			background-color: $container-color;
+			img {
+				width: 50vw;
+				height: 50vh;
+				object-fit: cover;
+			}
+			p {
+				justify-self: center;
+				align-self: center;
+				text-align: center;
+				width: 60%;
+				padding: 5%;
+				border-radius: 10px;
+				background-color: $container-shadow;
+			}
 		}
 	}
 }
