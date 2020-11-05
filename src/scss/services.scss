@@ -1,1 +1,52 @@
 @import './variables/variables';
+
+.services {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1,
+	h2 {
+		font-family: $title-font;
+		font-weight: 300;
+		text-shadow: 2px 2px 3px $text-shadow;
+		opacity: 0.85;
+	}
+	p,
+	td {
+		font-family: $text-font;
+		font-size: 20px;
+	}
+	.our-services {
+		width: 100%;
+		display: grid;
+		grid-template: 1fr 3fr / 1fr 1fr;
+		height: 85vh;
+		background: linear-gradient($container-shadow, white);
+		h1 {
+			grid-column-start: 1;
+			justify-self: center;
+			align-self: center;
+			font-size: 5vw;
+			text-align: center;
+		}
+		img {
+			grid-area: 1 / 2 / 3 / 3;
+			justify-self: center;
+			align-self: center;
+			max-width: 40vw;
+			max-height: 40vw;
+			height: 70vh;
+			width: 70vh;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: 50% 35%;
+		}
+		p {
+			justify-self: center;
+			align-self: start;
+			width: 40vw;
+			margin-top: 10vh;
+		}
+	}
+}

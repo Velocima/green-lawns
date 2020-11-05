@@ -5,9 +5,13 @@ import dog from '../images/good-boy.jpg';
 
 export const Services = () => {
 	return (
-		<main className='service-container'>
-			<section className='services'>
+		<main className='services'>
+			<section className='our-services'>
 				<h1>Our Services</h1>
+				<img
+					src={dog}
+					alt='Ted is one of the families very happy dogs.'
+				/>
 				<p>
 					This paragraph will describe the services available. should
 					contain practical information for customers.
@@ -18,10 +22,6 @@ export const Services = () => {
 					reprehenderit cupiditate libero ducimus repellendus dolor
 					placeat!
 				</p>
-				<img
-					src={dog}
-					alt='Ted is one of the families very happy dogs.'
-				/>
 			</section>
 			<section className='prices'>
 				<h1>prices</h1>
