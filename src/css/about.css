@@ -81,6 +81,8 @@
       justify-self: center;
       align-self: center;
       background-color: #d7fbe8;
+      border: 2px outset #9df3c4;
+      box-shadow: 7px 10px 10px #d7fbe8;
       padding: 20px 10px;
       border-radius: 10px; }
       .about-container .links a p {

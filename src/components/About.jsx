@@ -64,7 +64,7 @@ export const About = () => {
 			</section>
 			<section className='links'>
 				<Link to='/services'>
-					<p>Find out more about our services</p>
+					<p>Find out more about us</p>
 				</Link>
 				<Link to='/contact'>
 					<p>Get in touch with us</p>
