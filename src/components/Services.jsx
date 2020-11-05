@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/services.css';
 import { Link } from 'react-router-dom';
+import dog from '../images/good-boy.jpg';
 
 export const Services = () => {
 	return (
@@ -17,6 +18,10 @@ export const Services = () => {
 					reprehenderit cupiditate libero ducimus repellendus dolor
 					placeat!
 				</p>
+				<img
+					src={dog}
+					alt='Ted is one of the families very happy dogs.'
+				/>
 			</section>
 			<section className='prices'>
 				<h1>prices</h1>
