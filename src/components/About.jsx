@@ -51,7 +51,7 @@ export const About = () => {
 						voluptas sit accusamus?
 					</p>
 					<p>
-						Something about the micheline starred doggo dinners{' '}
+						Something about the micheline starred doggo dinners
 						<br></br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloribus, vel! Quaerat temporibus tempore aut sunt,
@@ -62,12 +62,13 @@ export const About = () => {
 					<img src={dog3} alt='' />
 				</div>
 			</section>
-			<section className='contact'>
-				<p>
-					Find out more about our services{' '}
-					<Link to='/services'>Here</Link> or get in touch with us{' '}
-					<Link to='/contact'>Here</Link>
-				</p>
+			<section className='links'>
+				<Link to='/services'>
+					<p>Find out more about our services</p>
+				</Link>
+				<Link to='/contact'>
+					<p>Get in touch with us</p>
+				</Link>
 			</section>
 		</main>
 	);
