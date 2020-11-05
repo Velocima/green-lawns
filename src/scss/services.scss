@@ -61,6 +61,7 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			justify-content: center;
+			margin-bottom: 10vh;
 			.table {
 				display: grid;
 				justify-content: center;
@@ -72,6 +73,21 @@
 				table {
 					justify-self: center;
 					width: 80%;
+					background-color: $container-color;
+					padding: 30px;
+					border-radius: 10px;
+					box-shadow: 7px 10px 10px $container-shadow;
+					border: 2px outset $container-shadow;
+					tr {
+						td {
+							border-bottom: 5px dotted $footer-color;
+							border-right: none;
+							padding: 10px 0;
+						}
+						td:nth-child(2) {
+							text-align: center;
+						}
+					}
 				}
 			}
 		}

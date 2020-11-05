@@ -53,7 +53,8 @@
     .services .prices .tables {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 10vh; }
       .services .prices .tables .table {
         display: grid;
         justify-content: center;
@@ -63,4 +64,15 @@
           font-size: 3vw; }
         .services .prices .tables .table table {
           justify-self: center;
-          width: 80%; }
+          width: 80%;
+          background-color: #d7fbe8;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 7px 10px 10px #9df3c4;
+          border: 2px outset #9df3c4; }
+          .services .prices .tables .table table tr td {
+            border-bottom: 5px dotted #13614d;
+            border-right: none;
+            padding: 10px 0; }
+          .services .prices .tables .table table tr td:nth-child(2) {
+            text-align: center; }
