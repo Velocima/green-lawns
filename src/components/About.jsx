@@ -4,6 +4,7 @@ import ownerImage from '../images/good-boys-and-owner.jpg';
 import dog1 from '../images/dog-placeholder-1.jpg';
 import dog2 from '../images/dog-placeholder-2.jpg';
 import dog3 from '../images/dog-placeholder-3.jpg';
+import { Link } from 'react-router-dom';
 
 export const About = () => {
 	return (
@@ -60,6 +61,13 @@ export const About = () => {
 					</p>
 					<img src={dog3} alt='' />
 				</div>
+			</section>
+			<section className='contact'>
+				<p>
+					Find out more about our services{' '}
+					<Link to='/services'>Here</Link> or get in touch with us{' '}
+					<Link to='/contact'>Here</Link>
+				</p>
 			</section>
 		</main>
 	);
