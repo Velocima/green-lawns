@@ -37,9 +37,30 @@
       width: 70vh;
       border-radius: 50%;
       object-fit: cover;
-      object-position: 50% 35%; }
+      object-position: 50% 30%; }
     .services .our-services p {
       justify-self: center;
       align-self: start;
       width: 40vw;
       margin-top: 10vh; }
+  .services .prices {
+    background: linear-gradient(#d7fbe8, white);
+    width: 100%; }
+    .services .prices h1 {
+      font-size: 5vw;
+      text-align: center;
+      padding: 10vh; }
+    .services .prices .tables {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center; }
+      .services .prices .tables .table {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 5vw auto; }
+        .services .prices .tables .table h2 {
+          align-self: center;
+          font-size: 3vw; }
+        .services .prices .tables .table table {
+          justify-self: center;
+          width: 80%; }

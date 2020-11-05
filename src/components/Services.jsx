@@ -24,7 +24,7 @@ export const Services = () => {
 				</p>
 			</section>
 			<section className='prices'>
-				<h1>prices</h1>
+				<h1>Prices</h1>
 				<div className='tables'>
 					<div className='table'>
 						<h2>Pricing for multiple nights</h2>

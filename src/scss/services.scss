@@ -40,13 +40,40 @@
 			width: 70vh;
 			border-radius: 50%;
 			object-fit: cover;
-			object-position: 50% 35%;
+			object-position: 50% 30%;
 		}
 		p {
 			justify-self: center;
 			align-self: start;
 			width: 40vw;
 			margin-top: 10vh;
+		}
+	}
+	.prices {
+		background: linear-gradient($container-color, white);
+		width: 100%;
+		h1 {
+			font-size: 5vw;
+			text-align: center;
+			padding: 10vh;
+		}
+		.tables {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-content: center;
+			.table {
+				display: grid;
+				justify-content: center;
+				grid-template-rows: 5vw auto;
+				h2 {
+					align-self: center;
+					font-size: 3vw;
+				}
+				table {
+					justify-self: center;
+					width: 80%;
+				}
+			}
 		}
 	}
 }
