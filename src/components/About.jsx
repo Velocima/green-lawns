@@ -6,7 +6,7 @@ import dog2 from '../images/dog-placeholder-2.jpg';
 import dog3 from '../images/dog-placeholder-3.jpg';
 import { Link } from 'react-router-dom';
 
-export const About = () => {
+export default function About() {
 	return (
 		<main className='about-container'>
 			<section className='family'>
@@ -72,4 +72,4 @@ export const About = () => {
 			</section>
 		</main>
 	);
-};
+}

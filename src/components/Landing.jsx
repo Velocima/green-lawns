@@ -3,7 +3,7 @@ import '../css/landing.css';
 import { Review } from './Review';
 import { reviews } from '../contentJs/Reviews';
 
-export const Landing = () => {
+export default function Landing() {
 	return (
 		<main className='landing-container'>
 			<div className='title-banner'>
@@ -41,4 +41,4 @@ export const Landing = () => {
 			</section>
 		</main>
 	);
-};
+}

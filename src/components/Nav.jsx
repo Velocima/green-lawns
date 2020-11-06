@@ -3,7 +3,7 @@ import '../css/nav.css';
 import logo from '../images/green-lawns-logo.png';
 import { Link } from 'react-router-dom';
 
-export const Nav = (props) => {
+export default function Nav(props) {
 	const pages = [
 		{ route: '/', navText: 'Home' },
 		{ route: '/about', navText: 'About Us' },
@@ -24,4 +24,4 @@ export const Nav = (props) => {
 			</ul>
 		</nav>
 	);
-};
+}

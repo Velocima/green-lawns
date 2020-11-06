@@ -3,7 +3,7 @@ import '../css/services.css';
 import { Link } from 'react-router-dom';
 import dog from '../images/good-boy.jpg';
 
-export const Services = () => {
+export default function Services() {
 	return (
 		<main className='services'>
 			<section className='our-services'>
@@ -132,4 +132,4 @@ export const Services = () => {
 			</section>
 		</main>
 	);
-};
+}
