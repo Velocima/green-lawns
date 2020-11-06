@@ -103,7 +103,8 @@
       .services .important-information .opening-hours h2 {
         justify-self: center;
         align-self: center;
-        font-size: 3vw; }
+        font-size: 3vw;
+        margin-bottom: 5vh; }
       .services .important-information .opening-hours table {
         justify-self: center;
         width: 80%;
