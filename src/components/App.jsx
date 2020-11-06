@@ -4,11 +4,13 @@ import { Nav } from './Nav';
 import { Landing } from './Landing';
 import { About } from './About';
 import { Services } from './Services';
+import ScrollToTop from './ScrollToTop';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
 	return (
 		<Router>
+			<ScrollToTop />
 			<header>
 				<Nav />
 			</header>
