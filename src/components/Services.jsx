@@ -79,8 +79,10 @@ export const Services = () => {
 						to entering our kennels. Certificates must be brought in
 						on every visit.
 						<br />
+						<br />
 						All bookings are to be paid in full by cash or cheque
 						upon collection.
+						<br />
 						<br />
 						Another days charge will be added if collection is in
 						the afternoon.
