@@ -5,11 +5,25 @@
 	h2 {
 		font-family: $title-font;
 		font-weight: 300;
+		color: white;
+		opacity: 0.85;
+		text-shadow: 2px 2px 3px $text-shadow;
+	}
+	h1 {
+		font-size: 5vw;
 	}
 	p,
 	td {
 		font-size: 20px;
 		font-family: $text-font;
+	}
+	p {
+		width: 70%;
+		padding: 5%;
+		background-color: $container-color;
+		border: 2px outset $container-shadow;
+		border-radius: 10px;
+		box-shadow: 7px 10px 10px $container-color;
 	}
 	.contact-info {
 		display: grid;
@@ -32,14 +46,7 @@
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
-			h1,
-			h2 {
-				color: white;
-				opacity: 0.85;
-				text-shadow: 2px 2px 3px $text-shadow;
-			}
 			h1 {
-				font-size: 5vw;
 				margin-bottom: 5vh;
 			}
 			h2 {
@@ -89,6 +96,32 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+		}
+	}
+	.review-us {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		background-color: $container-shadow;
+		padding-bottom: 10vh;
+		.banner {
+			height: 40vh;
+			width: 100%;
+			grid-column: 1 / 3;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+				url(../images/banner-placeholder-4.jpg);
+			background-position: 50% 80%;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		p {
+			margin-top: 10vh;
 		}
 	}
 }
