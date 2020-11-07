@@ -6,11 +6,19 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	height: 20vh;
-	// background-color: $nav-color;
-	img {
-		height: 18vh;
-		width: auto;
-		margin-left: 3vw;
+	background-color: $container-color;
+	.logo {
+		display: flex;
+		align-items: center;
+		img {
+			height: 18vh;
+			width: auto;
+			margin-left: 3vw;
+		}
+		h4 {
+			font-family: $title-font;
+			font-size: 5vh;
+		}
 	}
 	ul {
 		display: flex;

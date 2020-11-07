@@ -12,9 +12,14 @@ export default function Nav(props) {
 	];
 	return (
 		<nav>
-			<Link to='/'>
-				<img src={logo} alt='logo placeholder.' />
-			</Link>
+			<div className='logo'>
+				<Link to='/'>
+					<img src={logo} alt='logo placeholder.' />
+				</Link>
+				<h4>
+					Green Lawns <br></br>Boarding Kennels
+				</h4>
+			</div>
 			<ul>
 				{pages.map((page, i) => (
 					<li key={`${i}${page}`}>

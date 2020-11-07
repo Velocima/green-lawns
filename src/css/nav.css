@@ -5,11 +5,18 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 20vh; }
-  nav img {
-    height: 18vh;
-    width: auto;
-    margin-left: 3vw; }
+  height: 20vh;
+  background-color: #d7fbe8; }
+  nav .logo {
+    display: flex;
+    align-items: center; }
+    nav .logo img {
+      height: 18vh;
+      width: auto;
+      margin-left: 3vw; }
+    nav .logo h4 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 5vh; }
   nav ul {
     display: flex;
     list-style-type: none;
