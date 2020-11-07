@@ -122,7 +122,7 @@ export default function Services() {
 					</table>
 				</article>
 			</section>
-			<section className='contact'>
+			<section className='links'>
 				<Link to='/about'>
 					<p>Find out more about us</p>
 				</Link>
