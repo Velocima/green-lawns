@@ -58,9 +58,11 @@ export default function Contact() {
 					tabindex='0'
 				></iframe>
 				<div className='contact-details'>
-					<p>Telephone: 01600 740111</p>
-					<p>Mobile: 07815 534990</p>
 					<p>
+						Telephone: <span>01600 740111</span> <br />
+						Mobile: <span>07815 534990</span>
+						<br />
+						<br />
 						Address:
 						<br />
 						Something? <br />
