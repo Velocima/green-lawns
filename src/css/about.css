@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 .about-container {
   display: flex;
   flex-direction: column; }
   .about-container p {
     width: 80%;
     font-size: 20px;
-    font-family: "Nunito Sans", sans-serif; }
+    font-family: "Alegreya", serif; }
   .about-container .family {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,7 +25,7 @@
       height: 30vw;
       padding: 10px; }
       .about-container .family .family-text h1 {
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 3vw;
         font-weight: 300;
         margin-bottom: 15vh;
@@ -57,7 +59,7 @@
     .about-container .facilities .banner h1 {
       justify-self: center;
       align-self: center;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 5vw;
       font-weight: 300;
       color: white;
@@ -97,6 +99,6 @@
       border-radius: 10px; }
       .about-container .links a p {
         width: 20vw;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 2.7vw;
         color: black; }

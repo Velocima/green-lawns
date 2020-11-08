@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 .contact h1,
 .contact h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: white;
   opacity: 0.85;
@@ -14,7 +16,7 @@
 .contact p,
 .contact td {
   font-size: 20px;
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Alegreya", serif; }
 
 .contact p {
   width: 70%;
