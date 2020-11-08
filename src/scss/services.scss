@@ -9,7 +9,7 @@
 	h2 {
 		font-family: $title-font;
 		font-weight: 300;
-		text-shadow: 2px 2px 3px $text-shadow;
+		text-shadow: 2px 2px 3px $green4;
 		opacity: 0.85;
 	}
 	p,
@@ -24,7 +24,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 90vh;
-		background: linear-gradient($container-shadow, $container-color);
+		background: linear-gradient($green2, $green1);
 		.container {
 			margin-right: 3.3vw;
 		}
@@ -47,7 +47,7 @@
 		}
 	}
 	.prices {
-		background: linear-gradient($container-color, white);
+		background: linear-gradient($green1, white);
 		width: 100%;
 		h1 {
 			font-size: 5vw;
@@ -70,14 +70,14 @@
 				table {
 					justify-self: center;
 					width: 80%;
-					background-color: $container-color;
+					background-color: $green1;
 					padding: 30px;
 					border-radius: 10px;
-					box-shadow: 7px 10px 10px $container-shadow;
-					border: 2px outset $container-shadow;
+					box-shadow: 7px 10px 10px $green2;
+					border: 2px outset $green2;
 					tr {
 						td {
-							border-bottom: 5px dotted $footer-color;
+							border-bottom: 5px dotted $green5;
 							border-right: none;
 							padding: 10px 0;
 						}
@@ -90,7 +90,7 @@
 		}
 	}
 	.important-information {
-		background: linear-gradient($container-color, white);
+		background: linear-gradient($green1, white);
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -107,11 +107,11 @@
 			justify-self: center;
 			width: 80%;
 			p {
-				background-color: $container-color;
+				background-color: $green1;
 				padding: 30px;
 				border-radius: 10px;
-				box-shadow: 7px 10px 10px $container-shadow;
-				border: 2px outset $container-shadow;
+				box-shadow: 7px 10px 10px $green2;
+				border: 2px outset $green2;
 			}
 		}
 		.opening-hours {
@@ -126,14 +126,14 @@
 			table {
 				justify-self: center;
 				width: 80%;
-				background-color: $container-color;
+				background-color: $green1;
 				padding: 30px;
 				border-radius: 10px;
-				box-shadow: 7px 10px 10px $container-shadow;
-				border: 2px outset $container-shadow;
+				box-shadow: 7px 10px 10px $green2;
+				border: 2px outset $green2;
 				tr {
 					td {
-						border-bottom: 5px dotted $footer-color;
+						border-bottom: 5px dotted $green5;
 						border-right: none;
 						padding: 10px 0;
 					}
@@ -154,9 +154,9 @@
 			text-align: center;
 			justify-self: center;
 			align-self: center;
-			background-color: $container-color;
-			border: 2px outset $container-shadow;
-			box-shadow: 7px 10px 10px $container-color;
+			background-color: $green1;
+			border: 2px outset $green2;
+			box-shadow: 7px 10px 10px $green1;
 			padding: 20px 10px;
 			border-radius: 10px;
 			p {

@@ -7,7 +7,7 @@
 		font-weight: 300;
 		color: white;
 		opacity: 0.85;
-		text-shadow: 2px 2px 3px $text-shadow;
+		text-shadow: 2px 2px 3px $green4;
 	}
 	h1 {
 		font-size: 5vw;
@@ -20,17 +20,17 @@
 	p {
 		width: 70%;
 		padding: 5%;
-		background-color: $container-color;
-		border: 2px outset $container-shadow;
+		background-color: $green1;
+		border: 2px outset $green2;
 		border-radius: 10px;
-		box-shadow: 7px 10px 10px $container-color;
+		box-shadow: 7px 10px 10px $green1;
 	}
 	.contact-info {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
 		align-items: center;
-		background-color: $container-shadow;
+		background-color: $green2;
 		padding-bottom: 10vh;
 		.banner {
 			height: 40vh;
@@ -57,20 +57,20 @@
 		p {
 			width: 70%;
 			padding: 5%;
-			background-color: $container-color;
-			border: 2px outset $container-shadow;
+			background-color: $green1;
+			border: 2px outset $green2;
 			border-radius: 10px;
-			box-shadow: 7px 10px 10px $container-color;
+			box-shadow: 7px 10px 10px $green1;
 		}
 		table {
 			justify-self: center;
 			max-width: 80%;
 			min-width: 60%;
-			background-color: $container-color;
+			background-color: $green1;
 			padding: 30px;
 			border-radius: 10px;
-			box-shadow: 7px 10px 10px $container-color;
-			border: 2px outset $container-shadow;
+			box-shadow: 7px 10px 10px $green1;
+			border: 2px outset $green2;
 			margin: 3vw;
 			tr {
 				td {
@@ -86,8 +86,8 @@
 		iframe {
 			width: 40vw;
 			border-radius: 10px;
-			box-shadow: 7px 10px 10px $container-color;
-			border: 1px solid $container-shadow;
+			box-shadow: 7px 10px 10px $green1;
+			border: 1px solid $green2;
 		}
 		.contact-details {
 			width: 100%;
@@ -103,7 +103,7 @@
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
 		align-items: center;
-		background-color: $container-shadow;
+		background-color: $green2;
 		padding-bottom: 10vh;
 		.banner {
 			height: 40vh;
