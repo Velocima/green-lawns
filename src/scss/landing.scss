@@ -1,6 +1,7 @@
 @import 'variables/variables';
 
 .landing-container {
+	background-color: $background-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -50,13 +51,12 @@
 		align-items: center;
 		height: 40vh;
 		width: 100%;
-		background-color: $green1;
 		.text-container {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin: 10%;
-			background-color: $green2;
+			background-color: $green1;
 			border-radius: 10px;
 			p {
 				flex-grow: 1;

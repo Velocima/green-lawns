@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 .landing-container {
+  background-color: #ecfaf3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,14 +44,13 @@
     justify-items: center;
     align-items: center;
     height: 40vh;
-    width: 100%;
-    background-color: #d7fbe8; }
+    width: 100%; }
     .landing-container .description .text-container {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 10%;
-      background-color: #9df3c4;
+      background-color: #d7fbe8;
       border-radius: 10px; }
       .landing-container .description .text-container p {
         flex-grow: 1;
