@@ -13,17 +13,23 @@ export default function Landing() {
 				</div>
 			</div>
 			<div className='description'>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Odit nisi fugiat quod minus vero quo porro cumque deserunt
-					numquam sit enim id repudiandae amet suscipit corrupti, ipsa
-					consectetur. Voluptas, esse?
-					<br></br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Dignissimos soluta illo quae accusamus labore asperiores!
-					Tenetur libero distinctio quam similique dolor aut, maiores
-					eum at amet officia nisi consequuntur repudiandae?
-				</p>
+				<div className='text-container'>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing
+						elit. Odit nisi fugiat quod minus vero quo porro cumque
+						deserunt numquam sit enim id repudiandae amet suscipit
+						corrupti, ipsa consectetur. Voluptas, esse?
+						<br></br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos soluta illo quae accusamus labore
+						asperiores! Tenetur libero distinctio quam similique
+						dolor aut, maiores eum at amet officia nisi consequuntur
+						repudiandae?
+					</p>
+				</div>
+				<div className='call-to-action'>
+					<a href=''>Book now</a>
+				</div>
 			</div>
 			<section className='reviews'>
 				<div className='reviews-banner'>
