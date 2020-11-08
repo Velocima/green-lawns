@@ -10,8 +10,11 @@ export default function About() {
 	return (
 		<main className='about-container'>
 			<section className='family'>
+				<img src={ownerImage} alt='' />
 				<div className='family-text'>
-					<h1>More than just a business</h1>
+					<h1>
+						More than just <br /> a business
+					</h1>
 					<p>
 						This section will contain a paragraph about "family run
 						business". Cover who runs it, why they love it etc.
@@ -23,7 +26,6 @@ export default function About() {
 						aperiam perferendis.
 					</p>
 				</div>
-				<img src={ownerImage} alt='' />
 			</section>
 			<section className='facilities'>
 				<div className='banner'>

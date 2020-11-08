@@ -4,47 +4,43 @@
   display: flex;
   flex-direction: column; }
   .about-container p {
-    width: 80%;
     font-size: 20px;
     font-family: "Alegreya", serif; }
+  .about-container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: black;
+    opacity: 0.85; }
   .about-container .family {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     height: 90vh;
-    background: linear-gradient(#9df3c4, white); }
+    background-color: #ecfaf3; }
     .about-container .family .family-text {
-      justify-self: center;
-      align-self: center;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
       width: 50vw;
-      height: 30vw;
-      padding: 10px; }
+      background-color: #9df3c4; }
       .about-container .family .family-text h1 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 3vw;
-        font-weight: 300;
-        margin-bottom: 15vh;
-        color: black;
-        opacity: 0.85;
-        background-color: #d7fbe8;
-        padding: 10px;
+        margin-bottom: 7vh;
+        font-size: 5vw;
+        margin-left: 5vw;
         border-radius: 10px;
         text-shadow: 2px 2px 3px #1fab89; }
       .about-container .family .family-text p {
-        width: 37vw;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #d7fbe8; }
+        width: 30vw;
+        padding-left: 5vw; }
     .about-container .family img {
-      justify-self: center;
-      align-self: center;
       height: 30vw;
       width: 30vw;
+      margin: 0 10vw;
       border-radius: 50%;
-      box-shadow: 7px 10px 10px #9df3c4;
       object-fit: cover; }
   .about-container .facilities .banner {
     display: grid;

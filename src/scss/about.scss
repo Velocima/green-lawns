@@ -4,52 +4,49 @@
 	display: flex;
 	flex-direction: column;
 	p {
-		width: 80%;
 		font-size: 20px;
 		font-family: $text-font;
 	}
-
+	h1 {
+		font-family: $title-font;
+		font-size: 3vw;
+		font-weight: 300;
+		color: black;
+		opacity: 0.85;
+	}
 	.family {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 		height: 90vh;
-		background: linear-gradient($green2, white);
+		// background: linear-gradient($green2, $green1);
+		background-color: $background-color;
 		.family-text {
-			justify-self: center;
-			align-self: center;
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
+			justify-content: center;
+			align-items: flex-start;
+			height: 100%;
 			width: 50vw;
-			height: 30vw;
-			padding: 10px;
+			background-color: $green2;
 			h1 {
-				font-family: $title-font;
-				font-size: 3vw;
-				font-weight: 300;
-				margin-bottom: 15vh;
-				color: black;
-				opacity: 0.85;
-				background-color: $green1;
-				padding: 10px;
+				margin-bottom: 7vh;
+				font-size: 5vw;
+				margin-left: 5vw;
 				border-radius: 10px;
 				text-shadow: 2px 2px 3px $green4;
 			}
 			p {
-				width: 37vw;
-				padding: 10px;
-				border-radius: 10px;
-				background-color: $green1;
+				width: 30vw;
+				padding-left: 5vw;
 			}
 		}
 		img {
-			justify-self: center;
-			align-self: center;
 			height: 30vw;
 			width: 30vw;
+			margin: 0 10vw;
 			border-radius: 50%;
-			box-shadow: 7px 10px 10px $green2;
 			object-fit: cover;
 		}
 	}
