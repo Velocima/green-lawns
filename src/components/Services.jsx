@@ -7,21 +7,23 @@ export default function Services() {
 	return (
 		<main className='services'>
 			<section className='our-services'>
-				<h1>Our Services</h1>
+				<div className='container'>
+					<h1>Our Services</h1>
+					<p>
+						This paragraph will describe the services available.
+						should contain practical information for customers.
+						<br></br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Neque veritatis sequi nam fugiat, dolore aliquam
+						laboriosam esse suscipit nostrum quas soluta blanditiis
+						est reprehenderit cupiditate libero ducimus repellendus
+						dolor placeat!
+					</p>
+				</div>
 				<img
 					src={dog}
 					alt='Ted is one of the families very happy dogs.'
 				/>
-				<p>
-					This paragraph will describe the services available. should
-					contain practical information for customers.
-					<br></br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Neque veritatis sequi nam fugiat, dolore aliquam laboriosam
-					esse suscipit nostrum quas soluta blanditiis est
-					reprehenderit cupiditate libero ducimus repellendus dolor
-					placeat!
-				</p>
 			</section>
 			<section className='prices'>
 				<h1>Prices</h1>
