@@ -10,7 +10,9 @@ export default function About() {
 	return (
 		<main className='about-container'>
 			<section className='family'>
-				<img src={ownerImage} alt='' />
+				<div className='image-container'>
+					<img src={ownerImage} alt='' />
+				</div>
 				<div className='family-text'>
 					<h1>
 						More than just <br /> a business

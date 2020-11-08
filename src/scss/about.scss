@@ -41,12 +41,21 @@
 				margin-left: 5vw;
 			}
 		}
-		img {
-			height: 30vw;
-			width: 30vw;
-			justify-self: center;
-			border-radius: 50%;
-			object-fit: cover;
+		.image-container {
+			display: grid;
+			height: 100%;
+			width: 100%;
+			background: url('../images/doggo-background-texture-3.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 3%;
+			img {
+				place-self: center;
+				height: 30vw;
+				width: 30vw;
+				border-radius: 50%;
+				object-fit: cover;
+			}
 		}
 	}
 	.facilities {
