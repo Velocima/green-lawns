@@ -16,19 +16,19 @@
 	}
 	.family {
 		width: 100%;
-		display: flex;
-		justify-content: flex-start;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		height: 90vh;
 		// background: linear-gradient($green2, $green1);
-		background-color: $background-color;
+		background-color: $green1;
 		.family-text {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
 			height: 100%;
-			width: 50vw;
+			width: 100%;
 			background-color: $green2;
 			h1 {
 				margin-bottom: 7vh;
@@ -39,13 +39,13 @@
 			}
 			p {
 				width: 30vw;
-				padding-left: 5vw;
+				margin-left: 5vw;
 			}
 		}
 		img {
 			height: 30vw;
 			width: 30vw;
-			margin: 0 10vw;
+			justify-self: center;
 			border-radius: 50%;
 			object-fit: cover;
 		}

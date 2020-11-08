@@ -14,18 +14,18 @@
     opacity: 0.85; }
   .about-container .family {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 90vh;
-    background-color: #ecfaf3; }
+    background-color: #d7fbe8; }
     .about-container .family .family-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       height: 100%;
-      width: 50vw;
+      width: 100%;
       background-color: #9df3c4; }
       .about-container .family .family-text h1 {
         margin-bottom: 7vh;
@@ -35,11 +35,11 @@
         text-shadow: 2px 2px 3px #1fab89; }
       .about-container .family .family-text p {
         width: 30vw;
-        padding-left: 5vw; }
+        margin-left: 5vw; }
     .about-container .family img {
       height: 30vw;
       width: 30vw;
-      margin: 0 10vw;
+      justify-self: center;
       border-radius: 50%;
       object-fit: cover; }
   .about-container .facilities .banner {
