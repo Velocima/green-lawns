@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 60vh;
     width: 70%; }
     .landing-container .description p {
       width: auto;
@@ -51,5 +51,4 @@
       font-family: "Alegreya", serif;
       background-color: #d7fbe8;
       border: 2px outset #9df3c4;
-      border-radius: 10px;
-      box-shadow: 7px 10px 10px #9df3c4; }
+      border-radius: 10px; }
