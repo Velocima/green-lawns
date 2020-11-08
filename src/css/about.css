@@ -73,9 +73,14 @@
       text-align: center;
       width: 60%;
       padding: 5%;
-      margin-bottom: 1%;
-      background-color: white;
+      background-color: #d7fbe8;
       border-radius: 10px; }
+    .about-container .facilities .tiles .tile-1 {
+      box-shadow: -7px 10px 10px #1fab89; }
+    .about-container .facilities .tiles .tile-2 {
+      box-shadow: 7px 10px 10px #1fab89; }
+    .about-container .facilities .tiles .tile-3 {
+      box-shadow: -7px 10px 10px #1fab89; }
   .about-container .links {
     height: 40vh;
     display: grid;

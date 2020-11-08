@@ -32,7 +32,7 @@ export default function About() {
 					<h1>Our facilities</h1>
 				</div>
 				<div className='tiles'>
-					<p>
+					<p className='tile-1'>
 						Something about how the kennels are super clean and
 						awesome and dog friendly. <br></br>Lorem ipsum dolor sit
 						amet consectetur adipisicing elit. Doloribus, vel!
@@ -43,7 +43,7 @@ export default function About() {
 					</p>
 					<img src={dog1} alt='' />
 					<img src={dog2} alt='' />
-					<p>
+					<p className='tile-2'>
 						Somthing about how the good boys get walked lots and
 						love it because every good boy loves a stroll <br></br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,7 +52,7 @@ export default function About() {
 						possimus veniam porro perspiciatis similique tempora
 						voluptas sit accusamus?
 					</p>
-					<p>
+					<p className='tile-3'>
 						Something about the micheline starred doggo dinners
 						<br></br>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
