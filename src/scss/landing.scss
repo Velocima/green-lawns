@@ -50,6 +50,7 @@
 		align-items: center;
 		height: 40vh;
 		width: 100%;
+		background-color: $green1;
 		.text-container {
 			display: flex;
 			justify-content: center;
@@ -62,7 +63,6 @@
 				padding: 3vh;
 				font-size: 20px;
 				font-family: $text-font;
-				// box-shadow: 7px 10px 10px $container-shadow;
 			}
 		}
 		.call-to-action {
@@ -71,7 +71,9 @@
 			align-items: center;
 			width: 100%;
 			height: 100%;
-			background-color: $green2;
+			background: url('../images/doggo-background-texture.png');
+			background-repeat: no-repeat;
+			background-size: 150%;
 			a {
 				font-size: 3vw;
 				color: $footer-color;

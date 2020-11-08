@@ -43,7 +43,8 @@
     justify-items: center;
     align-items: center;
     height: 40vh;
-    width: 100%; }
+    width: 100%;
+    background-color: #d7fbe8; }
     .landing-container .description .text-container {
       display: flex;
       justify-content: center;
@@ -62,7 +63,9 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      background-color: #9df3c4; }
+      background: url("../images/doggo-background-texture.png");
+      background-repeat: no-repeat;
+      background-size: 150%; }
       .landing-container .description .call-to-action a {
         font-size: 3vw;
         color: #13614d;
