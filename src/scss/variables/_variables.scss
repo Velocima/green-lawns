@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 // $background-color: white;
 // $container-color: hsl(200, 40%, 75%);
@@ -13,7 +13,7 @@
 
 // Old colors
 
-$background-color: #f7fbf9;
+$background-color: #ecfaf3;
 $container-color: #d7fbe8;
 $container-shadow: #9df3c4;
 $text-shadow: #1fab89;
@@ -22,3 +22,8 @@ $footer-color: #13614d;
 
 $text-font: 'Alegreya', serif;
 $title-font: 'Montserrat', sans-serif;
+
+$green1: #d7fbe8;
+$green2: #9df3c4;
+$green3: #62d2a2;
+$green4: #1fab89;
