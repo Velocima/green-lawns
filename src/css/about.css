@@ -81,8 +81,11 @@
       text-align: center;
       width: 60%;
       padding: 5%;
-      background-color: #d7fbe8;
-      border-radius: 10px; }
+      border-radius: 10px;
+      background: url("../images/doggo-background-texture-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 3%; }
     .about-container .facilities .tiles .tile-1 {
       box-shadow: -7px 10px 10px #1fab89; }
     .about-container .facilities .tiles .tile-2 {
