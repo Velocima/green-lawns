@@ -48,7 +48,7 @@
       object-fit: cover; }
   .about-container .facilities .banner {
     display: grid;
-    height: 40vh;
+    height: 50vh;
     background: url("../images/about-banner-placeholder.jpg");
     background-position: center;
     background-attachment: fixed;
