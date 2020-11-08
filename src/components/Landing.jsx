@@ -36,8 +36,10 @@ export default function Landing() {
 					<h2>First rate customer service</h2>
 				</div>
 				<div className='reviews-container'>
+					<div className='background-shader'></div>
 					{reviews.map((review, i) => (
 						<Review
+							className={`review review${i + 1}`}
 							review={review.review}
 							author={review.author}
 							key={`${i}${review.author}`}

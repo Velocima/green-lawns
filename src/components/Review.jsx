@@ -3,7 +3,7 @@ import '../css/review.css';
 
 export const Review = (props) => {
 	return (
-		<div className='review'>
+		<div className={props.className}>
 			<p>{props.review}</p>
 			<p>{` - ${props.author}`}</p>
 		</div>
