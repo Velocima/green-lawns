@@ -5,18 +5,18 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
   background-color: #d7fbe8; }
   nav .logo {
     display: flex;
     align-items: center; }
     nav .logo img {
-      height: 18vh;
+      height: 8vh;
       width: auto;
-      margin-left: 3vw; }
+      margin: 0 1vh; }
     nav .logo h4 {
       font-family: "Montserrat", sans-serif;
-      font-size: 5vh; }
+      font-size: 3.5vh; }
   nav ul {
     display: flex;
     list-style-type: none;

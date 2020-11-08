@@ -5,19 +5,19 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 20vh;
+	height: 10vh;
 	background-color: $container-color;
 	.logo {
 		display: flex;
 		align-items: center;
 		img {
-			height: 18vh;
+			height: 8vh;
 			width: auto;
-			margin-left: 3vw;
+			margin: 0 1vh;
 		}
 		h4 {
 			font-family: $title-font;
-			font-size: 5vh;
+			font-size: 3.5vh;
 		}
 	}
 	ul {
