@@ -29,102 +29,84 @@ export default function Services() {
 			</section>
 			<section className='prices'>
 				<h1>Prices</h1>
-				<div className='tables'>
-					<div className='table'>
-						<h2>Pricing for multiple nights</h2>
-						<table>
-							<tr>
-								<td>1 Dog</td>
-								<td>£14 per night</td>
-							</tr>
-							<tr>
-								<td>2 Dogs (small)</td>
-								<td>£20 per night</td>
-							</tr>
-							<tr>
-								<td>2 Dogs (medium/large)</td>
-								<td>£22 per night</td>
-							</tr>
-							<tr>
-								<td>3 Dogs (small)</td>
-								<td>£26 per night</td>
-							</tr>
-							<tr>
-								<td>3 Dogs (medium/large)</td>
-								<td>£28 per night</td>
-							</tr>
-						</table>
-					</div>
-					<div className='table'>
-						<h2>Pricing for a single night</h2>
-						<table>
-							<tr>
-								<td>1 Dog</td>
-								<td>£20</td>
-							</tr>
-							<tr>
-								<td>2 Dogs</td>
-								<td>£25</td>
-							</tr>
-							<tr>
-								<td>3 Dogs </td>
-								<td>£30</td>
-							</tr>
-						</table>
-					</div>
-				</div>
+				<table className='multiple-nights'>
+					<tr>
+						<th colSpan='2'>For Multiple Nights</th>
+					</tr>
+					<tr>
+						<td>1 Dog</td>
+						<td>£14 per night</td>
+					</tr>
+					<tr>
+						<td>2 Dogs (small)</td>
+						<td>£20 per night</td>
+					</tr>
+					<tr>
+						<td>2 Dogs (medium/large)</td>
+						<td>£22 per night</td>
+					</tr>
+					<tr>
+						<td>3 Dogs (small)</td>
+						<td>£26 per night</td>
+					</tr>
+					<tr>
+						<td>3 Dogs (medium/large)</td>
+						<td>£28 per night</td>
+					</tr>
+				</table>
+				<table className='one-night'>
+					<tr>
+						<th colSpan='2'>For One Night</th>
+					</tr>
+					<tr>
+						<td>1 Dog</td>
+						<td>£20</td>
+					</tr>
+					<tr>
+						<td>2 Dogs</td>
+						<td>£25</td>
+					</tr>
+					<tr>
+						<td>3 Dogs </td>
+						<td>£30</td>
+					</tr>
+				</table>
 			</section>
 			<section className='important-information'>
 				<h1>Important Information</h1>
-				<article className='information'>
-					<p>
+				<ul>
+					<li>
 						All dogs are to be vaccinated and up to date. Kennel
 						cough vaccine should be given at least two weeks prior
 						to entering our kennels. Certificates must be brought in
 						on every visit.
-						<br />
-						<br />
+					</li>
+					<li>
 						All bookings are to be paid in full by cash or cheque
 						upon collection.
-						<br />
-						<br />
+					</li>
+					<li>
 						Another days charge will be added if collection is in
 						the afternoon.
-					</p>
-				</article>
-				<article className='opening-hours'>
-					<h2>Our Opening Hours</h2>
-					<table>
-						<tr>
-							<td>Monday</td>
-							<td>9:00am - 11:00am, 2:00pm - 4:00pm</td>
-						</tr>
-						<tr>
-							<td>Tuesday</td>
-							<td>9:00am - 11:00am, 2:00pm - 4:00pm</td>
-						</tr>
-						<tr>
-							<td>Wednesday</td>
-							<td>9:00am - 11:00am, 2:00pm - 4:00pm</td>
-						</tr>
-						<tr>
-							<td>Thursday</td>
-							<td>9:00am - 11:00am, 2:00pm - 4:00pm</td>
-						</tr>
-						<tr>
-							<td>Friday</td>
-							<td>9:00am - 11:00am, 2:00pm - 4:00pm</td>
-						</tr>
-						<tr>
-							<td>Saturday</td>
-							<td>9:00am - 11:00am</td>
-						</tr>
-						<tr>
-							<td>Sunday</td>
-							<td>9:00am - 11:00am</td>
-						</tr>
-					</table>
-				</article>
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th colSpan='2'>Opening Hours</th>
+					</tr>
+					<tr>
+						<td>Monday - Friday</td>
+						<td>
+							9:00am - 11:00am
+							<br></br>
+							2:00pm - 4:00pm
+						</td>
+					</tr>
+					<tr>
+						<td>Saturday - Sunday</td>
+						<td>9:00am - 11:00am</td>
+					</tr>
+				</table>
 			</section>
 			<section className='links'>
 				<Link to='/about'>
