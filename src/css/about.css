@@ -76,6 +76,7 @@
       height: 50vh;
       object-fit: cover; }
     .about-container .facilities .tiles p {
+      position: relative;
       justify-self: center;
       align-self: center;
       text-align: center;
@@ -87,11 +88,17 @@
       background-size: cover;
       background-position: 3%; }
     .about-container .facilities .tiles .tile-1 {
-      box-shadow: -7px 10px 10px #1fab89; }
+      box-shadow: -7px 10px 10px #1fab89;
+      left: 7px;
+      bottom: 10px; }
     .about-container .facilities .tiles .tile-2 {
-      box-shadow: 7px 10px 10px #1fab89; }
+      box-shadow: 7px 10px 10px #1fab89;
+      right: 7px;
+      bottom: 10px; }
     .about-container .facilities .tiles .tile-3 {
-      box-shadow: -7px 10px 10px #1fab89; }
+      box-shadow: -7px 10px 10px #1fab89;
+      left: 7px;
+      bottom: 10px; }
   .about-container .links {
     height: 40vh;
     display: grid;
