@@ -20,30 +20,45 @@
 
 	.our-services {
 		width: 100%;
-		display: flex;
-		justify-content: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		height: 90vh;
-		background: linear-gradient($green2, $green1);
+		background-color: $green1;
 		.container {
-			margin-right: 3.3vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			height: 100%;
+			width: 100%;
+			background-color: $green2;
+			h1 {
+				font-size: 5vw;
+				margin-bottom: 7vh;
+				margin-left: 5vw;
+			}
+			p {
+				width: 30vw;
+				margin-left: 5vw;
+			}
 		}
-		h1 {
-			font-size: 5vw;
-			margin-bottom: 7vh;
-			position: relative;
-			left: -10px;
-		}
-		img {
-			width: 30vw;
-			height: 30vw;
-			border-radius: 50%;
-			object-fit: cover;
-			object-position: 50% 30%;
-			margin-left: 3.3vw;
-		}
-		p {
-			width: 30vw;
+		.image-container {
+			display: grid;
+			height: 100%;
+			width: 100%;
+			background: url('../images/doggo-background-texture-3.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 3%;
+			img {
+				place-self: center;
+				height: 30vw;
+				width: 30vw;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: 50% 30%;
+			}
 		}
 	}
 	.prices {

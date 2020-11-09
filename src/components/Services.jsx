@@ -7,6 +7,12 @@ export default function Services() {
 	return (
 		<main className='services'>
 			<section className='our-services'>
+				<div className='image-container'>
+					<img
+						src={dog}
+						alt='Ted is one of the families very happy dogs.'
+					/>
+				</div>
 				<div className='container'>
 					<h1>Our Services</h1>
 					<p>
@@ -20,10 +26,6 @@ export default function Services() {
 						dolor placeat!
 					</p>
 				</div>
-				<img
-					src={dog}
-					alt='Ted is one of the families very happy dogs.'
-				/>
 			</section>
 			<section className='prices'>
 				<h1>Prices</h1>

@@ -17,27 +17,41 @@
     font-size: 20px; }
   .services .our-services {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 90vh;
-    background: linear-gradient(#9df3c4, #d7fbe8); }
+    background-color: #d7fbe8; }
     .services .our-services .container {
-      margin-right: 3.3vw; }
-    .services .our-services h1 {
-      font-size: 5vw;
-      margin-bottom: 7vh;
-      position: relative;
-      left: -10px; }
-    .services .our-services img {
-      width: 30vw;
-      height: 30vw;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: 50% 30%;
-      margin-left: 3.3vw; }
-    .services .our-services p {
-      width: 30vw; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      width: 100%;
+      background-color: #9df3c4; }
+      .services .our-services .container h1 {
+        font-size: 5vw;
+        margin-bottom: 7vh;
+        margin-left: 5vw; }
+      .services .our-services .container p {
+        width: 30vw;
+        margin-left: 5vw; }
+    .services .our-services .image-container {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      background: url("../images/doggo-background-texture-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 3%; }
+      .services .our-services .image-container img {
+        place-self: center;
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 50% 30%; }
   .services .prices {
     background: linear-gradient(#d7fbe8, white);
     width: 100%; }
