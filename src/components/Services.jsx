@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/services.css';
 import { Link } from 'react-router-dom';
 import dog from '../images/good-boy.jpg';
+import bullet from '../images/list-style.png';
 
 export default function Services() {
 	return (
@@ -76,18 +77,27 @@ export default function Services() {
 				<h1>Important Information</h1>
 				<ul>
 					<li>
-						All dogs are to be vaccinated and up to date. Kennel
-						cough vaccine should be given at least two weeks prior
-						to entering our kennels. Certificates must be brought in
-						on every visit.
+						<img src={bullet} alt='' />
+						<p>
+							All dogs are to be vaccinated and up to date. Kennel
+							cough vaccine should be given at least two weeks
+							prior to entering our kennels. Certificates must be
+							brought in on every visit.
+						</p>
 					</li>
 					<li>
-						All bookings are to be paid in full by cash or cheque
-						upon collection.
+						<img src={bullet} alt='' />
+						<p>
+							All bookings are to be paid in full by cash or
+							cheque upon collection.
+						</p>
 					</li>
 					<li>
-						Another days charge will be added if collection is in
-						the afternoon.
+						<img src={bullet} alt='' />
+						<p>
+							Another days charge will be added if collection is
+							in the afternoon.
+						</p>
 					</li>
 				</ul>
 				<table>

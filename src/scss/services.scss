@@ -93,7 +93,7 @@
 		}
 		table {
 			width: 500px;
-			padding: 0 20px 10px;
+			padding: 0 20px 20px;
 			border-radius: 10px;
 			background: url('../images/doggo-background-texture-3.png');
 			background-repeat: no-repeat;
@@ -138,14 +138,22 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			height: 40vh;
-			width: 455px;
-			padding: 0 20px;
+			width: 480px;
+			padding-right: 20px;
 			border-radius: 10px;
 			box-shadow: 7px 10px 10px $green4;
 			background-color: $green1;
 			border: 1px solid $green2;
-			list-style-type: circle;
+			list-style-type: none;
 			li {
+				display: flex;
+				align-items: center;
+				img {
+					display: inline;
+					width: 40px;
+					height: 40px;
+					padding-right: 20px;
+				}
 				margin-left: 25px;
 				margin-right: 5px;
 			}
