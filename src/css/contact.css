@@ -71,6 +71,9 @@
         color: black;
         font-weight: 400;
         padding-bottom: 20px; }
+      .contact .contact-info .phone-numbers p a,
+      .contact .contact-info .address p a {
+        text-decoration: none; }
   .contact .contact-info .phone-numbers p {
     box-shadow: 7px 10px 10px #bf9b30; }
   .contact .contact-info .phone-numbers {

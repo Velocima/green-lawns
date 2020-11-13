@@ -18,8 +18,15 @@ export default function Contact() {
 				<div className='phone-numbers'>
 					<p>
 						<h2>To book now call</h2>
-						Telephone: <span>01600 740111</span> <br />
-						Mobile: <span>07815 534990</span>
+						Telephone:{' '}
+						<a href='tel:01600740111'>
+							<span>01600 740111</span>
+						</a>{' '}
+						<br />
+						Mobile:{' '}
+						<a href='tel:07815534990'>
+							<span>07815 534990</span>
+						</a>
 					</p>
 				</div>
 				<iframe
