@@ -17,7 +17,8 @@ nav {
       margin-right: 1vw; }
     nav .logo h4 {
       font-family: "Montserrat", sans-serif;
-      font-size: 3.5vh; }
+      font-size: 3.5vh;
+      font-weight: 300; }
   nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
