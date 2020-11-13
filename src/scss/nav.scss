@@ -1,6 +1,10 @@
 @import 'variables/variables';
 
 nav {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
