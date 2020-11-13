@@ -44,7 +44,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    height: 40vh;
+    min-height: 40vh;
     width: 100%; }
     .landing-container .description .text-container {
       display: flex;
