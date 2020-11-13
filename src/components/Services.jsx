@@ -74,9 +74,9 @@ export default function Services() {
 					<span>Doggy Day Care</span>
 					Monday-Friday, 8:30a.m - 5:30pm
 					<br />
-					1 x dog £14 per day
+					1 x dog - £14 per day
 					<br />
-					2 x dogs £20 per day
+					2 x dogs - £20 per day
 					<br />
 					Price includes three walks and mid day meal if required.
 				</p>
