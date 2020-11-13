@@ -54,8 +54,6 @@ export default function Services() {
 						<td>3 Dogs (medium/large)</td>
 						<td>£28 per night</td>
 					</tr>
-				</table>
-				<table className='one-night'>
 					<tr>
 						<th colSpan='2'>For One Night</th>
 					</tr>
@@ -72,6 +70,16 @@ export default function Services() {
 						<td>£30</td>
 					</tr>
 				</table>
+				<p className='doggy-daycare'>
+					<span>Doggy Day Care</span>
+					Monday-Friday, 8:30a.m - 5:30pm
+					<br />
+					1 x dog £14 per day
+					<br />
+					2 x dogs £20 per day
+					<br />
+					Price includes three walks and mid day meal if required.
+				</p>
 			</section>
 			<section className='important-information'>
 				<h1>Important Information</h1>
@@ -79,10 +87,23 @@ export default function Services() {
 					<li>
 						<img src={bullet} alt='' />
 						<p>
-							All dogs are to be vaccinated and up to date. Kennel
-							cough vaccine should be given at least two weeks
-							prior to entering our kennels. Certificates must be
-							brought in on every visit.
+							All guests must be up to date with their
+							vaccinations, including the kennel cough vaccine.
+							This vaccine should be done annually with the main
+							vaccines, however, please make sure it’s completed
+							at least two weeks before entering our Kennels. The
+							certificates should accompany the doggies on every
+							visit. Flea and worm treatments should be applied
+							regularly however, please take advice from your vet
+							to how and when these should be taken.
+						</p>
+					</li>
+					<li>
+						<img src={bullet} alt='' />
+						<p>
+							A 20% non refundable or transferable deposit will be
+							applied when bookings are taken. Payments can be
+							made by cash, cheque or by Bacs
 						</p>
 					</li>
 					<li>
