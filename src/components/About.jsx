@@ -4,7 +4,6 @@ import ownerImage from '../images/good-boys-and-owner.jpg';
 import dog1 from '../images/dog-placeholder-1.jpg';
 import dog2 from '../images/dog-placeholder-2.jpg';
 import dog3 from '../images/dog-placeholder-3.jpg';
-import { Link } from 'react-router-dom';
 
 export default function About() {
 	return (
@@ -64,14 +63,6 @@ export default function About() {
 					</p>
 					<img src={dog2} alt='' />
 				</div>
-			</section>
-			<section className='links'>
-				<Link to='/services'>
-					<p>Find out more about us</p>
-				</Link>
-				<Link to='/contact'>
-					<p>Get in touch with us</p>
-				</Link>
 			</section>
 		</main>
 	);

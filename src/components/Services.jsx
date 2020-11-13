@@ -139,14 +139,6 @@ export default function Services() {
 					</tr>
 				</table>
 			</section>
-			<section className='links'>
-				<Link to='/about'>
-					<p>Find out more about us</p>
-				</Link>
-				<Link to='/contact'>
-					<p>Get in touch with us</p>
-				</Link>
-			</section>
 		</main>
 	);
 }
