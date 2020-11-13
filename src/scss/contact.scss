@@ -2,7 +2,8 @@
 
 .contact {
 	h1,
-	h2 {
+	h2,
+	th {
 		font-family: $title-font;
 		font-weight: 300;
 		color: white;
@@ -17,32 +18,30 @@
 		font-size: 20px;
 		font-family: $text-font;
 	}
-	p {
-		width: 70%;
-		padding: 5%;
-		background-color: $green1;
-		border: 2px outset $green2;
-		border-radius: 10px;
-		box-shadow: 7px 10px 10px $green1;
-	}
 	.contact-info {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		justify-items: center;
-		align-items: center;
-		background-color: $green2;
-		padding-bottom: 10vh;
+		grid-template-rows: 35vh 40vh 50vh 40vh;
+		place-items: center;
+		background-color: $background-color;
+		p {
+			width: 500px;
+			padding: 16px;
+			background-color: $green1;
+			border-radius: 10px;
+		}
+
 		.banner {
-			height: 40vh;
+			height: 100%;
 			width: 100%;
-			grid-column: 1 / 3;
+			grid-area: 1 / 1 / 2 / 3;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 				url(../images/banner-placeholder-3.jpg);
-			background-position: 50% 10%;
+			background-position: 50% 50%;
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -54,27 +53,85 @@
 				font-style: italic;
 			}
 		}
-		p {
-			width: 70%;
-			padding: 5%;
-			background-color: $green1;
-			border: 2px outset $green2;
-			border-radius: 10px;
-			box-shadow: 7px 10px 10px $green1;
+		.opening-paragraph {
+			grid-area: 2 / 1 / 3 / 2;
+			box-shadow: -7px 10px 10px $green4;
+			background: url('../images/doggo-background-texture-3.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 3%;
+		}
+		.phone-numbers,
+		.address {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			p {
+				box-shadow: 7px 10px 10px $green4;
+				text-align: center;
+				h2 {
+					color: black;
+					font-weight: 400;
+					padding-bottom: 20px;
+				}
+				padding-bottom: 20px;
+			}
+		}
+		.phone-numbers {
+			p {
+				box-shadow: 7px 10px 10px $gold4;
+			}
+		}
+		.phone-numbers {
+			background: url('../images/doggo-background-texture-2-crop-2.png');
+			background-repeat: repeat;
+			background-size: cover;
+			p {
+				font-size: 1.5rem;
+				background: radial-gradient($gold2, $gold3);
+				h2 {
+					font-size: 2.5rem;
+				}
+				span {
+					font-size: 2rem;
+					padding-left: 1rem;
+				}
+			}
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+			grid-area: 3 / 1 / 3 / 3;
+		}
+		.table-background {
+			grid-area: 4 / 1 / 5 / 2;
+			height: 100%;
+			width: 100%;
+			background: url('../images/doggo-background-texture-2-crop-2.png');
+			background-repeat: repeat;
+			background-size: cover;
 		}
 		table {
-			justify-self: center;
-			max-width: 80%;
-			min-width: 60%;
+			grid-area: 4 / 1 / 5 / 2;
+			width: 500px;
 			background-color: $green1;
-			padding: 30px;
+			padding: 20px;
 			border-radius: 10px;
-			box-shadow: 7px 10px 10px $green1;
-			border: 2px outset $green2;
-			margin: 3vw;
+			box-shadow: 7px 10px 10px $green4;
+			background-color: $green1;
+			border: 1px solid $green2;
 			tr {
-				td {
-					border-bottom: 5px dotted $footer-color;
+				th {
+					font-size: 2rem;
+					font-weight: 400;
+					color: black;
+				}
+				td,
+				th {
+					border-bottom: 5px dotted $green5;
 					border-right: none;
 					padding: 10px 0;
 				}
@@ -83,19 +140,14 @@
 				}
 			}
 		}
-		iframe {
-			width: 40vw;
-			border-radius: 10px;
-			box-shadow: 7px 10px 10px $green1;
-			border: 1px solid $green2;
-		}
-		.contact-details {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+		.address {
+			grid-area: 4 / 2 / 5 / 3;
+			p {
+				background: url('../images/doggo-background-texture-3.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 3%;
+			}
 		}
 	}
 	.review-us {
