@@ -58,11 +58,15 @@ export default function Contact() {
 				</table>
 				<div className='address'>
 					<p>
-						<h2>Out Address</h2>
+						<h2>Our Address</h2>
 						<br />
-						Something? <br />
-						Something? <br />
-						Monmouth <br /> NP25 4BX
+						Green Lawns
+						<br />
+						Mitchel Troy
+						<br />
+						Monmouth
+						<br />
+						NP25 4BX
 					</p>
 				</div>
 			</section>
