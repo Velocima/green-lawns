@@ -1,39 +1,21 @@
 @import 'variables/variables';
+@import 'variables/mixins';
 
 .landing-container {
 	background-color: $background-color;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin-top: 10vh;
 	.title-banner {
+		@extend %centered-column-flexbox;
+		@include parallax-banner('../images/banner-placeholder.jpg');
 		width: 100%;
 		height: 50vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-			url(../images/banner-placeholder.jpg);
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
 		.titles {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			@extend %centered-column-flexbox;
 			padding: 30px 50px;
 			border-radius: 10px;
 			h1,
 			h2 {
-				font-family: $title-font;
-				font-weight: 300;
-				color: white;
-				opacity: 0.85;
-				text-shadow: 2px 2px 3px $green4;
+				@extend %title-font-styles;
 			}
 			h1 {
 				font-size: 5vw;
@@ -48,38 +30,30 @@
 	.description {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		justify-items: center;
-		align-items: center;
+		place-items: center;
 		min-height: 40vh;
 		width: 100%;
 		.text-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			display: grid;
+			place-items: center;
 			margin: 10%;
 			background-color: $green1;
 			border-radius: 10px;
 			p {
+				@extend %left-card;
+				@extend %light-wallpaper;
 				flex-grow: 1;
-				padding: 3vh;
-				font-size: 20px;
 				font-family: $text-font;
-				background: url('../images/doggo-background-texture-3.png');
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: 3%;
-				box-shadow: -7px 10px 10px $green4;
+				font-size: 20px;
+				padding: 3vh;
 			}
 		}
 		.call-to-action {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@extend %dark-wallpaper;
+			display: grid;
+			place-items: center;
 			width: 100%;
 			height: 100%;
-			background: url('../images/doggo-background-texture-2-crop-2.png');
-			background-repeat: repeat;
-			background-size: cover;
 			a {
 				color: black;
 				font-weight: 300;

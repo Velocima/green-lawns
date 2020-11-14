@@ -1,0 +1,47 @@
+@import './variables';
+
+@mixin parallax-banner($image, $height: 50%) {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url($image);
+	background-position: 50% $height;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+%centered-column-flexbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+%title-font-styles {
+	font-family: $title-font;
+	font-weight: 300;
+	color: white;
+	opacity: 0.85;
+	text-shadow: 2px 2px 3px $green4;
+}
+
+%left-card {
+	box-shadow: -7px 10px 10px $green4;
+	border-radius: 10px;
+}
+
+%right-card {
+	box-shadow: 7px 10px 10px $green4;
+	border-radius: 10px;
+}
+
+%light-wallpaper {
+	background: url('../images/doggo-background-texture-3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+%dark-wallpaper {
+	background: url('../images/doggo-background-texture-2-crop-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
