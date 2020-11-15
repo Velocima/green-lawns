@@ -64,6 +64,7 @@ nav {
 		@for $i from 1 through 4 {
 			li:nth-child(#{$i}) {
 				background-color: map-get($map: $color-map, $key: $i);
+				animation: fadeIn 0.7s ($i * 0.3s) backwards ease-in;
 			}
 		}
 	}
