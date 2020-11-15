@@ -27,6 +27,7 @@ export default function Footer() {
 			</p>
 			<p>
 				Contact us: <br />
+				Telephone:{' '}
 				<a href='tel:01600740111'>
 					<span>01600 740111</span>
 				</a>{' '}

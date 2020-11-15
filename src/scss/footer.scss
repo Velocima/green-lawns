@@ -2,6 +2,18 @@
 @import './variables/variables';
 
 footer {
-	min-height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 15vh;
+	font-family: $title-font;
+	color: white;
 	background-color: $green5;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	ul {
+		list-style-type: none;
+	}
 }
