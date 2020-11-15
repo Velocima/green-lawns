@@ -22,9 +22,39 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%); }
+  to { } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .landing-container {
   background-color: #ecfaf3;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  overflow-x: hidden; }
   .landing-container .title-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner-placeholder.jpg");
     background-position: 50% 50%;
@@ -32,7 +62,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh; }
+    height: 50vh;
+    animation: fadeIn 1s ease-out backwards; }
     .landing-container .title-banner .titles {
       padding: 30px 50px;
       border-radius: 10px; }
@@ -45,10 +76,12 @@
         text-shadow: 2px 2px 3px #1fab89; }
       .landing-container .title-banner .titles h1 {
         font-size: 5vw;
-        margin-bottom: 5vh; }
+        margin-bottom: 5vh;
+        animation: fadeIn 1s 1s backwards; }
       .landing-container .title-banner .titles h2 {
         font-size: 2.5vw;
-        font-style: italic; }
+        font-style: italic;
+        animation: fadeIn 1s 1.3s backwards; }
   .landing-container .description {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,7 +93,8 @@
       place-items: center;
       margin: 10%;
       background-color: #d7fbe8;
-      border-radius: 10px; }
+      border-radius: 10px;
+      animation: fadeInFromLeft 1s 1.5s backwards; }
       .landing-container .description .text-container p {
         flex-grow: 1;
         font-family: "Alegreya", serif;
@@ -70,7 +104,8 @@
       display: grid;
       place-items: center;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      animation: fadeIn 1s 0.5s ease-out backwards; }
       .landing-container .description .call-to-action a {
         color: black;
         font-weight: 300;
@@ -82,4 +117,5 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 7px 10px 10px #bf9b30;
-        background: radial-gradient(#e3f39b, #ffbf00); }
+        background: radial-gradient(#e3f39b, #ffbf00);
+        animation: fadeInFromRight 1s 1.5s backwards; }

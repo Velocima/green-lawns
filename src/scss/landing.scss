@@ -1,14 +1,17 @@
 @import 'variables/variables';
 @import 'variables/mixins';
+@import 'variables/animations';
 
 .landing-container {
 	background-color: $background-color;
 	margin-top: 10vh;
+	overflow-x: hidden;
 	.title-banner {
 		@extend %centered-column-flexbox;
 		@include parallax-banner('../images/banner-placeholder.jpg');
 		width: 100%;
 		height: 50vh;
+		animation: fadeIn 1s ease-out backwards;
 		.titles {
 			@extend %centered-column-flexbox;
 			padding: 30px 50px;
@@ -20,10 +23,12 @@
 			h1 {
 				font-size: 5vw;
 				margin-bottom: 5vh;
+				animation: fadeIn 1s 1s backwards;
 			}
 			h2 {
 				font-size: 2.5vw;
 				font-style: italic;
+				animation: fadeIn 1s 1.3s backwards;
 			}
 		}
 	}
@@ -39,6 +44,7 @@
 			margin: 10%;
 			background-color: $green1;
 			border-radius: 10px;
+			animation: fadeInFromLeft 1s 1.5s backwards;
 			p {
 				@extend %left-card;
 				@extend %light-wallpaper;
@@ -54,6 +60,7 @@
 			place-items: center;
 			width: 100%;
 			height: 100%;
+			animation: fadeIn 1s 0.5s ease-out backwards;
 			a {
 				color: black;
 				font-weight: 300;
@@ -66,6 +73,7 @@
 				border-radius: 10px;
 				box-shadow: 7px 10px 10px $gold4;
 				background: radial-gradient($gold2, $gold3);
+				animation: fadeInFromRight 1s 1.5s backwards;
 			}
 		}
 	}
