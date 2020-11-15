@@ -6,6 +6,7 @@ import About from './About';
 import Services from './Services';
 import Contact from './Contact';
 import ScrollToTop from './ScrollToTop';
+import Footer from './Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
 					<Landing />
 				</Route>
 			</Switch>
-			<footer></footer>
+			<Footer />
 		</Router>
 	);
 };
