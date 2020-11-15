@@ -41,18 +41,19 @@ export default function Landing() {
 	];
 	useLayoutEffect(() => {
 		const topPosition = (element) => element.getBoundingClientRect().top;
+		const bottomPosition = (element) => element.getBoundingClientRect().bottom;
 
 		console.log(review1Ref.current);
 		const reviewBannerPosition = topPosition(reviewBannerRef.current),
 			reviewBackgroundPosition = topPosition(reviewBackgroundRef.current),
-			review1Position = topPosition(review1Ref.current),
-			review2Position = topPosition(review2Ref.current),
-			review3Position = topPosition(review3Ref.current),
-			review4Position = topPosition(review4Ref.current),
-			review5Position = topPosition(review5Ref.current),
-			review6Position = topPosition(review6Ref.current),
-			review7Position = topPosition(review7Ref.current),
-			review8Position = topPosition(review8Ref.current);
+			review1Position = bottomPosition(review1Ref.current),
+			review2Position = bottomPosition(review2Ref.current),
+			review3Position = bottomPosition(review3Ref.current),
+			review4Position = bottomPosition(review4Ref.current),
+			review5Position = bottomPosition(review5Ref.current),
+			review6Position = bottomPosition(review6Ref.current),
+			review7Position = bottomPosition(review7Ref.current),
+			review8Position = bottomPosition(review8Ref.current);
 
 		const onScroll = () => {
 			const scrollPosition = window.scrollY + window.innerHeight;
@@ -117,11 +118,21 @@ export default function Landing() {
 				</div>
 			</div>
 			<section className='reviews'>
-				<div className='reviews-banner' ref={reviewBannerRef}>
+				<div
+					className='reviews-banner'
+					ref={reviewBannerRef}
+					style={{ animationPlayState: isVisible.reviewBanner ? 'running' : 'paused' }}
+				>
 					<h2>First rate customer service</h2>
 				</div>
 				<div className='reviews-container'>
-					<div className='background-shader' ref={reviewBackgroundRef}></div>
+					<div
+						className='background-shader'
+						ref={reviewBackgroundRef}
+						style={{
+							animationPlayState: isVisible.reviewBackground ? 'running' : 'paused',
+						}}
+					></div>
 					{reviews.map((review, i) => (
 						<Review
 							className={`review review${i + 1}`}
@@ -129,6 +140,7 @@ export default function Landing() {
 							author={review.author}
 							key={`${i}${review.author}`}
 							reviewRef={reviewRefs[i]}
+							animate={isVisible[`review${i + 1}`]}
 						/>
 					))}
 				</div>
