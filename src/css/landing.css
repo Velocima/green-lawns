@@ -8,14 +8,6 @@
   justify-content: center;
   align-items: center; }
 
-.landing-container .title-banner .titles h1,
-.landing-container .title-banner .titles h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: white;
-  opacity: 0.85;
-  text-shadow: 2px 2px 3px #1fab89; }
-
 .landing-container .description .text-container p {
   box-shadow: -7px 10px 10px #1fab89;
   border-radius: 10px; }
@@ -44,6 +36,13 @@
     .landing-container .title-banner .titles {
       padding: 30px 50px;
       border-radius: 10px; }
+      .landing-container .title-banner .titles h1,
+      .landing-container .title-banner .titles h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        color: white;
+        opacity: 0.85;
+        text-shadow: 2px 2px 3px #1fab89; }
       .landing-container .title-banner .titles h1 {
         font-size: 5vw;
         margin-bottom: 5vh; }

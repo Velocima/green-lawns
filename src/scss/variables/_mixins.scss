@@ -9,19 +9,19 @@
 	background-size: cover;
 }
 
+@mixin title-styles($color) {
+	font-family: $title-font;
+	font-weight: 300;
+	color: $color;
+	opacity: 0.85;
+	text-shadow: 2px 2px 3px $green4;
+}
+
 %centered-column-flexbox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-%title-font-styles {
-	font-family: $title-font;
-	font-weight: 300;
-	color: white;
-	opacity: 0.85;
-	text-shadow: 2px 2px 3px $green4;
 }
 
 %left-card {

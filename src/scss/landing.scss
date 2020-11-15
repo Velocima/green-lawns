@@ -15,7 +15,7 @@
 			border-radius: 10px;
 			h1,
 			h2 {
-				@extend %title-font-styles;
+				@include title-styles(white);
 			}
 			h1 {
 				font-size: 5vw;

@@ -9,13 +9,6 @@
   justify-content: center;
   align-items: center; }
 
-.reviews .reviews-banner h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: white;
-  opacity: 0.85;
-  text-shadow: 2px 2px 3px #1fab89; }
-
 .reviews .reviews-container .review1, .reviews .reviews-container .review3, .reviews .reviews-container .review5, .reviews .reviews-container .review7 {
   box-shadow: -7px 10px 10px #1fab89;
   border-radius: 10px; }
@@ -40,6 +33,11 @@
     width: 100%;
     height: 40vh; }
     .reviews .reviews-banner h2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      color: white;
+      opacity: 0.85;
+      text-shadow: 2px 2px 3px #1fab89;
       font-size: 3.5vw; }
   .reviews .reviews-container {
     display: grid;

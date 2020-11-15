@@ -9,7 +9,7 @@
 		width: 100%;
 		height: 40vh;
 		h2 {
-			@extend %title-font-styles;
+			@include title-styles(white);
 			font-size: 3.5vw;
 		}
 	}
