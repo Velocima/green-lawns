@@ -1,4 +1,5 @@
-@import 'variables/variables';
+@import './variables/variables';
+@import './variables/animations';
 
 nav {
 	display: grid;
@@ -33,6 +34,7 @@ nav {
 		width: 100%;
 		height: 100%;
 		list-style-type: none;
+		transition: all 1s;
 		li {
 			display: grid;
 			place-items: center;
@@ -46,9 +48,22 @@ nav {
 				text-decoration: none;
 			}
 		}
+		.visible {
+			opacity: 1;
+		}
+		.invisible {
+			opacity: 0;
+		}
+
+		$color-map: (
+			1: $green1,
+			2: $green2,
+			3: $green3,
+			4: $green4,
+		);
 		@for $i from 1 through 4 {
 			li:nth-child(#{$i}) {
-				background-color: $green#{$i};
+				background-color: map-get($map: $color-map, $key: $i);
 			}
 		}
 	}
