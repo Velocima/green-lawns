@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/services.css';
-import { Link } from 'react-router-dom';
 import dog from '../images/good-boy.jpg';
 import bullet from '../images/paw-bullet.png';
 
