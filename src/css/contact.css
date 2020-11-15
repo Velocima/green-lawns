@@ -1,5 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+.contact .contact-info .banner, .contact .contact-info .phone-numbers,
+.contact .contact-info .address, .contact .review-us .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact .contact-info .opening-paragraph, .contact .contact-info table {
+  box-shadow: -7px 10px 10px #1fab89;
+  border-radius: 10px; }
+
+.contact .contact-info .phone-numbers p,
+.contact .contact-info .address p {
+  box-shadow: 7px 10px 10px #1fab89;
+  border-radius: 10px; }
+
+.contact .contact-info .opening-paragraph,
+.contact .contact-info .address p {
+  background: url("../images/doggo-background-texture-3.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.contact .contact-info .phone-numbers {
+  background: url("../images/doggo-background-texture-2-crop-2.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .contact {
   margin-top: 10vh; }
   .contact h1,
@@ -25,44 +54,29 @@
     .contact .contact-info p {
       width: 500px;
       padding: 16px;
-      background-color: #d7fbe8;
-      border-radius: 10px; }
+      background-color: #d7fbe8; }
     .contact .contact-info .banner {
-      height: 100%;
-      width: 100%;
-      grid-area: 1 / 1 / 2 / 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/banner-placeholder-3.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner-placeholder-3.jpg");
       background-position: 50% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      grid-area: 1 / 1 / 2 / 3;
+      height: 100%;
+      width: 100%; }
       .contact .contact-info .banner h1 {
         margin-bottom: 5vh; }
       .contact .contact-info .banner h2 {
         font-size: 2.5vw;
         font-style: italic; }
     .contact .contact-info .opening-paragraph {
-      grid-area: 2 / 1 / 3 / 2;
-      box-shadow: -7px 10px 10px #1fab89;
-      background: url("../images/doggo-background-texture-3.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 3%; }
+      grid-area: 2 / 1 / 3 / 2; }
     .contact .contact-info .phone-numbers,
     .contact .contact-info .address {
       width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      height: 100%; }
       .contact .contact-info .phone-numbers p,
       .contact .contact-info .address p {
-        box-shadow: 7px 10px 10px #1fab89;
         text-align: center;
         padding-bottom: 20px; }
         .contact .contact-info .phone-numbers p h2,
@@ -70,27 +84,21 @@
           color: black;
           font-weight: 400;
           padding-bottom: 20px; }
-        .contact .contact-info .phone-numbers p a,
-        .contact .contact-info .address p a {
-          text-decoration: none; }
     .contact .contact-info .phone-numbers p {
+      font-size: 1.5rem;
+      background: radial-gradient(#e3f39b, #ffbf00);
       box-shadow: 7px 10px 10px #bf9b30; }
-    .contact .contact-info .phone-numbers {
-      background: url("../images/doggo-background-texture-2-crop-2.png");
-      background-repeat: repeat;
-      background-size: cover; }
-      .contact .contact-info .phone-numbers p {
-        font-size: 1.5rem;
-        background: radial-gradient(#e3f39b, #ffbf00); }
-        .contact .contact-info .phone-numbers p h2 {
-          font-size: 2.5rem; }
-        .contact .contact-info .phone-numbers p span {
+      .contact .contact-info .phone-numbers p h2 {
+        font-size: 2.5rem; }
+      .contact .contact-info .phone-numbers p a {
+        text-decoration: none; }
+        .contact .contact-info .phone-numbers p a span {
           font-size: 2rem;
           padding-left: 1rem; }
     .contact .contact-info iframe {
+      grid-area: 3 / 1 / 3 / 3;
       width: 100%;
-      height: 100%;
-      grid-area: 3 / 1 / 3 / 3; }
+      height: 100%; }
     .contact .contact-info .table-background {
       grid-area: 4 / 1 / 5 / 2;
       height: 100%;
@@ -101,12 +109,8 @@
     .contact .contact-info table {
       grid-area: 4 / 1 / 5 / 2;
       width: 500px;
-      background-color: #d7fbe8;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 7px 10px 10px #1fab89;
-      background-color: #d7fbe8;
-      border: 1px solid #9df3c4; }
+      background-color: #d7fbe8; }
       .contact .contact-info table tr th {
         font-size: 2rem;
         font-weight: 400;
@@ -120,30 +124,18 @@
         text-align: center; }
     .contact .contact-info .address {
       grid-area: 4 / 2 / 5 / 3; }
-      .contact .contact-info .address p {
-        background: url("../images/doggo-background-texture-3.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 3%; }
   .contact .review-us {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    background-color: #9df3c4;
-    padding-bottom: 10vh; }
+    place-items: center;
+    padding-bottom: 10vh;
+    background-color: #9df3c4; }
     .contact .review-us .banner {
-      height: 40vh;
-      width: 100%;
-      grid-column: 1 / 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/banner-placeholder-4.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner-placeholder-4.jpg");
       background-position: 50% 80%;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: cover; }
-    .contact .review-us p {
-      margin-top: 10vh; }
+      background-size: cover;
+      grid-column: 1 / 3;
+      height: 40vh;
+      width: 100%; }
