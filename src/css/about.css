@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+.about-container .facilities .tiles .tile-1,
+.about-container .facilities .tiles .tile-3 {
+  box-shadow: -7px 10px 10px #1fab89;
+  border-radius: 10px; }
+
+.about-container .facilities .tiles .tile-2 {
+  box-shadow: 7px 10px 10px #1fab89;
+  border-radius: 10px; }
+
+.about-container .family .image-container, .about-container .facilities .tiles p {
+  background: url("../images/doggo-background-texture-3.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -9,15 +25,14 @@
     font-family: "Alegreya", serif; }
   .about-container h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3vw;
     font-weight: 300;
     color: black;
-    opacity: 0.85; }
+    opacity: 0.85;
+    text-shadow: 2px 2px 3px #1fab89; }
   .about-container .family {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    width: 100%;
     height: 90vh;
     background-color: #d7fbe8; }
     .about-container .family .family-text {
@@ -31,46 +46,42 @@
       .about-container .family .family-text h1 {
         margin-bottom: 7vh;
         font-size: 5vw;
-        margin-left: 5vw;
-        border-radius: 10px;
-        text-shadow: 2px 2px 3px #1fab89; }
+        margin-left: 5vw; }
       .about-container .family .family-text p {
         width: 30vw;
         margin-left: 5vw; }
     .about-container .family .image-container {
       display: grid;
+      place-items: center;
       height: 100%;
       width: 100%;
-      background: url("../images/doggo-background-texture-3.png");
-      background-repeat: no-repeat;
-      background-size: cover;
       background-position: 3%; }
       .about-container .family .image-container img {
-        place-self: center;
         height: 30vw;
         width: 30vw;
         border-radius: 50%;
-        object-fit: cover; }
+        object-fit: cover;
+        object-position: 50% 50%; }
   .about-container .facilities .banner {
-    display: grid;
-    height: 50vh;
-    background: url("../images/about-banner-placeholder.jpg");
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about-banner-placeholder.jpg");
+    background-position: 50% 50%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 50vh; }
     .about-container .facilities .banner h1 {
-      justify-self: center;
-      align-self: center;
       font-family: "Montserrat", sans-serif;
-      font-size: 5vw;
       font-weight: 300;
       color: white;
       opacity: 0.85;
-      text-shadow: 2px 2px 3px #1fab89; }
+      text-shadow: 2px 2px 3px #1fab89;
+      font-size: 5vw; }
   .about-container .facilities .tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     background-color: #9df3c4; }
     .about-container .facilities .tiles img {
       width: 100%;
@@ -78,25 +89,13 @@
       object-fit: cover; }
     .about-container .facilities .tiles p {
       position: relative;
-      justify-self: center;
-      align-self: center;
       text-align: center;
       width: 60%;
-      padding: 5%;
-      border-radius: 10px;
-      background: url("../images/doggo-background-texture-3.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 3%; }
-    .about-container .facilities .tiles .tile-1 {
-      box-shadow: -7px 10px 10px #1fab89;
+      padding: 5%; }
+    .about-container .facilities .tiles .tile-1,
+    .about-container .facilities .tiles .tile-3 {
       left: 7px;
       bottom: 10px; }
     .about-container .facilities .tiles .tile-2 {
-      box-shadow: 7px 10px 10px #1fab89;
       right: 7px;
-      bottom: 10px; }
-    .about-container .facilities .tiles .tile-3 {
-      box-shadow: -7px 10px 10px #1fab89;
-      left: 7px;
       bottom: 10px; }
