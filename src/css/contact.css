@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 .contact .contact-info .banner, .contact .contact-info .phone-numbers,
-.contact .contact-info .address, .contact .review-us .banner {
+.contact .contact-info .address {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,18 +130,3 @@
       .contact .contact-info .address p .address-header {
         font-size: 2.5rem;
         color: black; }
-  .contact .review-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    padding-bottom: 10vh;
-    background-color: #9df3c4; }
-    .contact .review-us .banner {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner-placeholder-4.jpg");
-      background-position: 50% 80%;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-      grid-column: 1 / 3;
-      height: 40vh;
-      width: 100%; }

@@ -75,23 +75,6 @@ export default function Contact() {
 					</p>
 				</div>
 			</section>
-			<section className='review-us'>
-				<div className='banner'>
-					<h1>Leave Us a Review</h1>
-				</div>
-				<p>
-					Your opinion matters to us. something something write us a
-					review.
-					<br />
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Dolorum aliquam labore, fugiat qui, veritatis numquam
-					voluptates repellat a repudiandae, modi commodi? Nisi amet
-					eos magni exercitationem aperiam fuga, debitis magnam.
-				</p>
-				<div className='review-links'>
-					<p>not sure what i'm going to link here yet...</p>
-				</div>
-			</section>
 		</main>
 	);
 }

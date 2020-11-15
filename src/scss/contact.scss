@@ -131,18 +131,4 @@
 			}
 		}
 	}
-	.review-us {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		place-items: center;
-		padding-bottom: 10vh;
-		background-color: $green2;
-		.banner {
-			@include parallax-banner('../images/banner-placeholder-4.jpg', 80%);
-			@extend %centered-column-flexbox;
-			grid-column: 1 / 3;
-			height: 40vh;
-			width: 100%;
-		}
-	}
 }
