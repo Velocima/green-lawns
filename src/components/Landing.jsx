@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/landing.css';
 import { Review } from './Review';
 import { reviews } from '../contentJs/Reviews';
+import { Link } from 'react-router-dom';
 
 export default function Landing() {
 	return (
@@ -28,7 +29,7 @@ export default function Landing() {
 					</p>
 				</div>
 				<div className='call-to-action'>
-					<a href=''>Book now</a>
+					<Link to='/contact'>Book Now</Link>
 				</div>
 			</div>
 			<section className='reviews'>

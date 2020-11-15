@@ -5,7 +5,9 @@
 	margin-top: 10vh;
 	h1,
 	h2,
-	th {
+	th,
+	.address-header,
+	.phone-numbers-header {
 		@include title-styles(white);
 	}
 	h1 {
@@ -55,7 +57,7 @@
 			p {
 				@extend %right-card;
 				text-align: center;
-				h2 {
+				span {
 					color: black;
 					font-weight: 400;
 					padding-bottom: 20px;
@@ -69,7 +71,8 @@
 				font-size: 1.5rem;
 				background: radial-gradient($gold2, $gold3);
 				box-shadow: 7px 10px 10px $gold4;
-				h2 {
+				.phone-numbers-header {
+					display: block;
 					font-size: 2.5rem;
 				}
 				a {
@@ -121,6 +124,10 @@
 			grid-area: 4 / 2 / 5 / 3;
 			p {
 				@extend %light-wallpaper;
+				.address-header {
+					font-size: 2.5rem;
+					color: black;
+				}
 			}
 		}
 	}

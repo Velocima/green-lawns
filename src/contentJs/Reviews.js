@@ -20,7 +20,7 @@ export const reviews = [
     {
         review: 'Our dogs have holidayed at Green Lawns for many years now and always arrive excited to be there, proving it is a happy place for dogs! Julie’s love of all dogs shines through and is so very evident when ours enthusiastically greet Julie on arrival.  She treats each of our three dogs as an individual and caters for their separate needs in ways that are unexpected.  In fact we have learned much from her and often adapt our ways in light of her observations e.g. our old fella Drum likes to have his food raised up and then he is more likely to eat it.  Julie takes the time to work out how to make each of Drum’s visits good ones and we are grateful that she cares for Drum in such an empathic way.  Her passion for all animals is quite clear and there is no one better I would put my trust in when we need our dogs in a safe and caring environment while we go away. Thank you Julie! 😊',
         author: 'Vicky',
-        image: 'vickyDog',
+        image: vickyDog,
     },
     {
         review: `Our two dogs have been going to Julie for there holidays for a number of years. Our first dog Cooper is a teacup Yorkie and would stay with Nan when we went away but as Nan got older it became harder. I was really worried about Kennels for him because he had never been and he was now 6 years old and is very stubborn and very sensitive and can’t be let of his lead ever! I spoke to Julie over the phone and visited the Kennels and it felt a safe place to leave Cooper and we have not looked back he loves it, especially the walks around the field! 

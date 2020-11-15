@@ -33,7 +33,9 @@
   margin-top: 10vh; }
   .contact h1,
   .contact h2,
-  .contact th {
+  .contact th,
+  .contact .address-header,
+  .contact .phone-numbers-header {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: white;
@@ -79,8 +81,8 @@
       .contact .contact-info .address p {
         text-align: center;
         padding-bottom: 20px; }
-        .contact .contact-info .phone-numbers p h2,
-        .contact .contact-info .address p h2 {
+        .contact .contact-info .phone-numbers p span,
+        .contact .contact-info .address p span {
           color: black;
           font-weight: 400;
           padding-bottom: 20px; }
@@ -88,7 +90,8 @@
       font-size: 1.5rem;
       background: radial-gradient(#e3f39b, #ffbf00);
       box-shadow: 7px 10px 10px #bf9b30; }
-      .contact .contact-info .phone-numbers p h2 {
+      .contact .contact-info .phone-numbers p .phone-numbers-header {
+        display: block;
         font-size: 2.5rem; }
       .contact .contact-info .phone-numbers p a {
         text-decoration: none; }
@@ -124,6 +127,9 @@
         text-align: center; }
     .contact .contact-info .address {
       grid-area: 4 / 2 / 5 / 3; }
+      .contact .contact-info .address p .address-header {
+        font-size: 2.5rem;
+        color: black; }
   .contact .review-us {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -17,7 +17,9 @@ export default function Contact() {
 				</p>
 				<div className='phone-numbers'>
 					<p>
-						<h2>To book now call</h2>
+						<span className='phone-numbers-header'>
+							To book now call
+						</span>
 						Telephone:{' '}
 						<a href='tel:01600740111'>
 							<span>01600 740111</span>
@@ -33,32 +35,35 @@ export default function Contact() {
 					src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2468.211355908111!2d-2.7741205!3d51.7840232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871c7a3c31bcd37%3A0x2e3a5debcce221b8!2sGreen%20Lawns%20Boarding%20Kennels!5e0!3m2!1sen!2suk!4v1604681217217!5m2!1sen!2suk'
 					width='600'
 					height='450'
-					frameborder='0'
-					allowfullscreen=''
+					frameBorder='0'
+					allowFullScreen=''
 					aria-hidden='false'
-					tabindex='0'
+					tabIndex='0'
+					title='Google maps'
 				></iframe>
 				<div className='table-background'></div>
 				<table>
-					<tr>
-						<th colSpan='2'>Opening Hours</th>
-					</tr>
-					<tr>
-						<td>Monday - Friday</td>
-						<td>
-							9:00am - 11:00am
-							<br></br>
-							2:00pm - 4:00pm
-						</td>
-					</tr>
-					<tr>
-						<td>Saturday - Sunday</td>
-						<td>9:00am - 11:00am</td>
-					</tr>
+					<tbody>
+						<tr>
+							<th colSpan='2'>Opening Hours</th>
+						</tr>
+						<tr>
+							<td>Monday - Friday</td>
+							<td>
+								9:00am - 11:00am
+								<br></br>
+								2:00pm - 4:00pm
+							</td>
+						</tr>
+						<tr>
+							<td>Saturday - Sunday</td>
+							<td>9:00am - 11:00am</td>
+						</tr>
+					</tbody>
 				</table>
 				<div className='address'>
 					<p>
-						<h2>Our Address</h2>
+						<span className='address-header'>Our Address</span>
 						<br />
 						Green Lawns
 						<br />

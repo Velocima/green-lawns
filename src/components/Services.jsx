@@ -30,44 +30,46 @@ export default function Services() {
 			<section className='prices'>
 				<h1>Prices</h1>
 				<table className='multiple-nights'>
-					<tr>
-						<th colSpan='2'>For Multiple Nights</th>
-					</tr>
-					<tr>
-						<td>1 Dog</td>
-						<td>£14 per night</td>
-					</tr>
-					<tr>
-						<td>2 Dogs (small)</td>
-						<td>£20 per night</td>
-					</tr>
-					<tr>
-						<td>2 Dogs (medium/large)</td>
-						<td>£22 per night</td>
-					</tr>
-					<tr>
-						<td>3 Dogs (small)</td>
-						<td>£26 per night</td>
-					</tr>
-					<tr>
-						<td>3 Dogs (medium/large)</td>
-						<td>£28 per night</td>
-					</tr>
-					<tr>
-						<th colSpan='2'>For One Night</th>
-					</tr>
-					<tr>
-						<td>1 Dog</td>
-						<td>£20</td>
-					</tr>
-					<tr>
-						<td>2 Dogs</td>
-						<td>£25</td>
-					</tr>
-					<tr>
-						<td>3 Dogs </td>
-						<td>£30</td>
-					</tr>
+					<tbody>
+						<tr>
+							<th colSpan='2'>For Multiple Nights</th>
+						</tr>
+						<tr>
+							<td>1 Dog</td>
+							<td>£14 per night</td>
+						</tr>
+						<tr>
+							<td>2 Dogs (small)</td>
+							<td>£20 per night</td>
+						</tr>
+						<tr>
+							<td>2 Dogs (medium/large)</td>
+							<td>£22 per night</td>
+						</tr>
+						<tr>
+							<td>3 Dogs (small)</td>
+							<td>£26 per night</td>
+						</tr>
+						<tr>
+							<td>3 Dogs (medium/large)</td>
+							<td>£28 per night</td>
+						</tr>
+						<tr>
+							<th colSpan='2'>For One Night</th>
+						</tr>
+						<tr>
+							<td>1 Dog</td>
+							<td>£20</td>
+						</tr>
+						<tr>
+							<td>2 Dogs</td>
+							<td>£25</td>
+						</tr>
+						<tr>
+							<td>3 Dogs </td>
+							<td>£30</td>
+						</tr>
+					</tbody>
 				</table>
 				<p className='doggy-daycare'>
 					<span>Doggy Day Care</span>
@@ -121,21 +123,23 @@ export default function Services() {
 					</li>
 				</ul>
 				<table>
-					<tr>
-						<th colSpan='2'>Opening Hours</th>
-					</tr>
-					<tr>
-						<td>Monday - Friday</td>
-						<td>
-							9:00am - 11:00am
-							<br></br>
-							2:00pm - 4:00pm
-						</td>
-					</tr>
-					<tr>
-						<td>Saturday - Sunday</td>
-						<td>9:00am - 11:00am</td>
-					</tr>
+					<tbody>
+						<tr>
+							<th colSpan='2'>Opening Hours</th>
+						</tr>
+						<tr>
+							<td>Monday - Friday</td>
+							<td>
+								9:00am - 11:00am
+								<br></br>
+								2:00pm - 4:00pm
+							</td>
+						</tr>
+						<tr>
+							<td>Saturday - Sunday</td>
+							<td>9:00am - 11:00am</td>
+						</tr>
+					</tbody>
 				</table>
 			</section>
 		</main>
