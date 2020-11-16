@@ -89,7 +89,7 @@ export default function Landing() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, [isVisible]);
+	}, []);
 
 	return (
 		<main className='landing-container'>
