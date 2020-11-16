@@ -1,9 +1,73 @@
-import React from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import '../css/services.css';
 import dog from '../images/good-boy.jpg';
 import bullet from '../images/paw-bullet.png';
 
 export default function Services() {
+	const [animationIsPlaying, setAnimationIsPlaying] = useState({
+		pricesTitle: 'paused',
+		pricesTable: 'paused',
+		doggyDayCare: 'paused',
+		infoTitle: 'paused',
+		infoList: 'paused',
+		openingHours: 'paused',
+	});
+
+	const pricesTitleRef = useRef(null),
+		pricesTableRef = useRef(null),
+		doggyDayCareRef = useRef(null),
+		infoTitleRef = useRef(null),
+		infoListRef = useRef(null),
+		openingHoursRef = useRef(null);
+
+	useLayoutEffect(() => {
+		const topPosition = (element) => element.current.getBoundingClientRect().top;
+
+		const pricesTitlePosition = topPosition(pricesTitleRef),
+			pricesTablePosition = topPosition(pricesTableRef),
+			doggyDayCarePosition = topPosition(doggyDayCareRef),
+			infoTitlePosition = topPosition(infoTitleRef),
+			infoListPosition = topPosition(infoListRef),
+			openingHoursPosition = topPosition(openingHoursRef);
+
+		const onScroll = () => {
+			const scrollPosition = window.scrollY + window.innerHeight;
+
+			if (
+				animationIsPlaying.pricesTitle !== 'running' &&
+				pricesTitlePosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, pricesTitle: 'running' }));
+			}
+			if (
+				animationIsPlaying.pricesTable !== 'running' &&
+				pricesTablePosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, pricesTable: 'running' }));
+			}
+			if (
+				animationIsPlaying.doggyDayCare !== 'running' &&
+				doggyDayCarePosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, doggyDayCare: 'running' }));
+			}
+			if (animationIsPlaying.infoTitle !== 'running' && infoTitlePosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, infoTitle: 'running' }));
+			}
+			if (animationIsPlaying.infoList !== 'running' && infoListPosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, infoList: 'running' }));
+			}
+			if (
+				animationIsPlaying.openingHours !== 'running' &&
+				openingHoursPosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, openingHours: 'running' }));
+			}
+		};
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
+
 	return (
 		<main className='services'>
 			<section className='our-services'>
@@ -28,8 +92,8 @@ export default function Services() {
 				</div>
 			</section>
 			<section className='prices'>
-				<h1>Prices</h1>
-				<table className='multiple-nights'>
+				<h1 ref={pricesTitleRef}>Prices</h1>
+				<table className='multiple-nights' ref={pricesTableRef}>
 					<tbody>
 						<tr>
 							<th colSpan='2'>For Multiple Nights</th>
@@ -71,7 +135,7 @@ export default function Services() {
 						</tr>
 					</tbody>
 				</table>
-				<p className='doggy-daycare'>
+				<p className='doggy-daycare' ref={doggyDayCareRef}>
 					<span>Doggy Day Care</span>
 					Monday-Friday, 8:30a.m - 5:30pm
 					<br />
@@ -83,8 +147,8 @@ export default function Services() {
 				</p>
 			</section>
 			<section className='important-information'>
-				<h1>Important Information</h1>
-				<ul>
+				<h1 ref={infoTitleRef}>Important Information</h1>
+				<ul ref={infoListRef}>
 					<li>
 						<img src={bullet} alt='' />
 						<p>
@@ -115,7 +179,7 @@ export default function Services() {
 						<p>Another days charge will be added if collection is in the afternoon.</p>
 					</li>
 				</ul>
-				<table>
+				<table ref={openingHoursRef}>
 					<tbody>
 						<tr>
 							<th colSpan='2'>Opening Hours</th>
