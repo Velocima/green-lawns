@@ -92,8 +92,19 @@ export default function Services() {
 				</div>
 			</section>
 			<section className='prices'>
-				<h1 ref={pricesTitleRef}>Prices</h1>
-				<table className='multiple-nights' ref={pricesTableRef}>
+				<div className='overflow-container'>
+					<h1
+						ref={pricesTitleRef}
+						style={{ animationPlayState: animationIsPlaying.pricesTitle }}
+					>
+						Prices
+					</h1>
+				</div>
+				<table
+					className='multiple-nights'
+					ref={pricesTableRef}
+					style={{ animationPlayState: animationIsPlaying.pricesTable }}
+				>
 					<tbody>
 						<tr>
 							<th colSpan='2'>For Multiple Nights</th>
@@ -135,7 +146,11 @@ export default function Services() {
 						</tr>
 					</tbody>
 				</table>
-				<p className='doggy-daycare' ref={doggyDayCareRef}>
+				<p
+					className='doggy-daycare'
+					ref={doggyDayCareRef}
+					style={{ animationPlayState: animationIsPlaying.doggyDayCare }}
+				>
 					<span>Doggy Day Care</span>
 					Monday-Friday, 8:30a.m - 5:30pm
 					<br />
@@ -147,8 +162,15 @@ export default function Services() {
 				</p>
 			</section>
 			<section className='important-information'>
-				<h1 ref={infoTitleRef}>Important Information</h1>
-				<ul ref={infoListRef}>
+				<div className='overflow-container'>
+					<h1
+						ref={infoTitleRef}
+						style={{ animationPlayState: animationIsPlaying.infoTitle }}
+					>
+						Important Information
+					</h1>
+				</div>
+				<ul ref={infoListRef} style={{ animationPlayState: animationIsPlaying.infoList }}>
 					<li>
 						<img src={bullet} alt='' />
 						<p>
@@ -179,7 +201,10 @@ export default function Services() {
 						<p>Another days charge will be added if collection is in the afternoon.</p>
 					</li>
 				</ul>
-				<table ref={openingHoursRef}>
+				<table
+					ref={openingHoursRef}
+					style={{ animationPlayState: animationIsPlaying.openingHours }}
+				>
 					<tbody>
 						<tr>
 							<th colSpan='2'>Opening Hours</th>

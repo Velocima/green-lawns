@@ -75,6 +75,7 @@
 		h1 {
 			font-size: 3.5vw;
 			text-align: center;
+			animation: fadeInFromAbove 1s 0.3s ease-out backwards;
 		}
 		h2 {
 			font-size: 2vw;
@@ -85,6 +86,7 @@
 			align-self: start;
 			width: 500px;
 			padding: 0 20px 20px;
+			animation: fadeInFromLeft 1s 0.7s ease-out backwards;
 			tr {
 				th {
 					font-size: 2rem;
@@ -110,6 +112,7 @@
 			width: 500px;
 			padding: 20px 20px;
 			text-align: center;
+			animation: fadeInFromLeft 1s 0.4s ease-out backwards;
 			span {
 				display: block;
 				width: 100%;
@@ -130,6 +133,7 @@
 		h1 {
 			font-size: 3.5vw;
 			text-align: center;
+			animation: fadeInFromAbove 1s 0.5s ease-out backwards;
 		}
 		ul {
 			@extend %right-card;
@@ -143,6 +147,7 @@
 			background-color: $green1;
 			border: 1px solid $green2;
 			list-style-type: none;
+			animation: fadeInFromRight 1s 0.9s ease-out backwards;
 			li {
 				display: flex;
 				align-items: center;
@@ -164,6 +169,7 @@
 			padding: 20px;
 			background-color: $green1;
 			border: 1px solid $green2;
+			animation: fadeInFromRight 1s 0.6s ease-out backwards;
 			tr {
 				th {
 					font-size: 2rem;

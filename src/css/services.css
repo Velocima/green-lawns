@@ -131,13 +131,15 @@
     background-color: #9df3c4; }
     .services .prices h1 {
       font-size: 3.5vw;
-      text-align: center; }
+      text-align: center;
+      animation: fadeInFromAbove 1s 0.3s ease-out backwards; }
     .services .prices h2 {
       font-size: 2vw; }
     .services .prices table {
       align-self: start;
       width: 500px;
-      padding: 0 20px 20px; }
+      padding: 0 20px 20px;
+      animation: fadeInFromLeft 1s 0.7s ease-out backwards; }
       .services .prices table tr th {
         font-size: 2rem;
         font-weight: 400;
@@ -153,7 +155,8 @@
       box-sizing: border-box;
       width: 500px;
       padding: 20px 20px;
-      text-align: center; }
+      text-align: center;
+      animation: fadeInFromLeft 1s 0.4s ease-out backwards; }
       .services .prices p span {
         display: block;
         width: 100%;
@@ -169,7 +172,8 @@
     grid-template-rows: 10vh 50vh 40vh; }
     .services .important-information h1 {
       font-size: 3.5vw;
-      text-align: center; }
+      text-align: center;
+      animation: fadeInFromAbove 1s 0.5s ease-out backwards; }
     .services .important-information ul {
       box-sizing: border-box;
       align-self: start;
@@ -180,7 +184,8 @@
       padding-right: 20px;
       background-color: #d7fbe8;
       border: 1px solid #9df3c4;
-      list-style-type: none; }
+      list-style-type: none;
+      animation: fadeInFromRight 1s 0.9s ease-out backwards; }
       .services .important-information ul li {
         display: flex;
         align-items: center;
@@ -196,7 +201,8 @@
       width: 500px;
       padding: 20px;
       background-color: #d7fbe8;
-      border: 1px solid #9df3c4; }
+      border: 1px solid #9df3c4;
+      animation: fadeInFromRight 1s 0.6s ease-out backwards; }
       .services .important-information table tr th {
         font-size: 2rem;
         font-weight: 400; }
