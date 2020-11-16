@@ -13,19 +13,22 @@ nav {
 	background-color: $background-color;
 	border-bottom: 1px solid $green5;
 	.logo {
-		display: flex;
-		align-items: center;
 		animation: slideFromLeft 0.9s ease-out;
-		img {
-			height: 8vh;
-			width: auto;
-			margin-left: 5vh;
-			margin-right: 1vw;
-		}
-		h4 {
-			font-family: $title-font;
-			font-size: 3.5vh;
-			font-weight: 300;
+		a {
+			display: flex;
+			text-decoration: none;
+			img {
+				height: 8vh;
+				width: auto;
+				margin-left: 5vh;
+				margin-right: 1vw;
+			}
+			h4 {
+				font-family: $title-font;
+				font-size: 3.5vh;
+				font-weight: 300;
+				color: black;
+			}
 		}
 	}
 	ul {

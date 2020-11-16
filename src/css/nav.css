@@ -59,18 +59,20 @@ nav {
   background-color: #ecfaf3;
   border-bottom: 1px solid #13614d; }
   nav .logo {
-    display: flex;
-    align-items: center;
     animation: slideFromLeft 0.9s ease-out; }
-    nav .logo img {
-      height: 8vh;
-      width: auto;
-      margin-left: 5vh;
-      margin-right: 1vw; }
-    nav .logo h4 {
-      font-family: "Montserrat", sans-serif;
-      font-size: 3.5vh;
-      font-weight: 300; }
+    nav .logo a {
+      display: flex;
+      text-decoration: none; }
+      nav .logo a img {
+        height: 8vh;
+        width: auto;
+        margin-left: 5vh;
+        margin-right: 1vw; }
+      nav .logo a h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.5vh;
+        font-weight: 300;
+        color: black; }
   nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

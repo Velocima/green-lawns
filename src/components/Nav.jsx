@@ -11,10 +11,10 @@ export default function Nav(props) {
 				<div className='logo'>
 					<Link to='/'>
 						<img src={logo} alt='logo placeholder.' />
+						<h4>
+							Green Lawns <br></br>Boarding Kennels
+						</h4>
 					</Link>
-					<h4>
-						Green Lawns <br></br>Boarding Kennels
-					</h4>
 				</div>
 			</div>
 			<ul>
