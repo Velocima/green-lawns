@@ -50,7 +50,7 @@ export default function About() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, [animationIsPlaying]);
+	}, []);
 
 	return (
 		<main className='about-container'>
@@ -92,6 +92,7 @@ export default function About() {
 					<p
 						className='tile-1'
 						style={{ animationPlayState: animationIsPlaying.firstRow }}
+						ref={firstRowRef}
 					>
 						Our Kennels are arranged in two blocks with ten kennels in each. They are
 						all heated and temperature checked twice daily. Every kennel has a inside
@@ -101,18 +102,17 @@ export default function About() {
 					<img
 						src={dog1}
 						alt=''
-						ref={firstRowRef}
 						style={{ animationPlayState: animationIsPlaying.firstRow }}
 					/>
 					<img
 						src={dog3}
 						alt=''
-						ref={secondRowRef}
 						style={{ animationPlayState: animationIsPlaying.secondRow }}
 					/>
 					<p
 						className='tile-2'
 						style={{ animationPlayState: animationIsPlaying.secondRow }}
+						ref={secondRowRef}
 					>
 						Our top of the range foods include both wet and dry. If your dog requires a
 						specific diet, we ask that you provide this for them. Bowls are supplied and
@@ -121,6 +121,7 @@ export default function About() {
 					<p
 						className='tile-3'
 						style={{ animationPlayState: animationIsPlaying.thirdRow }}
+						ref={thirdRowRef}
 					>
 						If your doggie requires medication during their stay, we can happily
 						administer this. We simply require that you write all the details on the
@@ -130,7 +131,6 @@ export default function About() {
 					<img
 						src={dog2}
 						alt=''
-						ref={thirdRowRef}
 						style={{ animationPlayState: animationIsPlaying.thirdRow }}
 					/>
 				</div>

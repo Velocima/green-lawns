@@ -43,6 +43,15 @@
   to {
     opacity: 1; } }
 
+@keyframes fadeInFromBelow {
+  from {
+    opacity: 0;
+    transform: translateY(120%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%); }
@@ -57,7 +66,8 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  overflow-x: hidden; }
   .about-container p {
     font-size: 20px;
     font-family: "Alegreya", serif; }
@@ -138,7 +148,9 @@
     .about-container .facilities .tiles .tile-1,
     .about-container .facilities .tiles .tile-3 {
       left: 7px;
-      bottom: 10px; }
+      bottom: 10px;
+      animation: fadeInFromLeft 1s ease-out backwards; }
     .about-container .facilities .tiles .tile-2 {
       right: 7px;
-      bottom: 10px; }
+      bottom: 10px;
+      animation: fadeInFromRight 1s ease-out backwards; }

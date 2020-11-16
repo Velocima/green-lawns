@@ -6,6 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 10vh;
+	overflow-x: hidden;
 	p {
 		font-size: 20px;
 		font-family: $text-font;
@@ -88,11 +89,13 @@
 				@extend %left-card;
 				left: 7px;
 				bottom: 10px;
+				animation: fadeInFromLeft 1s ease-out backwards;
 			}
 			.tile-2 {
 				@extend %right-card;
 				right: 7px;
 				bottom: 10px;
+				animation: fadeInFromRight 1s ease-out backwards;
 			}
 		}
 	}
