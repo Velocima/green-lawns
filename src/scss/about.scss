@@ -60,6 +60,7 @@
 			display: grid;
 			place-items: center;
 			height: 50vh;
+			animation: fadeIn 1s ease-out backwards;
 			h1 {
 				@include title-styles(white);
 				font-size: 5vw;

@@ -112,7 +112,8 @@
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 50vh; }
+    height: 50vh;
+    animation: fadeIn 1s ease-out backwards; }
     .about-container .facilities .banner h1 {
       font-family: "Montserrat", sans-serif;
       font-weight: 300;

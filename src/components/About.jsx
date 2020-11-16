@@ -29,20 +29,23 @@ export default function About() {
 
 		const onScroll = () => {
 			const scrollPosition = window.scrollY + window.innerHeight;
-			if (!animationIsPlaying.facilitiesBanner && facilitiesBannerPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, reviewBanner: 'running' }));
-			}
-			if (!animationIsPlaying.firstRow && firstRowPosition < scrollPosition) {
+			if (
+				animationIsPlaying.facilitiesBanner !== 'running' &&
+				facilitiesBannerPosition < scrollPosition
+			) {
 				setAnimationIsPlaying((prevState) => ({
 					...prevState,
-					reviewBackground: 'running',
+					facilitiesBanner: 'running',
 				}));
 			}
-			if (!animationIsPlaying.secondRow && secondRowPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, review1: 'running' }));
+			if (animationIsPlaying.firstRow !== 'running' && firstRowPosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, firstRow: 'running' }));
 			}
-			if (!animationIsPlaying.thirdRow && thirdRowPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, review2: 'running' }));
+			if (animationIsPlaying.secondRow !== 'running' && secondRowPosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, secondRow: 'running' }));
+			}
+			if (animationIsPlaying.thirdRow !== 'running' && thirdRowPosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, thirdRow: 'running' }));
 			}
 		};
 		window.addEventListener('scroll', onScroll);
