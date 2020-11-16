@@ -8,23 +8,23 @@ export default function Services() {
 		<main className='services'>
 			<section className='our-services'>
 				<div className='image-container'>
-					<img
-						src={dog}
-						alt='Ted is one of the families very happy dogs.'
-					/>
+					<img src={dog} alt='Ted is one of the families very happy dogs.' />
 				</div>
 				<div className='container'>
-					<h1>Our Services</h1>
-					<p>
-						This paragraph will describe the services available.
-						should contain practical information for customers.
-						<br></br>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Neque veritatis sequi nam fugiat, dolore aliquam
-						laboriosam esse suscipit nostrum quas soluta blanditiis
-						est reprehenderit cupiditate libero ducimus repellendus
-						dolor placeat!
-					</p>
+					<div className='overflow-container'>
+						<h1>Our Services</h1>
+					</div>
+					<div className='overflow-container'>
+						<p>
+							This paragraph will describe the services available. should contain
+							practical information for customers.
+							<br></br>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis
+							sequi nam fugiat, dolore aliquam laboriosam esse suscipit nostrum quas
+							soluta blanditiis est reprehenderit cupiditate libero ducimus
+							repellendus dolor placeat!
+						</p>
+					</div>
 				</div>
 			</section>
 			<section className='prices'>
@@ -88,38 +88,31 @@ export default function Services() {
 					<li>
 						<img src={bullet} alt='' />
 						<p>
-							All guests must be up to date with their
-							vaccinations, including the kennel cough vaccine.
-							This vaccine should be done annually with the main
-							vaccines, however, please make sure it’s completed
-							at least two weeks before entering our Kennels. The
-							certificates should accompany the doggies on every
-							visit. Flea and worm treatments should be applied
-							regularly however, please take advice from your vet
-							to how and when these should be taken.
+							All guests must be up to date with their vaccinations, including the
+							kennel cough vaccine. This vaccine should be done annually with the main
+							vaccines, however, please make sure it’s completed at least two weeks
+							before entering our Kennels. The certificates should accompany the
+							doggies on every visit. Flea and worm treatments should be applied
+							regularly however, please take advice from your vet to how and when
+							these should be taken.
 						</p>
 					</li>
 					<li>
 						<img src={bullet} alt='' />
 						<p>
-							A 20% non refundable or transferable deposit will be
-							applied when bookings are taken. Payments can be
-							made by cash, cheque or by Bacs
+							A 20% non refundable or transferable deposit will be applied when
+							bookings are taken. Payments can be made by cash, cheque or by Bacs
 						</p>
 					</li>
 					<li>
 						<img src={bullet} alt='' />
 						<p>
-							All bookings are to be paid in full by cash or
-							cheque upon collection.
+							All bookings are to be paid in full by cash or cheque upon collection.
 						</p>
 					</li>
 					<li>
 						<img src={bullet} alt='' />
-						<p>
-							Another days charge will be added if collection is
-							in the afternoon.
-						</p>
+						<p>Another days charge will be added if collection is in the afternoon.</p>
 					</li>
 				</ul>
 				<table>

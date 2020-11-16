@@ -1,5 +1,6 @@
 @import './variables/variables';
 @import './variables/mixins';
+@import './variables/animations';
 
 .services {
 	display: grid;
@@ -33,8 +34,10 @@
 			height: 100%;
 			width: 100%;
 			background-position: 3%;
+			animation: fadeIn 1s 0.5s ease-out backwards;
 			img {
 				@include circular-image(30vw, 30%);
+				animation: fadeIn 1s 1.7s ease-out backwards;
 			}
 		}
 		.container {
@@ -45,14 +48,19 @@
 			height: 100%;
 			width: 100%;
 			background-color: $green2;
-			h1 {
-				font-size: 5vw;
-				margin-bottom: 7vh;
+			.overflow-container {
 				margin-left: 5vw;
-			}
-			p {
-				width: 30vw;
-				margin-left: 5vw;
+				h1 {
+					font-size: 5vw;
+					margin-bottom: 7vh;
+					margin-left: 5vw;
+					animation: fadeInFromAbove 1s 0.3s ease-out backwards;
+				}
+				p {
+					width: 30vw;
+					margin-left: 5vw;
+					animation: fadeInFromLeft 1s 0.7s ease-out backwards;
+				}
 			}
 		}
 	}
