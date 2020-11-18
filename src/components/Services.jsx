@@ -92,14 +92,12 @@ export default function Services() {
 				</div>
 			</section>
 			<section className='prices'>
-				<div className='overflow-container'>
-					<h1
-						ref={pricesTitleRef}
-						style={{ animationPlayState: animationIsPlaying.pricesTitle }}
-					>
-						Prices
-					</h1>
-				</div>
+				<h1
+					ref={pricesTitleRef}
+					style={{ animationPlayState: animationIsPlaying.pricesTitle }}
+				>
+					Prices
+				</h1>
 				<table
 					className='multiple-nights'
 					ref={pricesTableRef}
@@ -162,14 +160,9 @@ export default function Services() {
 				</p>
 			</section>
 			<section className='important-information'>
-				<div className='overflow-container'>
-					<h1
-						ref={infoTitleRef}
-						style={{ animationPlayState: animationIsPlaying.infoTitle }}
-					>
-						Important Information
-					</h1>
-				</div>
+				<h1 ref={infoTitleRef} style={{ animationPlayState: animationIsPlaying.infoTitle }}>
+					Important Information
+				</h1>
 				<ul ref={infoListRef} style={{ animationPlayState: animationIsPlaying.infoList }}>
 					<li>
 						<img src={bullet} alt='' />
