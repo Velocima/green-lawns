@@ -21,12 +21,12 @@
 				@include title-styles(white);
 			}
 			h1 {
-				font-size: 5vw;
+				font-size: 5rem;
 				margin-bottom: 5vh;
 				animation: fadeIn 1s 1s backwards;
 			}
 			h2 {
-				font-size: 2.5vw;
+				font-size: 2.5rem;
 				font-style: italic;
 				animation: fadeIn 1s 1.3s backwards;
 			}
@@ -50,7 +50,7 @@
 				@extend %light-wallpaper;
 				flex-grow: 1;
 				font-family: $text-font;
-				font-size: 20px;
+				font-size: 1.25rem;
 				padding: 3vh;
 			}
 		}
@@ -65,7 +65,7 @@
 				color: black;
 				font-weight: 300;
 				padding-bottom: 20px;
-				font-size: 3vw;
+				font-size: 4rem;
 				text-shadow: 2px 2px 3px $green4;
 				text-decoration: none;
 				font-family: $title-font;
