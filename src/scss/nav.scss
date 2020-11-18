@@ -87,13 +87,18 @@ nav {
 			}
 		}
 	}
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1050px) {
 		position: absolute;
 		grid-template-columns: 1fr;
 		.logo {
 			a {
+				img {
+					margin-left: 0;
+				}
 				h4 {
-					margin-right: 10vw;
+					margin-right: 15vw;
+					font-size: 3vh;
+					font-weight: 400;
 				}
 			}
 		}
@@ -129,11 +134,21 @@ nav {
 			height: 100%;
 			width: 30%;
 			opacity: 0.85;
+			li {
+				a {
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 	@media screen and (max-width: 700px) {
 		ul {
 			width: 50%;
+			li {
+				a {
+					font-size: 1.5rem;
+				}
+			}
 		}
 	}
 	@media screen and (min-width: 2500px) {

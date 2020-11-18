@@ -8,7 +8,7 @@ export default function Nav(props) {
 	const [showNav, setShowNav] = useState(window.innerWidth < 1000 ? false : true);
 
 	const handleNavButtonClick = () => {
-		if (window.innerWidth < 1000) {
+		if (window.innerWidth < 1050) {
 			setShowNav((prevState) => !prevState);
 		}
 	};
@@ -19,7 +19,7 @@ export default function Nav(props) {
 				<div className='logo'>
 					<Link to='/'>
 						<img src={logo} alt='logo placeholder.' />
-						<h4>Green Lawns {window.innerWidth > 1000 && <br></br>}Boarding Kennels</h4>
+						<h4>Green Lawns {window.innerWidth > 1050 && <br></br>}Boarding Kennels</h4>
 					</Link>
 				</div>
 			</div>

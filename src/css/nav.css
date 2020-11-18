@@ -119,12 +119,16 @@ nav {
   @media screen and (max-width: 1350px) {
     nav ul li a {
       font-size: 1.5rem; } }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     nav {
       position: absolute;
       grid-template-columns: 1fr; }
+      nav .logo a img {
+        margin-left: 0; }
       nav .logo a h4 {
-        margin-right: 10vw; }
+        margin-right: 15vw;
+        font-size: 3vh;
+        font-weight: 400; }
       nav .nav-button {
         display: flex;
         flex-direction: column;
@@ -154,10 +158,14 @@ nav {
         right: 0;
         height: 100%;
         width: 30%;
-        opacity: 0.85; } }
+        opacity: 0.85; }
+        nav ul li a {
+          font-size: 2rem; } }
   @media screen and (max-width: 700px) {
     nav ul {
-      width: 50%; } }
+      width: 50%; }
+      nav ul li a {
+        font-size: 1.5rem; } }
   @media screen and (min-width: 2500px) {
     nav ul li a {
       font-size: 3rem; } }
