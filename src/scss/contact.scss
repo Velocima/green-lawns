@@ -1,5 +1,6 @@
 @import 'variables/variables';
 @import 'variables/mixins';
+@import './variables/animations';
 
 .contact {
 	margin-top: 10vh;
@@ -103,6 +104,7 @@
 			width: 500px;
 			padding: 20px;
 			background-color: $green1;
+			animation: fadeIn 1s ease-out backwards;
 			tr {
 				th {
 					font-size: 2rem;
@@ -124,6 +126,7 @@
 			grid-area: 4 / 2 / 5 / 3;
 			p {
 				@extend %light-wallpaper;
+				animation: fadeIn 1s ease-out backwards;
 				.address-header {
 					font-size: 2.5rem;
 					color: black;

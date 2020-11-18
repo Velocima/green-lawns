@@ -72,7 +72,7 @@ export default function Contact() {
 				<div className='table-background'></div>
 				<table
 					ref={openingHoursRef}
-					style={{ animationPlayState: animationIsPlaying.secondRow }}
+					style={{ animationPlayState: animationIsPlaying.openingHours }}
 				>
 					<tbody>
 						<tr>
@@ -93,10 +93,7 @@ export default function Contact() {
 					</tbody>
 				</table>
 				<div className='address'>
-					<p
-						ref={addressRef}
-						style={{ animationPlayState: animationIsPlaying.secondRow }}
-					>
+					<p ref={addressRef} style={{ animationPlayState: animationIsPlaying.address }}>
 						<span className='address-header'>Our Address</span>
 						<br />
 						Green Lawns

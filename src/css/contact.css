@@ -29,6 +29,53 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInFromAbove {
+  from {
+    opacity: 0;
+    transform: translateY(-120%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInFromBelow {
+  from {
+    opacity: 0;
+    transform: translateY(120%); }
+  80% {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%); }
+  to { } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .contact {
   margin-top: 10vh; }
   .contact h1,
@@ -113,7 +160,8 @@
       grid-area: 4 / 1 / 5 / 2;
       width: 500px;
       padding: 20px;
-      background-color: #d7fbe8; }
+      background-color: #d7fbe8;
+      animation: fadeIn 1s ease-out backwards; }
       .contact .contact-info table tr th {
         font-size: 2rem;
         font-weight: 400;
@@ -127,6 +175,8 @@
         text-align: center; }
     .contact .contact-info .address {
       grid-area: 4 / 2 / 5 / 3; }
-      .contact .contact-info .address p .address-header {
-        font-size: 2.5rem;
-        color: black; }
+      .contact .contact-info .address p {
+        animation: fadeIn 1s ease-out backwards; }
+        .contact .contact-info .address p .address-header {
+          font-size: 2.5rem;
+          color: black; }
