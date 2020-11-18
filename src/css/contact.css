@@ -89,10 +89,10 @@
     opacity: 0.85;
     text-shadow: 2px 2px 3px #1fab89; }
   .contact h1 {
-    font-size: 5vw; }
+    font-size: 6rem; }
   .contact p,
   .contact td {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Alegreya", serif; }
   .contact .contact-info {
     display: grid;
@@ -118,7 +118,7 @@
         margin-bottom: 5vh;
         animation: fadeIn 1s 0.3s ease-out backwards; }
       .contact .contact-info .banner h2 {
-        font-size: 2.5vw;
+        font-size: 3rem;
         font-style: italic;
         animation: fadeIn 1s 0.6s ease-out backwards; }
     .contact .contact-info .opening-paragraph {
@@ -146,7 +146,7 @@
         animation: fadeIn 1s 0.7s ease-out backwards; }
         .contact .contact-info .phone-numbers p .phone-numbers-header {
           display: block;
-          font-size: 2.5rem; }
+          font-size: 3rem; }
         .contact .contact-info .phone-numbers p a {
           text-decoration: none; }
           .contact .contact-info .phone-numbers p a span {
@@ -171,7 +171,7 @@
       background-color: #d7fbe8;
       animation: fadeIn 1s ease-out backwards; }
       .contact .contact-info table tr th {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 400;
         color: black; }
       .contact .contact-info table tr td,
@@ -186,5 +186,5 @@
       .contact .contact-info .address p {
         animation: fadeIn 1s ease-out backwards; }
         .contact .contact-info .address p .address-header {
-          font-size: 2.5rem;
+          font-size: 3rem;
           color: black; }

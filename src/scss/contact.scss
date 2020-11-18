@@ -12,11 +12,11 @@
 		@include title-styles(white);
 	}
 	h1 {
-		font-size: 5vw;
+		font-size: 6rem;
 	}
 	p,
 	td {
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-family: $text-font;
 	}
 	.contact-info {
@@ -43,7 +43,7 @@
 				animation: fadeIn 1s 0.3s ease-out backwards;
 			}
 			h2 {
-				font-size: 2.5vw;
+				font-size: 3rem;
 				font-style: italic;
 				animation: fadeIn 1s 0.6s ease-out backwards;
 			}
@@ -80,7 +80,7 @@
 				animation: fadeIn 1s 0.7s ease-out backwards;
 				.phone-numbers-header {
 					display: block;
-					font-size: 2.5rem;
+					font-size: 3rem;
 				}
 				a {
 					text-decoration: none;
@@ -114,7 +114,7 @@
 			animation: fadeIn 1s ease-out backwards;
 			tr {
 				th {
-					font-size: 2rem;
+					font-size: 3rem;
 					font-weight: 400;
 					color: black;
 				}
@@ -135,7 +135,7 @@
 				@extend %light-wallpaper;
 				animation: fadeIn 1s ease-out backwards;
 				.address-header {
-					font-size: 2.5rem;
+					font-size: 3rem;
 					color: black;
 				}
 			}
