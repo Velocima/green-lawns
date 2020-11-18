@@ -86,7 +86,7 @@
       color: white;
       opacity: 0.85;
       text-shadow: 2px 2px 3px #1fab89;
-      font-size: 3.5vw; }
+      font-size: 6rem; }
   .reviews .reviews-container {
     display: grid;
     grid-template-rows: 10vh repeat(8, minmax(10vh, auto)) 5vh;
@@ -115,7 +115,7 @@
       .reviews .reviews-container .review p:nth-child(1)::before,
       .reviews .reviews-container .review p:nth-child(1)::after {
         content: '“ ';
-        font-size: 32px;
+        font-size: 2rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: #134977;
         font-weight: bold;
@@ -124,7 +124,7 @@
       .reviews .reviews-container .review p:nth-child(1)::after {
         content: ' ”'; }
       .reviews .reviews-container .review p:nth-child(2) {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: italic;
         padding-left: 50px; }
     .reviews .reviews-container .review1 {
