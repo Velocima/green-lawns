@@ -69,7 +69,7 @@
   margin-top: 10vh;
   overflow-x: hidden; }
   .about-container p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Alegreya", serif; }
   .about-container h1 {
     font-family: "Montserrat", sans-serif;
@@ -95,7 +95,7 @@
         margin-left: 5vw; }
         .about-container .family .family-text .overflow-container h1 {
           margin-bottom: 7vh;
-          font-size: 5vw;
+          font-size: 6rem;
           animation: fadeInFromAbove 1s 0.3s ease-out backwards; }
         .about-container .family .family-text .overflow-container p {
           width: 30vw;
@@ -130,7 +130,7 @@
       color: white;
       opacity: 0.85;
       text-shadow: 2px 2px 3px #1fab89;
-      font-size: 5vw; }
+      font-size: 6rem; }
   .about-container .facilities .tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
