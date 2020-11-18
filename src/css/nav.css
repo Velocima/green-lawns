@@ -62,6 +62,7 @@ nav {
     animation: slideFromLeft 0.9s ease-out; }
     nav .logo a {
       display: flex;
+      align-items: center;
       text-decoration: none; }
       nav .logo a img {
         height: 8vh;
@@ -69,10 +70,13 @@ nav {
         margin-left: 5vh;
         margin-right: 1vw; }
       nav .logo a h4 {
+        flex-grow: 1;
         font-family: "Montserrat", sans-serif;
-        font-size: 2rem;
+        font-size: 4vh;
         font-weight: 300;
         color: black; }
+  nav .nav-button {
+    display: none; }
   nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -98,13 +102,59 @@ nav {
       opacity: 0; }
     nav ul li:nth-child(1) {
       background-color: #d7fbe8;
-      animation: fadeInFromRight 0.7s 0.2s backwards ease-out; }
+      animation: fadeInFromRight 0.7s 0.2s backwards ease-out;
+      transition: all 0.4s ease-out; }
     nav ul li:nth-child(2) {
       background-color: #9df3c4;
-      animation: fadeInFromRight 0.7s 0.4s backwards ease-out; }
+      animation: fadeInFromRight 0.7s 0.4s backwards ease-out;
+      transition: all 0.5s ease-out; }
     nav ul li:nth-child(3) {
       background-color: #62d2a2;
-      animation: fadeInFromRight 0.7s 0.6s backwards ease-out; }
+      animation: fadeInFromRight 0.7s 0.6s backwards ease-out;
+      transition: all 0.6s ease-out; }
     nav ul li:nth-child(4) {
       background-color: #1fab89;
-      animation: fadeInFromRight 0.7s 0.8s backwards ease-out; }
+      animation: fadeInFromRight 0.7s 0.8s backwards ease-out;
+      transition: all 0.7s ease-out; }
+  @media screen and (max-width: 1350px) {
+    nav ul li a {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 1000px) {
+    nav {
+      position: absolute; }
+      nav .nav-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 3vh;
+        right: 3vh;
+        z-index: 5000;
+        height: 40px;
+        width: 40px;
+        opacity: 0.85;
+        background-color: #ecfaf3;
+        border-radius: 5px; }
+        nav .nav-button .line {
+          background-color: #13614d;
+          height: 6px;
+          width: 80%;
+          border-radius: 3px; }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        opacity: 0.85; } }
+  @media screen and (min-width: 2500px) {
+    nav ul li a {
+      font-size: 3rem; } }
+  @media screen and (min-width: 3700px) {
+    nav ul li a {
+      font-size: 4.5rem; } }

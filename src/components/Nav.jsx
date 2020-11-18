@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/nav.css';
 import logo from '../images/green-lawns-logo.png';
 import { Link } from 'react-router-dom';
 import { pages } from '../contentJs/pages';
 
 export default function Nav(props) {
+	const [showNav, setShowNav] = useState(false);
+
+	const handleNavButtonClick = () => {
+		setShowNav((prevState) => !prevState);
+	};
+
 	return (
 		<nav>
 			<div className='overflow-container'>
@@ -17,9 +23,18 @@ export default function Nav(props) {
 					</Link>
 				</div>
 			</div>
+			<div className='nav-button' onClick={handleNavButtonClick}>
+				<div className='line'></div>
+				<div className='line'></div>
+				<div className='line'></div>
+			</div>
 			<ul>
 				{pages.map((page, i) => (
-					<li key={`${i}${page}`}>
+					<li
+						key={`${i}${page}`}
+						style={{ transform: `translateX(${showNav ? '0' : '100%'})` }}
+						onClick={handleNavButtonClick}
+					>
 						<Link to={page.route}>{page.navText}</Link>
 					</li>
 				))}
