@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 import { pages } from '../contentJs/pages';
 
 export default function Nav(props) {
-	const [showNav, setShowNav] = useState(false);
+	const [showNav, setShowNav] = useState(window.innerWidth < 1000 ? false : true);
 
 	const handleNavButtonClick = () => {
-		setShowNav((prevState) => !prevState);
+		if (window.innerWidth < 1000) {
+			setShowNav((prevState) => !prevState);
+		}
 	};
 
 	return (
@@ -17,9 +19,7 @@ export default function Nav(props) {
 				<div className='logo'>
 					<Link to='/'>
 						<img src={logo} alt='logo placeholder.' />
-						<h4>
-							Green Lawns <br></br>Boarding Kennels
-						</h4>
+						<h4>Green Lawns {window.innerWidth > 1000 && <br></br>}Boarding Kennels</h4>
 					</Link>
 				</div>
 			</div>
@@ -33,9 +33,10 @@ export default function Nav(props) {
 					<li
 						key={`${i}${page}`}
 						style={{ transform: `translateX(${showNav ? '0' : '100%'})` }}
-						onClick={handleNavButtonClick}
 					>
-						<Link to={page.route}>{page.navText}</Link>
+						<Link to={page.route} onClick={handleNavButtonClick}>
+							{page.navText}
+						</Link>
 					</li>
 				))}
 			</ul>

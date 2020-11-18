@@ -89,6 +89,14 @@ nav {
 	}
 	@media screen and (max-width: 1000px) {
 		position: absolute;
+		grid-template-columns: 1fr;
+		.logo {
+			a {
+				h4 {
+					margin-right: 10vw;
+				}
+			}
+		}
 		.nav-button {
 			display: flex;
 			flex-direction: column;
@@ -121,6 +129,11 @@ nav {
 			height: 100%;
 			width: 30%;
 			opacity: 0.85;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		ul {
+			width: 50%;
 		}
 	}
 	@media screen and (min-width: 2500px) {
