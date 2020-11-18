@@ -76,7 +76,7 @@
 				width: 100%;
 				height: 50vh;
 				object-fit: cover;
-				animation: fadeIn 1s backwards;
+				animation: fadeIn 1s ease-out backwards;
 			}
 			p {
 				@extend %light-wallpaper;
@@ -90,13 +90,13 @@
 				@extend %left-card;
 				left: 7px;
 				bottom: 10px;
-				animation: fadeInFromLeft 1s ease-out backwards;
+				animation: fadeIn 1s ease-out backwards;
 			}
 			.tile-2 {
 				@extend %right-card;
 				right: 7px;
 				bottom: 10px;
-				animation: fadeInFromRight 1s ease-out backwards;
+				animation: fadeIn 1s ease-out backwards;
 			}
 		}
 	}
