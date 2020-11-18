@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import '../css/contact.css';
 
 export default function Contact() {
+	const [animationIsPlaying, setAnimationIsPlaying] = useState({
+		openingHours: 'paused',
+		address: 'paused',
+	});
+
+	const openingHoursRef = useRef(null),
+		addressRef = useRef(null);
+
+	useLayoutEffect(() => {
+		const topPosition = (element) => element.current.getBoundingClientRect().top;
+
+		const openingHoursPosition = topPosition(openingHoursRef),
+			addressPosition = topPosition(addressRef);
+
+		const onScroll = () => {
+			const scrollPosition = window.scrollY + window.innerHeight;
+			if (
+				animationIsPlaying.openingHours !== 'running' &&
+				openingHoursPosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, openingHours: 'running' }));
+			}
+			if (animationIsPlaying.address !== 'running' && addressPosition < scrollPosition) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, address: 'running' }));
+			}
+		};
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
+
 	return (
 		<main className='contact'>
 			<section className='contact-info'>
@@ -10,16 +40,14 @@ export default function Contact() {
 					<h2>We'd Love to Hear from You!</h2>
 				</div>
 				<p className='opening-paragraph'>
-					This paragraph should explain what a customer should expect
-					by contacting/ how they can contact. <br />
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Illum suscipit voluptatem quisquam amet molestias inventore.
+					This paragraph should explain what a customer should expect by contacting/ how
+					they can contact. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit
+					voluptatem quisquam amet molestias inventore.
 				</p>
 				<div className='phone-numbers'>
 					<p>
-						<span className='phone-numbers-header'>
-							To book now call
-						</span>
+						<span className='phone-numbers-header'>To book now call</span>
 						Telephone:{' '}
 						<a href='tel:01600740111'>
 							<span>01600 740111</span>
@@ -42,7 +70,10 @@ export default function Contact() {
 					title='Google maps'
 				></iframe>
 				<div className='table-background'></div>
-				<table>
+				<table
+					ref={openingHoursRef}
+					style={{ animationPlayState: animationIsPlaying.secondRow }}
+				>
 					<tbody>
 						<tr>
 							<th colSpan='2'>Opening Hours</th>
@@ -62,7 +93,10 @@ export default function Contact() {
 					</tbody>
 				</table>
 				<div className='address'>
-					<p>
+					<p
+						ref={addressRef}
+						style={{ animationPlayState: animationIsPlaying.secondRow }}
+					>
 						<span className='address-header'>Our Address</span>
 						<br />
 						Green Lawns
