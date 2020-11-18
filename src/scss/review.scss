@@ -66,12 +66,12 @@
 				@if ($i % 2 == 1) {
 					grid-area: #{$i + 1} / 2 / span 1 / span 4;
 					@extend %left-card;
-					animation: fadeInFromLeft 0.7s ease-out backwards;
+					animation: fadeIn 1s ease-out backwards;
 				} @else {
 					grid-area: #{$i + 1} / 4 / span 1 / span 4;
 					@extend %light-wallpaper;
 					@extend %right-card;
-					animation: fadeInFromRight 0.7s ease-out backwards;
+					animation: fadeIn 1s ease-out backwards;
 				}
 			}
 		}

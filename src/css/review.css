@@ -129,25 +129,25 @@
         padding-left: 50px; }
     .reviews .reviews-container .review1 {
       grid-area: 2 / 2/span 1/span 4;
-      animation: fadeInFromLeft 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review2 {
       grid-area: 3 / 4/span 1/span 4;
-      animation: fadeInFromRight 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review3 {
       grid-area: 4 / 2/span 1/span 4;
-      animation: fadeInFromLeft 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review4 {
       grid-area: 5 / 4/span 1/span 4;
-      animation: fadeInFromRight 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review5 {
       grid-area: 6 / 2/span 1/span 4;
-      animation: fadeInFromLeft 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review6 {
       grid-area: 7 / 4/span 1/span 4;
-      animation: fadeInFromRight 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review7 {
       grid-area: 8 / 2/span 1/span 4;
-      animation: fadeInFromLeft 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
     .reviews .reviews-container .review8 {
       grid-area: 9 / 4/span 1/span 4;
-      animation: fadeInFromRight 0.7s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
