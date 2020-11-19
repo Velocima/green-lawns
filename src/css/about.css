@@ -192,3 +192,13 @@
       .about-container .family .image-container img {
         height: 35vh;
         width: 35vh; } }
+  @media screen and (min-width: 2500px) {
+    .about-container .family .family-text .overflow-container h1 {
+      font-size: 8rem; }
+    .about-container .family .family-text .overflow-container p {
+      font-size: 1.875rem; } }
+  @media screen and (min-width: 3700px) {
+    .about-container .family .family-text .overflow-container h1 {
+      font-size: 10rem; }
+    .about-container .family .family-text .overflow-container p {
+      font-size: 2.5rem; } }

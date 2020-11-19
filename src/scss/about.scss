@@ -171,7 +171,31 @@
 		}
 	}
 	@media screen and (min-width: 2500px) {
+		.family {
+			.family-text {
+				.overflow-container {
+					h1 {
+						font-size: 8rem;
+					}
+					p {
+						font-size: 1.875rem;
+					}
+				}
+			}
+		}
 	}
 	@media screen and (min-width: 3700px) {
+		.family {
+			.family-text {
+				.overflow-container {
+					h1 {
+						font-size: 10rem;
+					}
+					p {
+						font-size: 2.5rem;
+					}
+				}
+			}
+		}
 	}
 }
