@@ -143,23 +143,34 @@
     .landing-container .description .call-to-action a {
       font-size: 3rem; } }
   @media screen and (max-width: 1000px) {
-    .landing-container .title-banner .titles h1,
-    .landing-container .title-banner .titles h2 {
-      font-weight: 400; }
-    .landing-container .title-banner .titles h2 {
-      font-size: 3vw; }
-    .landing-container .description .text-container p {
-      font-size: 1rem; } }
-  @media screen and (max-width: 700px) {
     .landing-container .title-banner {
       height: 40vh; }
-      .landing-container .title-banner .titles {
-        padding: 0; }
-        .landing-container .title-banner .titles h1 {
-          font-size: 2rem;
-          text-align: center;
-          padding: 0 20px; }
-        .landing-container .title-banner .titles h2 {
-          font-size: 1.25rem;
-          text-align: center;
-          padding: 0 20px; } }
+      .landing-container .title-banner .titles h1,
+      .landing-container .title-banner .titles h2 {
+        font-weight: 400; }
+      .landing-container .title-banner .titles h2 {
+        font-size: 3vw; }
+    .landing-container .description {
+      min-height: 50vh; }
+      .landing-container .description .text-container p {
+        font-size: 1rem; }
+      .landing-container .description .call-to-action a {
+        font-size: 2.5rem; } }
+  @media screen and (max-width: 700px) {
+    .landing-container .title-banner .titles {
+      padding: 0; }
+      .landing-container .title-banner .titles h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 20px; }
+      .landing-container .title-banner .titles h2 {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 0 20px; }
+    .landing-container .description {
+      grid-template-columns: 1fr;
+      grid-template-rows: 20vh; }
+      .landing-container .description .call-to-action {
+        grid-row: 1 / span 2; }
+        .landing-container .description .call-to-action a {
+          font-size: 2rem; } }
