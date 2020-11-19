@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     background-color: #d7fbe8; }
     .about-container .family .family-text {
       display: flex;
@@ -94,12 +94,14 @@
       .about-container .family .family-text .overflow-container {
         margin-left: 5vw; }
         .about-container .family .family-text .overflow-container h1 {
+          width: 90%;
           margin-bottom: 7vh;
           font-size: 6rem;
           animation: fadeInFromAbove 1s 0.3s ease-out backwards; }
         .about-container .family .family-text .overflow-container p {
-          width: 30vw;
-          animation: fadeInFromLeft 1s 0.7s ease-out backwards; }
+          width: 75%;
+          animation: fadeInFromLeft 1s 0.7s ease-out backwards;
+          padding-bottom: 20px; }
     .about-container .family .image-container {
       display: grid;
       place-items: center;
@@ -155,3 +157,38 @@
       right: 7px;
       bottom: 10px;
       animation: fadeIn 1s ease-out backwards; }
+  @media screen and (max-width: 1350px) {
+    .about-container .family .family-text .overflow-container h1 {
+      margin-bottom: 20px;
+      font-size: 5rem; }
+    .about-container .family .family-text .overflow-container p {
+      font-size: 1.125rem; }
+    .about-container .family .image-container img {
+      height: 35vw;
+      width: 35vw; } }
+  @media screen and (max-width: 1050px) {
+    .about-container .family .family-text .overflow-container h1 {
+      font-size: 3.4rem;
+      width: 90%; }
+    .about-container .family .family-text .overflow-container p {
+      font-size: 1rem;
+      width: 85%; }
+    .about-container .family .image-container img {
+      height: 40vw;
+      width: 40vw; } }
+  @media screen and (max-width: 700px) {
+    .about-container .family {
+      grid-template-columns: 100%;
+      grid-template-rows: 40vh minmax(50vh, auto); }
+      .about-container .family .family-text .overflow-container {
+        margin: 0;
+        display: grid;
+        place-items: center; }
+        .about-container .family .family-text .overflow-container h1,
+        .about-container .family .family-text .overflow-container p {
+          text-align: center;
+          width: 90%;
+          padding: 10px 0; }
+      .about-container .family .image-container img {
+        height: 35vh;
+        width: 35vh; } }

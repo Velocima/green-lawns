@@ -60,9 +60,7 @@ export default function About() {
 				</div>
 				<div className='family-text'>
 					<div className='overflow-container'>
-						<h1>
-							More than just <br /> a business
-						</h1>
+						<h1>More than just a business</h1>
 					</div>
 					<div className='overflow-container'>
 						<p>
