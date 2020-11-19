@@ -65,7 +65,7 @@
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 90vh 100vh;
+  grid-template-rows: minmax(90vh, auto) minmax(100vh, auto);
   margin-top: 10vh; }
   .services h1,
   .services h2,
@@ -84,7 +84,7 @@
   .services .our-services {
     grid-area: 1 / 1 / 2 / 3;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #d7fbe8; }
@@ -111,21 +111,22 @@
       width: 100%;
       background-color: #9df3c4; }
       .services .our-services .container .overflow-container {
-        margin-left: 5vw; }
+        margin-left: 5vw;
+        display: grid;
+        align-items: start; }
         .services .our-services .container .overflow-container h1 {
+          width: 90%;
           font-size: 5vw;
           margin-bottom: 7vh;
-          margin-left: 5vw;
           animation: fadeInFromAbove 1s 0.3s ease-out backwards; }
         .services .our-services .container .overflow-container p {
-          width: 30vw;
-          margin-left: 5vw;
+          width: 75%;
           animation: fadeInFromLeft 1s 0.7s ease-out backwards; }
   .services .prices {
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
     place-items: center;
-    grid-template-rows: 10vh 50vh 40vh;
+    grid-template-rows: 10vh auto auto;
     width: 100%;
     height: 100%;
     background-color: #9df3c4; }
@@ -138,6 +139,7 @@
     .services .prices table {
       align-self: start;
       width: 500px;
+      margin: 20px 0;
       padding: 0 20px 20px;
       animation: fadeIn 1s ease-out backwards; }
       .services .prices table tr th {
@@ -154,6 +156,7 @@
     .services .prices p {
       box-sizing: border-box;
       width: 500px;
+      margin: 20px 0;
       padding: 20px 20px;
       text-align: center;
       animation: fadeIn 1s ease-out backwards; }
@@ -169,7 +172,7 @@
     place-items: center;
     width: 100%;
     height: 100%;
-    grid-template-rows: 10vh 50vh 40vh; }
+    grid-template-rows: 10vh auto auto; }
     .services .important-information h1 {
       font-size: 3.5vw;
       text-align: center;
@@ -180,7 +183,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      width: 500px;
+      max-width: 500px;
+      margin: 20px 0;
       padding-right: 20px;
       background-color: #d7fbe8;
       border: 1px solid #9df3c4;
@@ -199,6 +203,7 @@
           padding-right: 20px; }
     .services .important-information table {
       width: 500px;
+      margin: 20px 0;
       padding: 20px;
       background-color: #d7fbe8;
       border: 1px solid #9df3c4;
@@ -213,3 +218,142 @@
         padding: 10px 0; }
       .services .important-information table tr td:nth-child(2) {
         text-align: center; }
+  @media screen and (max-width: 1350px) {
+    .services .our-services .container .overflow-container h1 {
+      margin-bottom: 20px;
+      font-size: 5rem; }
+    .services .our-services .container .overflow-container p {
+      font-size: 1.125rem; }
+    .services .our-services .image-container img {
+      height: 35vw;
+      width: 35vw; }
+    .services .prices {
+      grid-template-rows: 10vh auto auto; }
+      .services .prices h1 {
+        font-weight: 400; }
+      .services .prices table {
+        width: 75%;
+        margin: 20px 0; }
+        .services .prices table tr th {
+          font-size: 1.75rem; }
+      .services .prices p {
+        width: 75%;
+        margin: 20px 0; }
+        .services .prices p span {
+          font-size: 1.75rem; }
+    .services .important-information {
+      grid-template-rows: 10vh auto auto; }
+      .services .important-information h1 {
+        font-weight: 400; }
+      .services .important-information ul {
+        width: 75%;
+        margin: 20px 0; }
+        .services .important-information ul li {
+          margin-left: 15px; }
+          .services .important-information ul li img {
+            padding-right: 15px; }
+      .services .important-information table {
+        width: 75%;
+        margin: 20px 0; }
+        .services .important-information table tr th {
+          font-size: 1.75rem; } }
+  @media screen and (max-width: 1050px) {
+    .services .our-services .container .overflow-container h1 {
+      font-size: 3.4rem;
+      font-weight: 400;
+      width: 90%; }
+    .services .our-services .container .overflow-container p {
+      font-size: 1rem;
+      width: 85%; }
+    .services .our-services .image-container img {
+      height: 40vw;
+      width: 40vw; }
+    .services .prices {
+      grid-template-rows: 100px auto auto; }
+      .services .prices h1 {
+        font-size: 2.25rem;
+        font-weight: 400; }
+      .services .prices table {
+        width: 85%; }
+        .services .prices table tr td {
+          font-size: 1rem; }
+      .services .prices p {
+        width: 85%;
+        font-size: 1rem; }
+    .services .important-information {
+      grid-template-rows: 100px auto auto; }
+      .services .important-information h1 {
+        font-size: 2.25rem;
+        font-weight: 400; }
+      .services .important-information ul {
+        width: 85%; }
+        .services .important-information ul li {
+          margin-left: 10px; }
+          .services .important-information ul li P {
+            font-size: 1rem; }
+          .services .important-information ul li img {
+            padding-right: 10px;
+            width: 25px;
+            height: 25px; }
+      .services .important-information table {
+        width: 85%; }
+        .services .important-information table tr td {
+          font-size: 1rem; } }
+  @media screen and (max-width: 700px) {
+    .services {
+      grid-template-rows: repeat(3, minmax(50vh, auto));
+      grid-template-columns: 100%; }
+      .services .our-services {
+        grid-template-rows: minmax(30vh, auto) minmax(40vh, auto);
+        grid-template-columns: 100%; }
+        .services .our-services .container {
+          display: grid;
+          place-items: center; }
+          .services .our-services .container .overflow-container {
+            place-items: center;
+            width: 80%;
+            margin: 0; }
+            .services .our-services .container .overflow-container h1,
+            .services .our-services .container .overflow-container p {
+              width: auto;
+              text-align: center;
+              margin-bottom: 15px; }
+        .services .our-services .image-container {
+          grid-area: 2 / 1 / 3 / 3; }
+          .services .our-services .image-container img {
+            height: 35vh;
+            width: 35vh; }
+      .services .prices {
+        grid-area: 2 / 1 / 3 / 3; }
+        .services .prices h1 {
+          font-size: 3rem; }
+        .services .prices table {
+          width: 80%; }
+          .services .prices table tr th {
+            font-size: 1.5rem; }
+        .services .prices p {
+          width: 80%;
+          margin-bottom: 40px; }
+          .services .prices p span {
+            font-size: 1.5rem; }
+      .services .important-information {
+        grid-area: 3 / 1 / 4 / 3; }
+        .services .important-information h1 {
+          font-size: 3rem; }
+        .services .important-information ul {
+          width: 80%; }
+        .services .important-information table {
+          width: 80%;
+          margin-bottom: 40px; }
+          .services .important-information table tr th {
+            font-size: 1.5rem; } }
+  @media screen and (min-width: 2500px) {
+    .services .our-services .container .overflow-container h1 {
+      font-size: 8rem; }
+    .services .our-services .container .overflow-container p {
+      font-size: 1.875rem; } }
+  @media screen and (min-width: 3700px) {
+    .services .our-services .container .overflow-container h1 {
+      font-size: 10rem; }
+    .services .our-services .container .overflow-container p {
+      font-size: 2.5rem; } }
