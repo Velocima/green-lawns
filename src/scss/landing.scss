@@ -14,19 +14,19 @@
 		animation: fadeIn 1s ease-out backwards;
 		.titles {
 			@extend %centered-column-flexbox;
-			padding: 30px 50px;
+			padding: 30px 0;
 			border-radius: 10px;
 			h1,
 			h2 {
 				@include title-styles(white);
 			}
 			h1 {
-				font-size: 5rem;
+				font-size: 5vw;
 				margin-bottom: 5vh;
 				animation: fadeIn 1s 1s backwards;
 			}
 			h2 {
-				font-size: 2.5rem;
+				font-size: 2.5vw;
 				font-style: italic;
 				animation: fadeIn 1s 1.3s backwards;
 			}
@@ -74,6 +74,58 @@
 				box-shadow: 7px 10px 10px $gold4;
 				background: radial-gradient($gold2, $gold3);
 				animation: fadeInFromRight 1s 1.5s backwards;
+			}
+		}
+	}
+	@media screen and (max-width: 1350px) {
+		.description {
+			.text-container {
+				p {
+					font-size: 1.15rem;
+				}
+			}
+			.call-to-action {
+				a {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		.title-banner {
+			.titles {
+				h1,
+				h2 {
+					font-weight: 400;
+				}
+				h2 {
+					font-size: 3vw;
+				}
+			}
+		}
+		.description {
+			.text-container {
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 700px) {
+		.title-banner {
+			height: 40vh;
+			.titles {
+				padding: 0;
+				h1 {
+					font-size: 2rem;
+					text-align: center;
+					padding: 0 20px;
+				}
+				h2 {
+					font-size: 1.25rem;
+					text-align: center;
+					padding: 0 20px;
+				}
 			}
 		}
 	}

@@ -83,7 +83,7 @@
     height: 50vh;
     animation: fadeIn 1s ease-out backwards; }
     .landing-container .title-banner .titles {
-      padding: 30px 50px;
+      padding: 30px 0;
       border-radius: 10px; }
       .landing-container .title-banner .titles h1,
       .landing-container .title-banner .titles h2 {
@@ -93,11 +93,11 @@
         opacity: 0.85;
         text-shadow: 2px 2px 3px #1fab89; }
       .landing-container .title-banner .titles h1 {
-        font-size: 5rem;
+        font-size: 5vw;
         margin-bottom: 5vh;
         animation: fadeIn 1s 1s backwards; }
       .landing-container .title-banner .titles h2 {
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         font-style: italic;
         animation: fadeIn 1s 1.3s backwards; }
   .landing-container .description {
@@ -137,3 +137,29 @@
         box-shadow: 7px 10px 10px #bf9b30;
         background: radial-gradient(#e3f39b, #ffbf00);
         animation: fadeInFromRight 1s 1.5s backwards; }
+  @media screen and (max-width: 1350px) {
+    .landing-container .description .text-container p {
+      font-size: 1.15rem; }
+    .landing-container .description .call-to-action a {
+      font-size: 3rem; } }
+  @media screen and (max-width: 1000px) {
+    .landing-container .title-banner .titles h1,
+    .landing-container .title-banner .titles h2 {
+      font-weight: 400; }
+    .landing-container .title-banner .titles h2 {
+      font-size: 3vw; }
+    .landing-container .description .text-container p {
+      font-size: 1rem; } }
+  @media screen and (max-width: 700px) {
+    .landing-container .title-banner {
+      height: 40vh; }
+      .landing-container .title-banner .titles {
+        padding: 0; }
+        .landing-container .title-banner .titles h1 {
+          font-size: 2rem;
+          text-align: center;
+          padding: 0 20px; }
+        .landing-container .title-banner .titles h2 {
+          font-size: 1.25rem;
+          text-align: center;
+          padding: 0 20px; } }
