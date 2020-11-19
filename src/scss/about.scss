@@ -122,6 +122,18 @@
 				}
 			}
 		}
+		.facilities {
+			.banner {
+				h1 {
+					font-size: 5rem;
+				}
+			}
+			.tiles {
+				p {
+					font-size: 1.125rem;
+				}
+			}
+		}
 	}
 	@media screen and (max-width: 1050px) {
 		.family {
@@ -141,6 +153,20 @@
 				img {
 					height: 40vw;
 					width: 40vw;
+				}
+			}
+		}
+		.facilities {
+			.banner {
+				background-position: 25% 50%;
+				h1 {
+					font-size: 3.4rem;
+					text-align: center;
+				}
+			}
+			.tiles {
+				p {
+					font-size: 1rem;
 				}
 			}
 		}
@@ -169,6 +195,31 @@
 				}
 			}
 		}
+		.facilities {
+			.tiles {
+				grid-template-columns: 100%;
+				grid-template-rows: repeat(3, 1fr 1.5fr);
+				p {
+					position: static;
+					width: 80%;
+					margin: 30px;
+					padding: 10px;
+				}
+				img {
+					height: 100%;
+				}
+				img:nth-child(2) {
+					grid-row: 4 / span 1;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.facilities {
+			.tiles {
+				grid-template-rows: repeat(3, 1fr 1fr);
+			}
+		}
 	}
 	@media screen and (min-width: 2500px) {
 		.family {
@@ -183,6 +234,18 @@
 				}
 			}
 		}
+		.facilities {
+			.banner {
+				h1 {
+					font-size: 8rem;
+				}
+			}
+			.tiles {
+				p {
+					font-size: 1.875rem;
+				}
+			}
+		}
 	}
 	@media screen and (min-width: 3700px) {
 		.family {
@@ -194,6 +257,18 @@
 					p {
 						font-size: 2.5rem;
 					}
+				}
+			}
+		}
+		.facilities {
+			.banner {
+				h1 {
+					font-size: 10rem;
+				}
+			}
+			.tiles {
+				p {
+					font-size: 2.5rem;
 				}
 			}
 		}
