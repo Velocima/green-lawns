@@ -86,7 +86,7 @@
       color: white;
       opacity: 0.85;
       text-shadow: 2px 2px 3px #1fab89;
-      font-size: 6rem; }
+      font-size: 5vw; }
   .reviews .reviews-container {
     display: grid;
     grid-template-rows: 10vh repeat(8, minmax(10vh, auto)) 5vh;
@@ -151,3 +151,61 @@
     .reviews .reviews-container .review8 {
       grid-area: 9 / 4/span 1/span 4;
       animation: fadeIn 1s ease-out backwards; }
+  @media screen and (max-width: 1350px) {
+    .reviews .reviews-container .review1 {
+      grid-area: 2 / 2/span 1/span 5; }
+    .reviews .reviews-container .review2 {
+      grid-area: 3 / 3/span 1/span 5; }
+    .reviews .reviews-container .review3 {
+      grid-area: 4 / 2/span 1/span 5; }
+    .reviews .reviews-container .review4 {
+      grid-area: 5 / 3/span 1/span 5; }
+    .reviews .reviews-container .review5 {
+      grid-area: 6 / 2/span 1/span 5; }
+    .reviews .reviews-container .review6 {
+      grid-area: 7 / 3/span 1/span 5; }
+    .reviews .reviews-container .review7 {
+      grid-area: 8 / 2/span 1/span 5; }
+    .reviews .reviews-container .review8 {
+      grid-area: 9 / 3/span 1/span 5; } }
+  @media screen and (max-width: 700px) {
+    .reviews .reviews-banner h2 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 30px; }
+    .reviews .reviews-container .review p:nth-child(1) {
+      padding-bottom: 0; }
+    .reviews .reviews-container .review p:nth-child(2) {
+      padding-top: 0; }
+    .reviews .reviews-container .review1 {
+      grid-area: 2 / 2/span 1/span 6; }
+    .reviews .reviews-container .review2 {
+      grid-area: 3 / 2/span 1/span 6; }
+    .reviews .reviews-container .review3 {
+      grid-area: 4 / 2/span 1/span 6; }
+    .reviews .reviews-container .review4 {
+      grid-area: 5 / 2/span 1/span 6; }
+    .reviews .reviews-container .review5 {
+      grid-area: 6 / 2/span 1/span 6; }
+    .reviews .reviews-container .review6 {
+      grid-area: 7 / 2/span 1/span 6; }
+    .reviews .reviews-container .review7 {
+      grid-area: 8 / 2/span 1/span 6; }
+    .reviews .reviews-container .review8 {
+      grid-area: 9 / 2/span 1/span 6; } }
+  @media screen and (min-width: 2500px) {
+    .reviews .reviews-container .review p:nth-child(1)::before,
+    .reviews .reviews-container .review p:nth-child(1)::after {
+      font-size: 3rem; }
+    .reviews .reviews-container .review p:nth-child(1) {
+      font-size: 1.5rem; }
+    .reviews .reviews-container .review p:nth-child(2) {
+      font-size: 1.875rem; } }
+  @media screen and (min-width: 3700px) {
+    .reviews .reviews-container .review p:nth-child(1)::before,
+    .reviews .reviews-container .review p:nth-child(1)::after {
+      font-size: 4rem; }
+    .reviews .reviews-container .review p:nth-child(1) {
+      font-size: 2rem; }
+    .reviews .reviews-container .review p:nth-child(2) {
+      font-size: 2.5rem; } }
