@@ -15,3 +15,23 @@ footer {
     color: white; }
   footer ul {
     list-style-type: none; }
+  @media screen and (max-width: 700px) {
+    footer {
+      flex-direction: column; }
+      footer ul,
+      footer p {
+        width: 50%;
+        padding: 10px 0;
+        text-align: center; } }
+  @media screen and (min-width: 2500px) {
+    footer a,
+    footer li,
+    footer p,
+    footer span {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 3700px) {
+    footer a,
+    footer li,
+    footer p,
+    footer span {
+      font-size: 2rem; } }

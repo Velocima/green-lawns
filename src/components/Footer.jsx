@@ -37,7 +37,10 @@ export default function Footer() {
 					<span>07815 534990</span>
 				</a>
 			</p>
-			<p>Website created by Max Hartley</p>
+			<p>
+				Website created by <br></br>
+				Max Hartley
+			</p>
 		</footer>
 	);
 }
