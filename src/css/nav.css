@@ -139,10 +139,7 @@ nav {
         right: 3vh;
         z-index: 5000;
         height: 40px;
-        width: 40px;
-        opacity: 0.85;
-        background-color: #ecfaf3;
-        border-radius: 5px; }
+        width: 40px; }
         nav .nav-button .line {
           background-color: #13614d;
           height: 6px;
