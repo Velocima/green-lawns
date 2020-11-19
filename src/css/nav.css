@@ -147,7 +147,12 @@ nav {
           background-color: #13614d;
           height: 6px;
           width: 80%;
-          border-radius: 3px; }
+          border-radius: 3px;
+          transition: 0.5s; }
+        nav .nav-button .line-animated {
+          transform: rotate3d(1, 0.5, 1, 360deg); }
+        nav .nav-button .middle-line-animated {
+          transform: rotate3d(1, 0.5, 1, -360deg); }
       nav ul {
         display: flex;
         flex-direction: column;

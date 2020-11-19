@@ -24,9 +24,9 @@ export default function Nav(props) {
 				</div>
 			</div>
 			<div className='nav-button' onClick={handleNavButtonClick}>
-				<div className='line'></div>
-				<div className='line'></div>
-				<div className='line'></div>
+				<div className={`line ${showNav ? '' : 'line-animated'}`}></div>
+				<div className={`line ${showNav ? '' : 'middle-line-animated'}`}></div>
+				<div className={`line ${showNav ? '' : 'line-animated'}`}></div>
 			</div>
 			<ul>
 				{pages.map((page, i) => (
