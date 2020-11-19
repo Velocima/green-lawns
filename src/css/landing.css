@@ -174,3 +174,13 @@
         grid-row: 1 / span 2; }
         .landing-container .description .call-to-action a {
           font-size: 2rem; } }
+  @media screen and (min-width: 2500px) {
+    .landing-container .description .text-container p {
+      font-size: 1.75rem; }
+    .landing-container .description .call-to-action a {
+      font-size: 6rem; } }
+  @media screen and (min-width: 3700px) {
+    .landing-container .description .text-container p {
+      font-size: 2.5rem; }
+    .landing-container .description .call-to-action a {
+      font-size: 8rem; } }
