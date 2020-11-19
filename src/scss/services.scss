@@ -145,7 +145,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			max-width: 500px;
+			width: 500px;
 			margin: 20px 0;
 			padding-right: 20px;
 			background-color: $green1;
@@ -415,14 +415,47 @@
 		}
 		.prices {
 			table {
+				width: 750px;
+				tr {
+					th {
+						font-size: 3rem;
+					}
+					td {
+						font-size: 1.75rem;
+					}
+				}
 			}
 			p {
+				width: 750px;
+				font-size: 1.75rem;
+				span {
+					font-size: 3rem;
+				}
 			}
 		}
 		.important-information {
 			ul {
+				width: 750px;
+				li {
+					p {
+						font-size: 1.75rem;
+					}
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
 			}
 			table {
+				width: 750px;
+				tr {
+					th {
+						font-size: 3rem;
+					}
+					td {
+						font-size: 1.75rem;
+					}
+				}
 			}
 		}
 	}
@@ -441,14 +474,47 @@
 		}
 		.prices {
 			table {
+				width: 1000px;
+				tr {
+					th {
+						font-size: 4rem;
+					}
+					td {
+						font-size: 2.5rem;
+					}
+				}
 			}
 			p {
+				width: 1000px;
+				font-size: 2.5rem;
+				span {
+					font-size: 4rem;
+				}
 			}
 		}
 		.important-information {
 			ul {
+				width: 1000px;
+				li {
+					p {
+						font-size: 2.5rem;
+					}
+					img {
+						width: 60px;
+						height: 60px;
+					}
+				}
 			}
 			table {
+				width: 1000px;
+				tr {
+					th {
+						font-size: 4rem;
+					}
+					td {
+						font-size: 2.5rem;
+					}
+				}
 			}
 		}
 	}
