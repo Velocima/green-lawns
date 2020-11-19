@@ -234,7 +234,7 @@
   @media screen and (max-width: 700px) {
     .contact .contact-info {
       grid-template-columns: 100%;
-      grid-template-rows: minmax(30vh, auto) repeat(5, minmax(20vh, auto)); }
+      grid-template-rows: minmax(30vh, auto) repeat(5, minmax(30vh, auto)); }
       .contact .contact-info .banner h1 {
         font-size: 3.5rem;
         text-align: center; }
@@ -255,9 +255,51 @@
     .contact .contact-info .banner h1 {
       font-size: 8rem; }
     .contact .contact-info .banner h2 {
-      font-size: 4rem; } }
+      font-size: 4rem; }
+    .contact .contact-info .opening-paragraph {
+      width: 750px;
+      font-size: 1.75rem; }
+    .contact .contact-info .phone-numbers p {
+      width: 750px;
+      font-size: 1.75rem; }
+      .contact .contact-info .phone-numbers p .phone-numbers-header {
+        font-size: 3.5rem; }
+      .contact .contact-info .phone-numbers p a span {
+        font-size: 2.25rem; }
+    .contact .contact-info table {
+      width: 750px; }
+      .contact .contact-info table tr th {
+        font-size: 3.5rem; }
+      .contact .contact-info table tr td {
+        font-size: 1.75rem; }
+    .contact .contact-info .address p {
+      width: 750px;
+      font-size: 1.75rem; }
+      .contact .contact-info .address p .address-header {
+        font-size: 3.5rem; } }
   @media screen and (min-width: 3700px) {
     .contact .contact-info .banner h1 {
       font-size: 10rem; }
     .contact .contact-info .banner h2 {
-      font-size: 5rem; } }
+      font-size: 5rem; }
+    .contact .contact-info .opening-paragraph {
+      width: 1000px;
+      font-size: 2.5rem; }
+    .contact .contact-info .phone-numbers p {
+      width: 1000px;
+      font-size: 2.5rem; }
+      .contact .contact-info .phone-numbers p .phone-numbers-header {
+        font-size: 5rem; }
+      .contact .contact-info .phone-numbers p a span {
+        font-size: 2.25rem; }
+    .contact .contact-info table {
+      width: 1000px; }
+      .contact .contact-info table tr th {
+        font-size: 5rem; }
+      .contact .contact-info table tr td {
+        font-size: 2.5rem; }
+    .contact .contact-info .address p {
+      width: 1000px;
+      font-size: 2.5rem; }
+      .contact .contact-info .address p .address-header {
+        font-size: 5rem; } }
