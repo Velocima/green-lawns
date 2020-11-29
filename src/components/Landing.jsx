@@ -3,8 +3,10 @@ import '../css/landing.css';
 import { Review } from './Review';
 import { reviews } from '../contentJs/Reviews';
 import { Link } from 'react-router-dom';
+import useWindowSize from './useWindowSize';
 
 export default function Landing() {
+	const [width, height] = useWindowSize();
 	const [isVisible, setIsVisible] = useState({
 		reviewBanner: false,
 		reviewBackground: false,
@@ -41,21 +43,20 @@ export default function Landing() {
 	];
 	useLayoutEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
-		const bottomPosition = (element) => element.current.getBoundingClientRect().bottom;
 
 		const reviewBannerPosition = topPosition(reviewBannerRef),
 			reviewBackgroundPosition = topPosition(reviewBackgroundRef),
-			review1Position = bottomPosition(review1Ref),
-			review2Position = bottomPosition(review2Ref),
-			review3Position = bottomPosition(review3Ref),
-			review4Position = bottomPosition(review4Ref),
-			review5Position = bottomPosition(review5Ref),
-			review6Position = bottomPosition(review6Ref),
-			review7Position = bottomPosition(review7Ref),
-			review8Position = bottomPosition(review8Ref);
+			review1Position = topPosition(review1Ref),
+			review2Position = topPosition(review2Ref),
+			review3Position = topPosition(review3Ref),
+			review4Position = topPosition(review4Ref),
+			review5Position = topPosition(review5Ref),
+			review6Position = topPosition(review6Ref),
+			review7Position = topPosition(review7Ref),
+			review8Position = topPosition(review8Ref);
 
 		const onScroll = () => {
-			const scrollPosition = window.scrollY + window.innerHeight;
+			const scrollPosition = window.scrollY + height;
 			if (!isVisible.reviewBanner && reviewBannerPosition < scrollPosition) {
 				setIsVisible((prevState) => ({ ...prevState, reviewBanner: true }));
 			}
@@ -89,7 +90,7 @@ export default function Landing() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, []);
+	}, [width, height]);
 
 	return (
 		<main className='landing-container'>
