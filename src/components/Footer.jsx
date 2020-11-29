@@ -7,7 +7,7 @@ export default function Footer() {
 	return (
 		<footer>
 			<ul>
-				<li key='first-item'>Navigate</li>
+				<li key='first-item'>Navigate:</li>
 				{pages.map((page, i) => (
 					<li key={`${i}${page}`}>
 						<Link to={page.route}>{page.navText}</Link>
@@ -36,9 +36,14 @@ export default function Footer() {
 				<a href='tel:07815534990'>
 					<span>07815 534990</span>
 				</a>
+				<br />
+				Email:{' '}
+				<a href='mailto:greenlawnskennels@icloud.com'>
+					<span className='email'>greenlawnskennels@icloud.com</span>
+				</a>
 			</p>
 			<p>
-				Website created by <br></br>
+				Website created by:<br></br>
 				Max Hartley
 			</p>
 		</footer>
