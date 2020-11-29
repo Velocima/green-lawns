@@ -12,7 +12,6 @@ footer {
   background-color: #13614d; }
   footer a {
     display: inline-block;
-    text-decoration: none;
     color: white;
     transition: all 0.3s; }
   footer ul {
