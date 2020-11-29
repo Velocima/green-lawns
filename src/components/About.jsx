@@ -1,4 +1,5 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
+import useWindowSize from './useWindowSize';
 import '../css/about.css';
 import ownerImage from '../images/good-boys-and-owner.jpg';
 import dog1 from '../images/dog-placeholder-1.jpg';
@@ -6,6 +7,7 @@ import dog2 from '../images/dog-placeholder-2.jpg';
 import dog3 from '../images/dog-placeholder-3.jpg';
 
 export default function About() {
+	const [width, height] = useWindowSize();
 	const [animationIsPlaying, setAnimationIsPlaying] = useState({
 		facilitiesBanner: 'paused',
 		firstRow: 'paused',
@@ -23,12 +25,12 @@ export default function About() {
 		const bottomPosition = (element) => element.current.getBoundingClientRect().bottom;
 
 		const facilitiesBannerPosition = topPosition(facilitiesBannerRef),
-			firstRowPosition = bottomPosition(firstRowRef),
-			secondRowPosition = bottomPosition(secondRowRef),
-			thirdRowPosition = bottomPosition(thirdRowRef);
+			firstRowPosition = topPosition(firstRowRef),
+			secondRowPosition = topPosition(secondRowRef),
+			thirdRowPosition = topPosition(thirdRowRef);
 
 		const onScroll = () => {
-			const scrollPosition = window.scrollY + window.innerHeight;
+			const scrollPosition = window.scrollY + height;
 			if (
 				animationIsPlaying.facilitiesBanner !== 'running' &&
 				facilitiesBannerPosition < scrollPosition
@@ -50,7 +52,7 @@ export default function About() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, []);
+	}, [width, height]);
 
 	return (
 		<main className='about-container'>

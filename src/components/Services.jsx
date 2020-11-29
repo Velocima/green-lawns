@@ -1,9 +1,11 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
+import useWindowSize from './useWindowSize';
 import '../css/services.css';
 import dog from '../images/good-boy.jpg';
 import bullet from '../images/paw-bullet.png';
 
 export default function Services() {
+	const [width, height] = useWindowSize();
 	const [animationIsPlaying, setAnimationIsPlaying] = useState({
 		pricesTitle: 'paused',
 		pricesTable: 'paused',
@@ -31,7 +33,7 @@ export default function Services() {
 			openingHoursPosition = topPosition(openingHoursRef);
 
 		const onScroll = () => {
-			const scrollPosition = window.scrollY + window.innerHeight;
+			const scrollPosition = window.scrollY + height;
 
 			if (
 				animationIsPlaying.pricesTitle !== 'running' &&
@@ -66,7 +68,7 @@ export default function Services() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, []);
+	}, [width, height]);
 
 	return (
 		<main className='services'>

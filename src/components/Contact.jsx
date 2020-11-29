@@ -1,7 +1,9 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
+import useWindowSize from './useWindowSize';
 import '../css/contact.css';
 
 export default function Contact() {
+	const [width, height] = useWindowSize();
 	const [animationIsPlaying, setAnimationIsPlaying] = useState({
 		openingHours: 'paused',
 		address: 'paused',
@@ -17,7 +19,7 @@ export default function Contact() {
 			addressPosition = topPosition(addressRef);
 
 		const onScroll = () => {
-			const scrollPosition = window.scrollY + window.innerHeight;
+			const scrollPosition = window.scrollY + height;
 			if (
 				animationIsPlaying.openingHours !== 'running' &&
 				openingHoursPosition < scrollPosition
@@ -30,7 +32,7 @@ export default function Contact() {
 		};
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);
-	}, []);
+	}, [width, height]);
 
 	return (
 		<main className='contact'>
