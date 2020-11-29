@@ -49,7 +49,7 @@ export default function Contact() {
 				</p>
 				<div className='phone-numbers'>
 					<p>
-						<span className='phone-numbers-header'>To book now call</span>
+						<span className='phone-numbers-header'>Book now via:</span>
 						Telephone:{' '}
 						<a href='tel:01600740111'>
 							<span>01600 740111</span>
@@ -58,6 +58,11 @@ export default function Contact() {
 						Mobile:{' '}
 						<a href='tel:07815534990'>
 							<span>07815 534990</span>
+						</a>
+						<br />
+						Email:{' '}
+						<a href='mailto:greenlawnskennels@icloud.com'>
+							<span className='email'>greenlawnskennels@icloud.com</span>
 						</a>
 					</p>
 				</div>
