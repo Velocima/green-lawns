@@ -179,14 +179,12 @@ export default function Services() {
 						<img src={bullet} alt='' />
 						<p>
 							A 20% non refundable or transferable deposit will be applied when
-							bookings are taken. Payments can be made by cash, cheque or by Bacs
+							bookings are taken. The rest is to be paid in full upon collection.
 						</p>
 					</li>
 					<li>
 						<img src={bullet} alt='' />
-						<p>
-							All bookings are to be paid in full by cash or cheque upon collection.
-						</p>
+						<p>We only accept payments via BACS, cash or cheque.</p>
 					</li>
 					<li>
 						<img src={bullet} alt='' />
