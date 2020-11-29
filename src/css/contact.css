@@ -149,10 +149,15 @@
           display: block;
           font-size: 3rem; }
         .contact .contact-info .phone-numbers p a {
-          text-decoration: none; }
+          text-decoration-color: rgba(0, 0, 0, 0);
+          transition: all 0.3s;
+          display: inline-block; }
           .contact .contact-info .phone-numbers p a span {
             font-size: 2rem;
             padding-left: 1rem; }
+        .contact .contact-info .phone-numbers p a:hover {
+          transform: translateX(10px);
+          text-decoration-color: rgba(0, 0, 0, 0.7); }
     .contact .contact-info iframe {
       grid-area: 3 / 1 / 3 / 3;
       width: 100%;
