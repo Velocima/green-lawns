@@ -136,7 +136,10 @@
         border-radius: 10px;
         box-shadow: 7px 10px 10px #bf9b30;
         background: radial-gradient(#e3f39b, #ffbf00);
-        animation: fadeInFromRight 1s 1.5s backwards; }
+        animation: fadeInFromRight 1s 1.5s backwards;
+        transition: 0.3s; }
+      .landing-container .description .call-to-action a:hover {
+        transform: scale(1.05); }
   @media screen and (max-width: 1350px) {
     .landing-container .description .text-container p {
       font-size: 1.15rem; }

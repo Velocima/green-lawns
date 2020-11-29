@@ -74,6 +74,10 @@
 				box-shadow: 7px 10px 10px $gold4;
 				background: radial-gradient($gold2, $gold3);
 				animation: fadeInFromRight 1s 1.5s backwards;
+				transition: 0.3s;
+			}
+			a:hover {
+				transform: scale(1.05);
 			}
 		}
 	}
