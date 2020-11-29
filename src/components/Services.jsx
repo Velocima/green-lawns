@@ -80,13 +80,10 @@ export default function Services() {
 					</div>
 					<div className='overflow-container'>
 						<p>
-							This paragraph will describe the services available. should contain
-							practical information for customers.
-							<br></br>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis
-							sequi nam fugiat, dolore aliquam laboriosam esse suscipit nostrum quas
-							soluta blanditiis est reprehenderit cupiditate libero ducimus
-							repellendus dolor placeat!
+							We offer single nights or longer stays as well as day boarding for our
+							guests. Every dog will have exercise three times per day in our lovely
+							paddocks with Meals all included and extra treats in between times!
+							Please see our opening times for day nursery.
 						</p>
 					</div>
 				</div>
