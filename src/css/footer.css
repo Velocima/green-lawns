@@ -14,6 +14,8 @@ footer {
     display: inline-block;
     color: white;
     transition: all 0.3s; }
+    footer a span {
+      word-break: break-word !important; }
   footer ul {
     list-style-type: none; }
   footer a:hover {
