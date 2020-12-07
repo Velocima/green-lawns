@@ -33,7 +33,7 @@ export default function Nav(props) {
 				<div className={`line ${showNav ? '' : 'middle-line-animated'}`}></div>
 				<div className={`line ${showNav ? '' : 'line-animated'}`}></div>
 			</div>
-			<ul style={{ pointerEvents: width > 1050 && !showNav ? 'none' : 'auto' }}>
+			<ul style={{ pointerEvents: width > 1050 ? 'auto' : !showNav ? 'none' : 'auto' }}>
 				{pages.map((page, i) => (
 					<li
 						key={`${i}${page}`}
