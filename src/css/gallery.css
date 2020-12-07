@@ -22,6 +22,21 @@
       cursor: pointer; }
     .gallery .overflow-container img:hover {
       transform: scale(1.1); }
+  .gallery .modal {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.7s;
+    z-index: 10000; }
+    .gallery .modal button {
+      position: fixed;
+      top: 10vh;
+      right: 10vh; }
   @media screen and (max-width: 540px) {
     .gallery {
       grid-template-columns: 1fr;
