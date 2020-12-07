@@ -22,3 +22,9 @@
       cursor: pointer; }
     .gallery .overflow-container img:hover {
       transform: scale(1.1); }
+  @media screen and (max-width: 540px) {
+    .gallery {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 400px;
+      gap: 10px;
+      padding: 5vh 10px; } }
