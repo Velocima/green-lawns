@@ -6,7 +6,7 @@ import { pages } from '../contentJs/pages';
 import useWindowSize from './useWindowSize';
 
 export default function Nav(props) {
-	const [width, height] = useWindowSize();
+	const [width] = useWindowSize();
 	const [showNav, setShowNav] = useState(width < 1050 ? false : true);
 
 	const handleNavButtonClick = () => {
