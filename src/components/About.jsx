@@ -58,7 +58,6 @@ export default function About() {
 
 	useLayoutEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
-		const bottomPosition = (element) => element.current.getBoundingClientRect().bottom;
 
 		const facilitiesBannerPosition = topPosition(facilitiesBannerRef),
 			firstRowPosition = topPosition(firstRowRef),
