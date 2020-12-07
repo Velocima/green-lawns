@@ -9,7 +9,7 @@ export default function Gallery(props) {
 		setIsModalOpen(true);
 		setModalImage(target.src);
 	};
-	const handleButtonClick = () => {
+	const closeModal = () => {
 		setIsModalOpen(false);
 	};
 
@@ -27,7 +27,7 @@ export default function Gallery(props) {
 					pointerEvents: isModalOpen ? 'all' : 'none',
 				}}
 			>
-				<button onClick={handleButtonClick}>X</button>
+				<button onClick={closeModal}>X</button>
 				<img src={modalImage} alt='' />
 			</div>
 		</section>
