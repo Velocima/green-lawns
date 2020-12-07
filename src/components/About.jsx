@@ -1,5 +1,6 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
 import useWindowSize from './useWindowSize';
+import Gallery from './Gallery';
 import '../css/about.css';
 import ownerImage from '../images/good-boys-and-owner.jpg';
 import dog1 from '../images/dog-placeholder-1.jpg';
@@ -135,6 +136,7 @@ export default function About() {
 					/>
 				</div>
 			</section>
+			<Gallery></Gallery>
 		</main>
 	);
 }
