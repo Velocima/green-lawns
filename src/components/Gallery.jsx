@@ -5,8 +5,8 @@ export default function Gallery(props) {
 	return (
 		<section className='gallery'>
 			{props.images.map((image, i) => (
-				<div className='overflow-container'>
-					<img src={image} alt='' key={i} />
+				<div className='overflow-container' key={i}>
+					<img src={image} alt='' />
 				</div>
 			))}
 		</section>

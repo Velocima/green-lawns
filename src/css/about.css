@@ -66,6 +66,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 10vh;
   overflow-x: hidden; }
   .about-container p {
