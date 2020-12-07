@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/gallery.css';
 
 export default function Gallery(props) {
@@ -12,6 +12,18 @@ export default function Gallery(props) {
 	const closeModal = () => {
 		setIsModalOpen(false);
 	};
+
+	useEffect(() => {
+		const handleEscape = ({ key }) => {
+			if (key === 'Escape') {
+				setIsModalOpen(false);
+			}
+		};
+		window.addEventListener('keydown', handleEscape);
+		return () => {
+			window.removeEventListener('keydown', handleEscape);
+		};
+	}, [isModalOpen]);
 
 	return (
 		<section className='gallery'>
