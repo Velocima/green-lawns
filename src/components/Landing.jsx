@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from 'react';
+import React from 'react';
 import '../css/landing.css';
 import { Link } from 'react-router-dom';
 
