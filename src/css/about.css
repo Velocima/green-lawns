@@ -11,8 +11,13 @@
   box-shadow: 7px 10px 10px #1fab89;
   border-radius: 10px; }
 
-.about-container .family .image-container, .about-container .facilities .tiles p {
+.about-container .facilities .tiles p {
   background: url("../images/doggo-background-texture-3.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-container .family .image-container {
+  background: url("../images/doggo-background-texture-2-crop-2.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -90,7 +95,7 @@
       align-items: flex-start;
       height: 100%;
       width: 100%;
-      background-color: #9df3c4; }
+      background-color: #ecfaf3; }
       .about-container .family .family-text .overflow-container {
         margin-left: 5vw; }
         .about-container .family .family-text .overflow-container h1 {

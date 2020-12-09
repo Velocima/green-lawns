@@ -27,7 +27,7 @@
 			align-items: flex-start;
 			height: 100%;
 			width: 100%;
-			background-color: $green2;
+			background-color: $background-color;
 			.overflow-container {
 				margin-left: 5vw;
 				h1 {
@@ -44,7 +44,7 @@
 			}
 		}
 		.image-container {
-			@extend %light-wallpaper;
+			@extend %dark-wallpaper;
 			display: grid;
 			place-items: center;
 			height: 100%;
