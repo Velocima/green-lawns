@@ -18,7 +18,7 @@ const App = () => {
 				<Nav />
 			</header>
 			<Switch>
-				<Route path='/testimonials'>
+				<Route path='/testimonies'>
 					<Testimonials />
 				</Route>
 				<Route path='/services'>
