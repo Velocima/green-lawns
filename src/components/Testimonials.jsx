@@ -105,7 +105,7 @@ export default function Testimonials() {
 				ref={reviewBannerRef}
 				style={{ animationPlayState: isVisible.reviewBanner ? 'running' : 'paused' }}
 			>
-				<h2>Testimonials</h2>
+				<h2>Testimonies</h2>
 			</div>
 			<div className='reviews-container'>
 				<div
