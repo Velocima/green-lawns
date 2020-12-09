@@ -14,23 +14,23 @@ nav {
 	border-bottom: 1px solid $green5;
 	.logo {
 		animation: slideFromLeft 0.9s ease-out;
-		a {
-			display: flex;
-			align-items: center;
-			text-decoration-color: rgba(0, 0, 0, 0);
-			img {
-				height: 8vh;
-				width: auto;
-				margin-left: 5vh;
-				margin-right: 1vw;
-			}
-			h4 {
-				flex-grow: 1;
-				font-family: $title-font;
-				font-size: 4vh;
-				font-weight: 300;
-				color: black;
-			}
+		display: inline-flex;
+		align-items: center;
+		justify-content: flex-start;
+		text-decoration-color: rgba(0, 0, 0, 0);
+		img {
+			height: 8vh;
+			width: auto;
+			margin-left: 5vh;
+			margin-right: 1vw;
+		}
+		h4 {
+			margin: 0;
+			padding: 0;
+			font-family: $title-font;
+			font-size: 4vh;
+			font-weight: 300;
+			color: black;
 		}
 	}
 	.nav-button {
@@ -101,15 +101,13 @@ nav {
 		position: absolute;
 		grid-template-columns: 1fr;
 		.logo {
-			a {
-				img {
-					margin-left: 0;
-				}
-				h4 {
-					margin-right: 15vw;
-					font-size: 3vh;
-					font-weight: 400;
-				}
+			img {
+				margin-left: 0;
+			}
+			h4 {
+				margin-right: 15vw;
+				font-size: 3vh;
+				font-weight: 400;
 			}
 		}
 		.nav-button {

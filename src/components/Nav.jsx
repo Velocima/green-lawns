@@ -21,12 +21,10 @@ export default function Nav(props) {
 	return (
 		<nav>
 			<div className='overflow-container'>
-				<div className='logo'>
-					<Link to='/'>
-						<img src={logo} alt='logo placeholder.' />
-						<h4>Green Lawns {width > 1050 && <br></br>}Boarding Kennels</h4>
-					</Link>
-				</div>
+				<Link to='/' className='logo'>
+					<img src={logo} alt='logo placeholder.' />
+					<h4>Green Lawns {width > 1050 && <br></br>}Boarding Kennels</h4>
+				</Link>
 			</div>
 			<div className='nav-button' onClick={handleNavButtonClick}>
 				<div className={`line ${showNav ? '' : 'line-animated'}`}></div>

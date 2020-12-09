@@ -59,22 +59,23 @@ nav {
   background-color: #ecfaf3;
   border-bottom: 1px solid #13614d; }
   nav .logo {
-    animation: slideFromLeft 0.9s ease-out; }
-    nav .logo a {
-      display: flex;
-      align-items: center;
-      text-decoration-color: rgba(0, 0, 0, 0); }
-      nav .logo a img {
-        height: 8vh;
-        width: auto;
-        margin-left: 5vh;
-        margin-right: 1vw; }
-      nav .logo a h4 {
-        flex-grow: 1;
-        font-family: "Montserrat", sans-serif;
-        font-size: 4vh;
-        font-weight: 300;
-        color: black; }
+    animation: slideFromLeft 0.9s ease-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration-color: rgba(0, 0, 0, 0); }
+    nav .logo img {
+      height: 8vh;
+      width: auto;
+      margin-left: 5vh;
+      margin-right: 1vw; }
+    nav .logo h4 {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4vh;
+      font-weight: 300;
+      color: black; }
   nav .nav-button {
     display: none; }
   nav ul {
@@ -130,9 +131,9 @@ nav {
     nav {
       position: absolute;
       grid-template-columns: 1fr; }
-      nav .logo a img {
+      nav .logo img {
         margin-left: 0; }
-      nav .logo a h4 {
+      nav .logo h4 {
         margin-right: 15vw;
         font-size: 3vh;
         font-weight: 400; }
