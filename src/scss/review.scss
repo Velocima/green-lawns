@@ -62,7 +62,7 @@
 				padding-left: 50px;
 			}
 		}
-		@for $i from 1 through 8 {
+		@for $i from 1 through 9 {
 			.review#{$i} {
 				@if ($i % 2 == 1) {
 					grid-area: #{$i + 1} / 2 / span 1 / span 4;

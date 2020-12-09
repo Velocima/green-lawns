@@ -11,13 +11,21 @@ import { galleryImages } from '../contentJs/galleryImages';
 export default function About() {
 	const [width, height] = useWindowSize();
 	const [animationIsPlaying, setAnimationIsPlaying] = useState({
+		familyImage: 'paused',
+		familyWallpaper: 'paused',
+		familyTitle: 'paused',
+		familyText: 'paused',
 		facilitiesBanner: 'paused',
 		firstRow: 'paused',
 		secondRow: 'paused',
 		thirdRow: 'paused',
 	});
 
-	const facilitiesBannerRef = useRef(null),
+	const familyImageRef = useRef(null),
+		familyWallpaperRef = useRef(null),
+		familyTitleRef = useRef(null),
+		familyTextRef = useRef(null),
+		facilitiesBannerRef = useRef(null),
 		firstRowRef = useRef(null),
 		secondRowRef = useRef(null),
 		thirdRowRef = useRef(null);
@@ -25,13 +33,44 @@ export default function About() {
 	useLayoutEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
 
-		const facilitiesBannerPosition = topPosition(facilitiesBannerRef),
+		const familyImagePosition = topPosition(familyWallpaperRef),
+			familyWallpaperPosition = topPosition(familyWallpaperRef),
+			familyTitlePosition = topPosition(familyTitleRef),
+			familyTextPosition = topPosition(familyTextRef),
+			facilitiesBannerPosition = topPosition(facilitiesBannerRef),
 			firstRowPosition = topPosition(firstRowRef),
 			secondRowPosition = topPosition(secondRowRef),
 			thirdRowPosition = topPosition(thirdRowRef);
 
 		const onScroll = () => {
 			const scrollPosition = window.scrollY + height;
+			if (
+				animationIsPlaying.familyImage !== 'running' &&
+				familyImagePosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, familyImage: 'running' }));
+			}
+			if (
+				animationIsPlaying.familyWallpaper !== 'running' &&
+				familyWallpaperPosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({
+					...prevState,
+					familyWallpaper: 'running',
+				}));
+			}
+			if (
+				animationIsPlaying.familyTitle !== 'running' &&
+				familyTitlePosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, familyTitle: 'running' }));
+			}
+			if (
+				animationIsPlaying.thifamilyTextrdRow !== 'running' &&
+				familyTextPosition < scrollPosition
+			) {
+				setAnimationIsPlaying((prevState) => ({ ...prevState, familyText: 'running' }));
+			}
 			if (
 				animationIsPlaying.facilitiesBanner !== 'running' &&
 				facilitiesBannerPosition < scrollPosition
@@ -58,15 +97,32 @@ export default function About() {
 	return (
 		<main className='about-container'>
 			<section className='family'>
-				<div className='image-container'>
-					<img src={ownerImage} alt='' />
+				<div
+					className='image-container'
+					ref={familyImageRef}
+					style={{ animationPlayState: animationIsPlaying.familyImage }}
+				>
+					<img
+						src={ownerImage}
+						alt=''
+						ref={familyWallpaperRef}
+						style={{ animationPlayState: animationIsPlaying.familyWallpaper }}
+					/>
 				</div>
 				<div className='family-text'>
 					<div className='overflow-container'>
-						<h1>More than just a business</h1>
+						<h1
+							ref={familyTitleRef}
+							style={{ animationPlayState: animationIsPlaying.familyTitle }}
+						>
+							More than just a business
+						</h1>
 					</div>
 					<div className='overflow-container'>
-						<p>
+						<p
+							ref={familyTextRef}
+							style={{ animationPlayState: animationIsPlaying.familyText }}
+						>
 							We are a highly reputable and established boarding kennels offering
 							first class care for our guests. We are situated just outside Monmouth
 							within easy reach of the M4 and A449. Our Kennels are fully licensed by
