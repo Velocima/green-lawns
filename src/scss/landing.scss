@@ -10,7 +10,7 @@
 		@extend %centered-column-flexbox;
 		@include parallax-banner('../images/banner-placeholder.jpg');
 		width: 100%;
-		height: 50vh;
+		min-height: 50vh;
 		animation: fadeIn 1s ease-out backwards;
 		.titles {
 			@extend %centered-column-flexbox;
@@ -67,7 +67,7 @@
 	}
 	@media screen and (max-width: 1000px) {
 		.title-banner {
-			height: 40vh;
+			min-height: 40vh;
 			.titles {
 				h1,
 				h2 {
@@ -97,7 +97,7 @@
 				h2 {
 					font-size: 1.25rem;
 					text-align: center;
-					padding: 0 20px;
+					padding: 0 20px 10px;
 				}
 			}
 		}
