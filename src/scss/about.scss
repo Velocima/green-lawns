@@ -34,11 +34,11 @@
 					width: 90%;
 					margin-bottom: 7vh;
 					font-size: 6rem;
-					animation: fadeInFromAbove 1s 0.3s ease-out backwards;
+					animation: fadeIn 1s ease-out backwards;
 				}
 				p {
 					width: 75%;
-					animation: fadeInFromLeft 1s 0.7s ease-out backwards;
+					animation: fadeIn 1s ease-out backwards;
 					padding-bottom: 20px;
 				}
 			}
@@ -50,10 +50,10 @@
 			height: 100%;
 			width: 100%;
 			background-position: 3%;
-			animation: fadeIn 1s 0.5s ease-out backwards;
+			animation: fadeIn 1s ease-out backwards;
 			img {
 				@include circular-image(30vw);
-				animation: fadeIn 1s 1.7s ease-out backwards;
+				animation: fadeIn 1s ease-out backwards;
 			}
 		}
 	}

@@ -102,10 +102,10 @@
           width: 90%;
           margin-bottom: 7vh;
           font-size: 6rem;
-          animation: fadeInFromAbove 1s 0.3s ease-out backwards; }
+          animation: fadeIn 1s ease-out backwards; }
         .about-container .family .family-text .overflow-container p {
           width: 75%;
-          animation: fadeInFromLeft 1s 0.7s ease-out backwards;
+          animation: fadeIn 1s ease-out backwards;
           padding-bottom: 20px; }
     .about-container .family .image-container {
       display: grid;
@@ -113,14 +113,14 @@
       height: 100%;
       width: 100%;
       background-position: 3%;
-      animation: fadeIn 1s 0.5s ease-out backwards; }
+      animation: fadeIn 1s ease-out backwards; }
       .about-container .family .image-container img {
         height: 30vw;
         width: 30vw;
         border-radius: 50%;
         object-fit: cover;
         object-position: 50% 50%;
-        animation: fadeIn 1s 1.7s ease-out backwards; }
+        animation: fadeIn 1s ease-out backwards; }
   .about-container .facilities .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about-banner-placeholder.jpg");
     background-position: 50% 50%;
