@@ -16,11 +16,6 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.about-container .family .image-container {
-  background: url("../images/doggo-background-texture-2-crop-2.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 @keyframes fadeInFromRight {
   from {
     opacity: 0;
@@ -112,7 +107,7 @@
       place-items: center;
       height: 100%;
       width: 100%;
-      background-position: 3%;
+      background-color: #9df3c4;
       animation: fadeIn 1s ease-out backwards; }
       .about-container .family .image-container img {
         height: 30vw;

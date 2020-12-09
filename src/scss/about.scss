@@ -44,12 +44,11 @@
 			}
 		}
 		.image-container {
-			@extend %dark-wallpaper;
 			display: grid;
 			place-items: center;
 			height: 100%;
 			width: 100%;
-			background-position: 3%;
+			background-color: $green2;
 			animation: fadeIn 1s ease-out backwards;
 			img {
 				@include circular-image(30vw);

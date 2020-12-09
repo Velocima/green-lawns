@@ -8,17 +8,8 @@
   justify-content: center;
   align-items: center; }
 
-.landing-container .description .text-container p {
-  box-shadow: -7px 10px 10px #1fab89;
-  border-radius: 10px; }
-
-.landing-container .description .text-container p {
+.landing-container .call-to-action {
   background: url("../images/doggo-background-texture-3.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.landing-container .description .call-to-action {
-  background: url("../images/doggo-background-texture-2-crop-2.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -100,50 +91,30 @@
         font-size: 2.5vw;
         font-style: italic;
         animation: fadeIn 1s 1.3s backwards; }
-  .landing-container .description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+  .landing-container .call-to-action {
     min-height: 40vh;
-    width: 100%; }
-    .landing-container .description .text-container {
-      display: grid;
-      place-items: center;
-      margin: 10%;
-      background-color: #d7fbe8;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s 0.5s ease-out backwards; }
+    .landing-container .call-to-action a {
+      color: black;
+      font-weight: 300;
+      font-size: 4rem;
+      text-shadow: 2px 2px 3px #1fab89;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      padding: 40px 60px;
       border-radius: 10px;
-      animation: fadeInFromLeft 1s 1.5s backwards; }
-      .landing-container .description .text-container p {
-        flex-grow: 1;
-        font-family: "Alegreya", serif;
-        font-size: 1.25rem;
-        padding: 3vh; }
-    .landing-container .description .call-to-action {
-      display: grid;
-      place-items: center;
-      width: 100%;
-      height: 100%;
-      animation: fadeIn 1s 0.5s ease-out backwards; }
-      .landing-container .description .call-to-action a {
-        color: black;
-        font-weight: 300;
-        padding-bottom: 20px;
-        font-size: 4rem;
-        text-shadow: 2px 2px 3px #1fab89;
-        text-decoration: none;
-        font-family: "Montserrat", sans-serif;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 7px 10px 10px #bf9b30;
-        background: radial-gradient(#e3f39b, #ffbf00);
-        animation: fadeInFromRight 1s 1.5s backwards;
-        transition: 0.3s; }
-      .landing-container .description .call-to-action a:hover {
-        transform: scale(1.05); }
+      box-shadow: 7px 10px 10px #bf9b30;
+      background: radial-gradient(#e3f39b, #ffbf00);
+      animation: fadeInFromRight 1s 1.5s backwards;
+      transition: 0.3s; }
+    .landing-container .call-to-action a:hover {
+      transform: scale(1.05); }
   @media screen and (max-width: 1350px) {
-    .landing-container .description .text-container p {
-      font-size: 1.15rem; }
-    .landing-container .description .call-to-action a {
+    .landing-container .call-to-action a {
       font-size: 3rem; } }
   @media screen and (max-width: 1000px) {
     .landing-container .title-banner {
@@ -153,11 +124,9 @@
         font-weight: 400; }
       .landing-container .title-banner .titles h2 {
         font-size: 3vw; }
-    .landing-container .description {
+    .landing-container .call-to-action {
       min-height: 50vh; }
-      .landing-container .description .text-container p {
-        font-size: 1rem; }
-      .landing-container .description .call-to-action a {
+      .landing-container .call-to-action a {
         font-size: 2.5rem; } }
   @media screen and (max-width: 700px) {
     .landing-container .title-banner .titles {
@@ -170,20 +139,14 @@
         font-size: 1.25rem;
         text-align: center;
         padding: 0 20px; }
-    .landing-container .description {
-      grid-template-columns: 1fr;
-      grid-template-rows: 20vh; }
-      .landing-container .description .call-to-action {
-        grid-row: 1 / span 2; }
-        .landing-container .description .call-to-action a {
-          font-size: 2rem; } }
+    .landing-container .call-to-action {
+      grid-row: 1 / span 2; }
+      .landing-container .call-to-action a {
+        font-size: 2rem;
+        padding: 20px 30px; } }
   @media screen and (min-width: 2500px) {
-    .landing-container .description .text-container p {
-      font-size: 1.75rem; }
-    .landing-container .description .call-to-action a {
+    .landing-container .call-to-action a {
       font-size: 6rem; } }
   @media screen and (min-width: 3700px) {
-    .landing-container .description .text-container p {
-      font-size: 2.5rem; }
-    .landing-container .description .call-to-action a {
+    .landing-container .call-to-action a {
       font-size: 8rem; } }
