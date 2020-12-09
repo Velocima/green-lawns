@@ -12,7 +12,6 @@ import image11 from '../images/gallery/stick.jpg';
 import image12 from '../images/gallery/ted-1.jpg';
 import image13 from '../images/gallery/thor.jpg';
 import image14 from '../images/gallery/trio.jpg';
-import image15 from '../images/gallery/runnig.jpg';
 
 export const galleryImages = [
 	{ image: image1, alt: '' },
@@ -29,5 +28,4 @@ export const galleryImages = [
 	{ image: image12, alt: '' },
 	{ image: image13, alt: '' },
 	{ image: image14, alt: '' },
-	{ image: image15, alt: '' },
 ];
