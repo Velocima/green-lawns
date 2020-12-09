@@ -3,6 +3,7 @@
 @import 'variables/animations';
 
 .reviews {
+	margin-top: 10vh;
 	width: 100%;
 	.reviews-banner {
 		@include parallax-banner('../images/banner-placeholder-2.jpg');
