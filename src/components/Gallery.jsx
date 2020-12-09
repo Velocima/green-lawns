@@ -7,7 +7,7 @@ export default function Gallery(props) {
 
 	const handleImageClick = ({ target }) => {
 		setIsModalOpen(true);
-		setModalImage(target.src);
+		setModalImage({ image: target.src, alt: target.alt });
 	};
 	const closeModal = () => {
 		setIsModalOpen(false);
@@ -29,7 +29,7 @@ export default function Gallery(props) {
 		<section className='gallery'>
 			{props.images.map((image, i) => (
 				<div className='overflow-container' key={i}>
-					<img src={image} alt='' onClick={handleImageClick} />
+					<img src={image.image} alt={image.alt} onClick={handleImageClick} />
 				</div>
 			))}
 			<div
@@ -40,7 +40,7 @@ export default function Gallery(props) {
 				}}
 			>
 				<button onClick={closeModal}>X</button>
-				<img src={modalImage} alt='' />
+				<img src={modalImage.image} alt={modalImage.alt} />
 			</div>
 		</section>
 	);
