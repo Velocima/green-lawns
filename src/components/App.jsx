@@ -3,6 +3,7 @@ import '../css/app.css';
 import Nav from './Nav';
 import Landing from './Landing';
 import About from './About';
+import Testimonials from './Testimonials';
 import Services from './Services';
 import Contact from './Contact';
 import ScrollToTop from './ScrollToTop';
@@ -17,8 +18,8 @@ const App = () => {
 				<Nav />
 			</header>
 			<Switch>
-				<Route path='/about'>
-					<About />
+				<Route path='/testimonials'>
+					<Testimonials />
 				</Route>
 				<Route path='/services'>
 					<Services />
@@ -28,6 +29,7 @@ const App = () => {
 				</Route>
 				<Route path='/'>
 					<Landing />
+					<About />
 				</Route>
 			</Switch>
 			<Footer />

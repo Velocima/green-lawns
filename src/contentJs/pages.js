@@ -1,6 +1,6 @@
 export const pages = [
-    { route: '/', navText: 'Home' },
-    { route: '/about', navText: 'About Us' },
-    { route: '/services', navText: 'Services' },
-    { route: '/contact', navText: 'Contact' },
+	{ route: '/', navText: 'Home' },
+	{ route: '/testimonials', navText: 'Testimonials' },
+	{ route: '/services', navText: 'Services' },
+	{ route: '/contact', navText: 'Contact' },
 ];
