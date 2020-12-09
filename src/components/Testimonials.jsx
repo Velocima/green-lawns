@@ -17,6 +17,7 @@ export default function Testimonials() {
 		review6: false,
 		review7: false,
 		review8: false,
+		review9: false,
 	});
 
 	const reviewBannerRef = useRef(null),
@@ -28,7 +29,8 @@ export default function Testimonials() {
 		review5Ref = useRef(null),
 		review6Ref = useRef(null),
 		review7Ref = useRef(null),
-		review8Ref = useRef(null);
+		review8Ref = useRef(null),
+		review9Ref = useRef(null);
 
 	const reviewRefs = [
 		review1Ref,
@@ -39,6 +41,7 @@ export default function Testimonials() {
 		review6Ref,
 		review7Ref,
 		review8Ref,
+		review9Ref,
 	];
 	useLayoutEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
@@ -52,7 +55,8 @@ export default function Testimonials() {
 			review5Position = topPosition(review5Ref),
 			review6Position = topPosition(review6Ref),
 			review7Position = topPosition(review7Ref),
-			review8Position = topPosition(review8Ref);
+			review8Position = topPosition(review8Ref),
+			review9Position = topPosition(review9Ref);
 
 		const onScroll = () => {
 			const scrollPosition = window.scrollY + height;
@@ -85,6 +89,9 @@ export default function Testimonials() {
 			}
 			if (!isVisible.review8 && review8Position < scrollPosition) {
 				setIsVisible((prevState) => ({ ...prevState, review8: true }));
+			}
+			if (!isVisible.review9 && review9Position < scrollPosition) {
+				setIsVisible((prevState) => ({ ...prevState, review9: true }));
 			}
 		};
 		onScroll();

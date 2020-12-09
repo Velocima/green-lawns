@@ -18,13 +18,13 @@
 	}
 	.reviews-container {
 		display: grid;
-		grid-template-rows: 10vh repeat(8, minmax(10vh, auto)) 5vh;
+		grid-template-rows: 10vh repeat(9, minmax(10vh, auto)) 5vh;
 		grid-template-columns: 2fr 2fr repeat(4, 1fr) 2fr 2fr;
 		place-items: center;
 		.background-shader {
 			width: 100%;
 			height: 100%;
-			grid-area: 1 / 1 / span 10 / span 4;
+			grid-area: 1 / 1 / span 11 / span 4;
 			background: url('../images/doggo-background-texture-2-crop-2.png');
 			background-repeat: repeat;
 			background-size: contain;
@@ -79,7 +79,7 @@
 	}
 	@media screen and (max-width: 1350px) {
 		.reviews-container {
-			@for $i from 1 through 8 {
+			@for $i from 1 through 9 {
 				.review#{$i} {
 					@if ($i % 2 == 1) {
 						grid-area: #{$i + 1} / 2 / span 1 / span 5;
@@ -107,7 +107,7 @@
 					padding-top: 0;
 				}
 			}
-			@for $i from 1 through 8 {
+			@for $i from 1 through 9 {
 				.review#{$i} {
 					grid-area: #{$i + 1} / 2 / span 1 / span 6;
 				}

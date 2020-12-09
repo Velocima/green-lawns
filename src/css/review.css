@@ -90,13 +90,13 @@
       font-size: 5vw; }
   .reviews .reviews-container {
     display: grid;
-    grid-template-rows: 10vh repeat(8, minmax(10vh, auto)) 5vh;
+    grid-template-rows: 10vh repeat(9, minmax(10vh, auto)) 5vh;
     grid-template-columns: 2fr 2fr repeat(4, 1fr) 2fr 2fr;
     place-items: center; }
     .reviews .reviews-container .background-shader {
       width: 100%;
       height: 100%;
-      grid-area: 1 / 1 / span 10 / span 4;
+      grid-area: 1 / 1 / span 11 / span 4;
       background: url("../images/doggo-background-texture-2-crop-2.png");
       background-repeat: repeat;
       background-size: contain;
@@ -171,7 +171,9 @@
     .reviews .reviews-container .review7 {
       grid-area: 8 / 2/span 1/span 5; }
     .reviews .reviews-container .review8 {
-      grid-area: 9 / 3/span 1/span 5; } }
+      grid-area: 9 / 3/span 1/span 5; }
+    .reviews .reviews-container .review9 {
+      grid-area: 10 / 2/span 1/span 5; } }
   @media screen and (max-width: 700px) {
     .reviews .reviews-banner h2 {
       font-size: 2rem;
@@ -196,7 +198,9 @@
     .reviews .reviews-container .review7 {
       grid-area: 8 / 2/span 1/span 6; }
     .reviews .reviews-container .review8 {
-      grid-area: 9 / 2/span 1/span 6; } }
+      grid-area: 9 / 2/span 1/span 6; }
+    .reviews .reviews-container .review9 {
+      grid-area: 10 / 2/span 1/span 6; } }
   @media screen and (min-width: 2500px) {
     .reviews .reviews-container .review p:nth-child(1)::before,
     .reviews .reviews-container .review p:nth-child(1)::after {
