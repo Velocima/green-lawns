@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center; }
 
-.contact .contact-info .opening-paragraph, .contact .contact-info table {
+.contact .contact-info table {
   box-shadow: -7px 10px 10px #1fab89;
   border-radius: 10px; }
 
@@ -18,7 +18,7 @@
   box-shadow: 7px 10px 10px #1fab89;
   border-radius: 10px; }
 
-.contact .contact-info .opening-paragraph,
+
 .contact .contact-info .address p {
   background: url("../images/doggo-background-texture-3.png");
   background-repeat: no-repeat;
@@ -121,10 +121,6 @@
         font-size: 3rem;
         font-style: italic;
         animation: fadeIn 1s 0.6s ease-out backwards; }
-    .contact .contact-info .opening-paragraph {
-      grid-area: 2 / 1 / 3 / 2;
-      margin: 20px 0;
-      animation: fadeInFromLeft 1s 0.6s backwards; }
     .contact .contact-info .phone-numbers,
     .contact .contact-info .address {
       width: 100%;
@@ -139,6 +135,7 @@
           font-weight: 400;
           padding-bottom: 20px; }
     .contact .contact-info .phone-numbers {
+      grid-column: 1 / span 2;
       margin: 20px 0;
       animation: fadeIn 1s 0.3s ease-out backwards; }
       .contact .contact-info .phone-numbers p {
@@ -206,10 +203,12 @@
     .contact .contact-info p {
       width: 75%;
       font-size: 1.25rem; }
-    .contact .contact-info .phone-numbers p .phone-numbers-header {
-      font-size: 2.5rem; }
-    .contact .contact-info .phone-numbers p a span {
-      font-size: 1.75rem; }
+    .contact .contact-info .phone-numbers p {
+      width: 50%; }
+      .contact .contact-info .phone-numbers p .phone-numbers-header {
+        font-size: 2.5rem; }
+      .contact .contact-info .phone-numbers p a span {
+        font-size: 1.75rem; }
     .contact .contact-info table {
       width: 75%;
       margin: 20px 0; }
@@ -242,31 +241,33 @@
   @media screen and (max-width: 700px) {
     .contact .contact-info {
       grid-template-columns: 100%;
-      grid-template-rows: minmax(30vh, auto) repeat(5, minmax(30vh, auto)); }
+      grid-template-rows: minmax(30vh, auto) repeat(4, minmax(30vh, auto)); }
       .contact .contact-info .banner h1 {
         font-size: 3.5rem;
         text-align: center; }
       .contact .contact-info .banner h2 {
         font-size: 1.75rem;
         text-align: center; }
-      .contact .contact-info .opening-paragraph {
-        grid-area: 2 / 1 / 3 / 2; }
       .contact .contact-info .phone-numbers {
-        grid-area: 3 / 1 / 4 / 2; }
+        grid-area: 2 / 1 / 3 / 2; }
+        .contact .contact-info .phone-numbers .email {
+          word-break: break-word !important;
+          padding-left: 0; }
       .contact .contact-info iframe {
-        grid-area: 4 / 1 / 5 / 2; }
+        grid-area: 3 / 1 / 4 / 2; }
       .contact .contact-info table {
-        grid-area: 5 / 1 / 6 / 2; }
+        grid-area: 4 / 1 / 5 / 2;
+        width: 85%; }
       .contact .contact-info .address {
-        grid-area: 6 / 1 / 7 / 2; } }
+        grid-area: 5 / 1 / 6 / 2;
+        width: 100%; }
+        .contact .contact-info .address p {
+          width: 80%; } }
   @media screen and (min-width: 2500px) {
     .contact .contact-info .banner h1 {
       font-size: 8rem; }
     .contact .contact-info .banner h2 {
       font-size: 4rem; }
-    .contact .contact-info .opening-paragraph {
-      width: 750px;
-      font-size: 1.75rem; }
     .contact .contact-info .phone-numbers p {
       width: 750px;
       font-size: 1.75rem; }
@@ -290,9 +291,6 @@
       font-size: 10rem; }
     .contact .contact-info .banner h2 {
       font-size: 5rem; }
-    .contact .contact-info .opening-paragraph {
-      width: 1000px;
-      font-size: 2.5rem; }
     .contact .contact-info .phone-numbers p {
       width: 1000px;
       font-size: 2.5rem; }

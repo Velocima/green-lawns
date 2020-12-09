@@ -41,12 +41,6 @@ export default function Contact() {
 					<h1>Get In Touch</h1>
 					<h2>We'd Love to Hear from You!</h2>
 				</div>
-				<p className='opening-paragraph'>
-					This paragraph should explain what a customer should expect by contacting/ how
-					they can contact. <br />
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit
-					voluptatem quisquam amet molestias inventore.
-				</p>
 				<div className='phone-numbers'>
 					<p>
 						<span className='phone-numbers-header'>Book now via:</span>
